@@ -1,6 +1,6 @@
 import {Component, computed, defineComponent, h, PropType, resolveComponent, toRefs} from "vue";
 import { snakeCase, kebabCase } from "change-case";
-import type {Base, Node} from "../prosemirror-json.ts";
+import type {Common, Node} from "../prosemirror-json.ts";
 
 import { defaultConfig as config} from "../config.ts";
 
@@ -21,7 +21,7 @@ function substituteAttributes(name: string, attrs?: Record<string, any>): string
     });
 }
 
-const resolveProseComponent = (el: Base, typeMap: Record<string, string | Component>) => {
+const resolveProseComponent = (el: Common, typeMap: Record<string, string | Component>) => {
     const type = snakeCase(el.type);
     const name: string | Component = typeMap[type] ?? "prose-mirror-" + kebabCase(el.type);
     const component: string | Component = typeof name === "string" ? resolveComponent(name) : name;
@@ -37,7 +37,7 @@ const ProseMirrorNode = defineComponent({
         mark: Number,
     },
     setup(properties) {
-        const me= resolveComponent("ProseMirrorNode", true);
+        const self= resolveComponent("ProseMirrorNode", true);
 
         const { typeMap } = config;
 
@@ -55,7 +55,7 @@ const ProseMirrorNode = defineComponent({
                     markComponent,
                     markItem.value.attrs,
                     // recurse the next mark for child
-                    h(me, { node: node.value, mark: markIndex.value + 1 }),
+                    h(self, { node: node.value, mark: markIndex.value + 1 }),
                 );
             }
             // render text as is
@@ -69,7 +69,7 @@ const ProseMirrorNode = defineComponent({
                     proseComponent,
                     { ...node.value.attrs, node: node.value },
                     // node content build the children
-                    node.value.content?.map((child) => h(me, { node: child })),
+                    node.value.content?.map((child) => h(self, { node: child })),
                 );
             }
         };

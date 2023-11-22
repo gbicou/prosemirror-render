@@ -1,14 +1,25 @@
-
+/**
+ * JSON ProseMirror attributes
+ */
 export type Attrs = Record<string, any>
 
-export type Base = {
+/**
+ * JSON ProseMirror common properties for Mark & Node
+ */
+export type Common = {
     readonly type: string;
     readonly attrs?: Attrs;
 }
 
-export type Mark = Base
+/**
+ * JSON ProseMirror Mark
+ */
+export type Mark = Common
 
-export type Node = Base & {
+/**
+ * JSON ProseMirror Node
+ */
+export type Node = Common & {
     readonly marks?: Mark[];
     readonly content?: Node[];
     readonly text?: string;
