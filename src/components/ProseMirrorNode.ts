@@ -4,15 +4,12 @@ import type { Attrs, Common, Node } from "../prosemirror-json.ts";
 
 import { defaultConfig as config } from "../config.ts";
 
-/*
-interface ProseMirrorNodeProperties {
-    // curent prosemirror node
-    node: Node;
-    // mark index to render
-    mark?: number;
-}
-*/
-
+/**
+ * Replaces attribute placeholders in an element name with their corresponding values.
+ * @param name - The name of the element.
+ * @param attrs - An optional object containing attribute values.
+ * @returns - The string with attribute placeholders replaced by their values.
+ */
 function substituteAttributes(name: string, attrs?: Attrs): string {
   const regex = /\[([a-zA-Z_]\w*)]/g;
 
@@ -21,19 +18,27 @@ function substituteAttributes(name: string, attrs?: Attrs): string {
   });
 }
 
-const resolveProseComponent = (el: Common, typeMap: Record<string, string | Component>) => {
-  const type = snakeCase(el.type);
-  const name: string | Component = typeMap[type] ?? "prose-mirror-" + kebabCase(el.type);
+/**
+ * Resolves the component for the given ProseMirror node or mark.
+ * @param node - The ProseMirror node or mark.
+ * @param typeMap - Mapping from node type to element or component.
+ * @returns - The component to render the node or mark.
+ */
+function resolveProseComponent(node: Common, typeMap: Record<string, string | Component>): string | Component {
+  const type = snakeCase(node.type);
+  const name: string | Component = typeMap[type] ?? "prose-mirror-" + kebabCase(node.type);
   const component: string | Component = typeof name === "string" ? resolveComponent(name) : name;
-  const parsed: string | Component = typeof component === "string" ? substituteAttributes(component, el.attrs) : component;
+  const parsed: string | Component = typeof component === "string" ? substituteAttributes(component, node.attrs) : component;
 
   return parsed;
-};
+}
 
 const ProseMirrorNode = defineComponent({
   name: "ProseMirrorNode",
   props: {
+    // curent prosemirror node
     node: { type: Object as PropType<Node>, required: true },
+    // mark index to render
     mark: { type: Number, default: 0 },
   },
   setup(properties) {

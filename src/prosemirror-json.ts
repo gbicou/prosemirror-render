@@ -1,7 +1,8 @@
 /**
  * JSON ProseMirror attributes
  */
-export type Attrs = Record<string, never>;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type Attrs = Record<string, any>;
 
 /**
  * JSON ProseMirror common properties for Mark & Node
