@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProseMirrorNode from "../components/ProseMirrorNode.ts";
+// import ProseMirrorNode from "../components/ProseMirrorNode.ts";
 
 const node = {
   type: "doc",

@@ -17,7 +17,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ["src/pages/*.vue"],
+      files: ["**/src/pages/*.vue"],
       rules: {
         "vue/multi-word-component-names": "off",
       },

@@ -8,4 +8,6 @@ export const VueProseMirrorPlugin: Plugin = (app: App, options?: VueProseMirrorO
   app.component("ProseMirrorNode", ProseMirrorNode);
 };
 
-export { ProseMirrorNode, VueProseMirrorPlugin as default };
+export { ProseMirrorNode };
+
+export default VueProseMirrorPlugin;
