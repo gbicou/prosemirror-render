@@ -170,6 +170,81 @@ const node = {
         },
       ],
     },
+    {
+      type: "horizontalRule",
+    },
+    {
+      type: "orderedList",
+      attrs: {
+        start: 1,
+      },
+      content: [
+        {
+          type: "listItem",
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                {
+                  type: "text",
+                  text: "A list item",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: "listItem",
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                {
+                  type: "text",
+                  text: "And another one",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "orderedList",
+      attrs: {
+        start: 5,
+      },
+      content: [
+        {
+          type: "listItem",
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                {
+                  type: "text",
+                  text: "This item starts at 5",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: "listItem",
+          content: [
+            {
+              type: "paragraph",
+              content: [
+                {
+                  type: "text",
+                  text: "And another one",
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 </script>
