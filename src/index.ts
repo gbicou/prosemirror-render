@@ -1,10 +1,11 @@
 import ProseMirrorNode from "./components/ProseMirrorNode.ts";
 import { type App, type Plugin } from "vue";
-import { type Config, defaultConfig, key } from "./config.ts";
+import { type VueProseMirrorOptions, defaultOptions, VueProseMirrorOptionsKey } from "./options.ts";
+import defu from "defu";
 
-const install: Plugin = (app: App, options?: Config) => {
-  app.provide(key, options ?? defaultConfig);
+export const VueProseMirrorPlugin: Plugin = (app: App, options?: VueProseMirrorOptions) => {
+  app.provide(VueProseMirrorOptionsKey, defu(options, defaultOptions));
   app.component("ProseMirrorNode", ProseMirrorNode);
 };
 
-export { ProseMirrorNode, install };
+export { ProseMirrorNode, VueProseMirrorPlugin as default };

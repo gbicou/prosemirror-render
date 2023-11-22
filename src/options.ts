@@ -1,14 +1,14 @@
 import type { Component } from "vue";
 import type { InjectionKey } from "vue";
 
-export interface Config {
+export interface VueProseMirrorOptions {
   /** Map node types to component names */
   typeMap: Record<string, string | Component>;
 }
 
-export const key: InjectionKey<Config> = Symbol("prosemirror-config");
+export const VueProseMirrorOptionsKey: InjectionKey<VueProseMirrorOptions> = Symbol("prosemirror-options");
 
-export const defaultConfig: Config = {
+export const defaultOptions: VueProseMirrorOptions = {
   typeMap: {
     doc: "div",
     heading: "h[level]",

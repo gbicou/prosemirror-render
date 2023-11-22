@@ -1,7 +1,7 @@
 import { type Component, computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
 import { kebabCase, snakeCase } from "change-case";
 import type { Attrs, Common, Node } from "../prosemirror-json.ts";
-import { defaultConfig, key } from "../config.ts";
+import { defaultOptions, VueProseMirrorOptionsKey } from "../options.ts";
 
 /**
  * Replaces attribute placeholders in an element name with their corresponding values.
@@ -51,7 +51,7 @@ const ProseMirrorNode = defineComponent({
   setup(properties) {
     const self = resolveComponent("ProseMirrorNode", true);
 
-    const { typeMap } = inject(key, defaultConfig);
+    const { typeMap } = inject(VueProseMirrorOptionsKey, defaultOptions);
 
     const { node, mark } = toRefs(properties);
 
