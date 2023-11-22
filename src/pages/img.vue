@@ -2,43 +2,41 @@
 import ProseMirrorNode from "../components/ProseMirrorNode.ts";
 
 const node = {
-  "type": "doc",
-  "content": [
+  type: "doc",
+  content: [
     {
-      "type": "paragraph",
-      "content": [
+      type: "paragraph",
+      content: [
         {
-          "type": "text",
-          "text": "This is a basic example of implementing images."
-        }
-      ]
+          type: "text",
+          text: "This is a basic example of implementing images.",
+        },
+      ],
     },
     {
-      "type": "image",
-      "attrs": {
-        "src": "https://source.unsplash.com/8xznAGy4HcY/800x400",
-        "alt": null,
-        "title": null
-      }
+      type: "image",
+      attrs: {
+        src: "https://source.unsplash.com/8xznAGy4HcY/800x400",
+        alt: null,
+        title: null,
+      },
     },
     {
-      "type": "image",
-      "attrs": {
-        "src": "https://source.unsplash.com/K9QHL52rE2k/800x400",
-        "alt": null,
-        "title": null
-      }
-    }
-  ]
+      type: "image",
+      attrs: {
+        src: "https://source.unsplash.com/K9QHL52rE2k/800x400",
+        alt: null,
+        title: null,
+      },
+    },
+  ],
 };
-
 </script>
 
 <template>
   <div>
-    <prose-mirror-node :node="node"/>
+    <prose-mirror-node :node="node" />
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

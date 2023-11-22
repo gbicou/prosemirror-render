@@ -2,51 +2,49 @@
 import ProseMirrorNode from "../components/ProseMirrorNode.ts";
 
 const node = {
-  "type": "doc",
-  "content": [
+  type: "doc",
+  content: [
     {
-      "type": "paragraph",
-      "content": [
+      type: "paragraph",
+      content: [
         {
-          "type": "text",
-          "text": "This is a paragraph."
-        }
-      ]
+          type: "text",
+          text: "This is a paragraph.",
+        },
+      ],
     },
     {
-      "type": "horizontalRule"
+      type: "horizontalRule",
     },
     {
-      "type": "paragraph",
-      "content": [
+      type: "paragraph",
+      content: [
         {
-          "type": "text",
-          "text": "And this is another paragraph."
-        }
-      ]
+          type: "text",
+          text: "And this is another paragraph.",
+        },
+      ],
     },
     {
-      "type": "horizontalRule"
+      type: "horizontalRule",
     },
     {
-      "type": "paragraph",
-      "content": [
+      type: "paragraph",
+      content: [
         {
-          "type": "text",
-          "text": "But between those paragraphs are horizontal rules."
-        }
-      ]
-    }
-  ]
+          type: "text",
+          text: "But between those paragraphs are horizontal rules.",
+        },
+      ],
+    },
+  ],
 };
-
 </script>
 
 <template>
   <div>
-    <prose-mirror-node :node="node"/>
+    <prose-mirror-node :node="node" />
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

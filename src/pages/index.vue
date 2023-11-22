@@ -2,183 +2,182 @@
 import ProseMirrorNode from "../components/ProseMirrorNode.ts";
 
 const node = {
-  "type": "doc",
-  "content": [
+  type: "doc",
+  content: [
     {
-      "type": "heading",
-      "attrs": {
-        "level": 2
+      type: "heading",
+      attrs: {
+        level: 2,
       },
-      "content": [
+      content: [
         {
-          "type": "text",
-          "text": "Hi there,"
-        }
-      ]
+          type: "text",
+          text: "Hi there,",
+        },
+      ],
     },
     {
-      "type": "paragraph",
-      "content": [
+      type: "paragraph",
+      content: [
         {
-          "type": "text",
-          "text": "this is a "
+          type: "text",
+          text: "this is a ",
         },
         {
-          "type": "text",
-          "marks": [
+          type: "text",
+          marks: [
             {
-              "type": "italic",
-              "attrs": {
-                "data-testid": "italic"
-              }
-            }
+              type: "italic",
+              attrs: {
+                "data-testid": "italic",
+              },
+            },
           ],
-          "text": "basic"
+          text: "basic",
         },
         {
-          "type": "text",
-          "text": " example of "
+          type: "text",
+          text: " example of ",
         },
         {
-          "type": "text",
-          "marks": [
+          type: "text",
+          marks: [
             {
-              "type": "bold",
-              "attrs": {
-                "data-testid": "bold"
-              }
-            }
+              type: "bold",
+              attrs: {
+                "data-testid": "bold",
+              },
+            },
           ],
-          "text": "tiptap"
+          text: "tiptap",
         },
         {
-          "type": "text",
-          "text": ". Sure, there are all "
+          type: "text",
+          text: ". Sure, there are all ",
         },
         {
-          "type": "text",
-          "marks": [
+          type: "text",
+          marks: [
             {
-              "type": "code"
-            }
+              type: "code",
+            },
           ],
-          "text": "kind"
+          text: "kind",
         },
         {
-          "type": "text",
-          "text": " of basic text styles you’d probably expect from a text editor. But "
+          type: "text",
+          text: " of basic text styles you’d probably expect from a text editor. But ",
         },
         {
-          "type": "text",
-          "marks": [
+          type: "text",
+          marks: [
             {
-              "type": "bold"
+              type: "bold",
             },
             {
-              "type": "italic"
-            }
+              type: "italic",
+            },
           ],
-          "text": "wait"
+          text: "wait",
         },
         {
-          "type": "text",
-          "text": " until you see the lists:"
-        }
-      ]
+          type: "text",
+          text: " until you see the lists:",
+        },
+      ],
     },
     {
-      "type": "bulletList",
-      "content": [
+      type: "bulletList",
+      content: [
         {
-          "type": "listItem",
-          "content": [
+          type: "listItem",
+          content: [
             {
-              "type": "paragraph",
-              "content": [
+              type: "paragraph",
+              content: [
                 {
-                  "type": "text",
-                  "text": "That’s a bullet list with one …"
-                }
-              ]
-            }
-          ]
+                  type: "text",
+                  text: "That’s a bullet list with one …",
+                },
+              ],
+            },
+          ],
         },
         {
-          "type": "listItem",
-          "content": [
+          type: "listItem",
+          content: [
             {
-              "type": "paragraph",
-              "content": [
+              type: "paragraph",
+              content: [
                 {
-                  "type": "text",
-                  "text": "… or two list items."
-                }
-              ]
-            }
-          ]
-        }
-      ]
+                  type: "text",
+                  text: "… or two list items.",
+                },
+              ],
+            },
+          ],
+        },
+      ],
     },
     {
-      "type": "paragraph",
-      "content": [
+      type: "paragraph",
+      content: [
         {
-          "type": "text",
-          "text": "Isn’t that great? But wait, there’s more. Let’s try a code block:"
-        }
-      ]
+          type: "text",
+          text: "Isn’t that great? But wait, there’s more. Let’s try a code block:",
+        },
+      ],
     },
     {
-      "type": "codeBlock",
-      "attrs": {
-        "language": "css"
+      type: "codeBlock",
+      attrs: {
+        language: "css",
       },
-      "content": [
+      content: [
         {
-          "type": "text",
-          "text": "body {\n  display: none;\n}"
-        }
-      ]
+          type: "text",
+          text: "body {\n  display: none;\n}",
+        },
+      ],
     },
     {
-      "type": "paragraph",
-      "content": [
+      type: "paragraph",
+      content: [
         {
-          "type": "text",
-          "text": "I know, I know, this is impressive. It’s only the tip of the iceberg though. Give it a try and click a little bit around. Don’t forget to check the other examples too."
-        }
-      ]
+          type: "text",
+          text: "I know, I know, this is impressive. It’s only the tip of the iceberg though. Give it a try and click a little bit around. Don’t forget to check the other examples too.",
+        },
+      ],
     },
     {
-      "type": "blockquote",
-      "content": [
+      type: "blockquote",
+      content: [
         {
-          "type": "paragraph",
-          "content": [
+          type: "paragraph",
+          content: [
             {
-              "type": "text",
-              "text": "Wow, that’s amazing. Good work, boy! 👏 "
+              type: "text",
+              text: "Wow, that’s amazing. Good work, boy! 👏 ",
             },
             {
-              "type": "hardBreak"
+              type: "hardBreak",
             },
             {
-              "type": "text",
-              "text": "— Mom"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+              type: "text",
+              text: "— Mom",
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };
 </script>
 
 <template>
   <div>
-    <prose-mirror-node :node="node"/>
+    <prose-mirror-node :node="node" />
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

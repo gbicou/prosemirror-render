@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import dts from "vite-plugin-dts";
 import { resolve } from "path";
 import nodeExternals from "rollup-plugin-node-externals";
-import VueRouter from 'unplugin-vue-router/vite'
+import VueRouter from "unplugin-vue-router/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
