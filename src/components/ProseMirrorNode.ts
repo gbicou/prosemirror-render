@@ -1,7 +1,6 @@
 import { Component, computed, defineComponent, h, PropType, resolveComponent, toRefs } from "vue";
-import { snakeCase, kebabCase } from "change-case";
+import { kebabCase, snakeCase } from "change-case";
 import type { Attrs, Common, Node } from "../prosemirror-json.ts";
-
 import { defaultConfig as config } from "../config.ts";
 
 /**
@@ -26,11 +25,19 @@ function substituteAttributes(name: string, attrs?: Attrs): string {
  */
 function resolveProseComponent(node: Common, typeMap: Record<string, string | Component>): string | Component {
   const type = snakeCase(node.type);
-  const name: string | Component = typeMap[type] ?? "prose-mirror-" + kebabCase(node.type);
-  const component: string | Component = typeof name === "string" ? resolveComponent(name) : name;
-  const parsed: string | Component = typeof component === "string" ? substituteAttributes(component, node.attrs) : component;
 
-  return parsed;
+  // translate type to component or element
+  const name: string | Component = typeMap[type] ?? "prose-mirror-" + kebabCase(node.type);
+
+  // replace placeholders in the component name
+  const parsed: string | Component = typeof name === "string" ? substituteAttributes(name, node.attrs) : name;
+
+  // don't try to resolve the component if it looks like a DOM element name
+  if (typeof parsed === "string" && !parsed.includes("-")) {
+    return parsed;
+  }
+
+  return typeof parsed === "string" ? resolveComponent(parsed) : parsed;
 }
 
 const ProseMirrorNode = defineComponent({
