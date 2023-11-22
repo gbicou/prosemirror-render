@@ -13,11 +13,11 @@ interface ProseMirrorNodeProperties {
 }
 */
 
-function replaceDollarVariables(name: string, attrs?: Record<string, any>): string {
+function substituteAttributes(name: string, attrs?: Record<string, any>): string {
     const regex = /\[([a-zA-Z_]\w*)]/g;
 
-    return name.replace(regex, (match: string, variable: string) => {
-        return attrs[variable] ?? variable;
+    return name.replace(regex, (_match: string, variable: string) => {
+        return attrs ? attrs[variable] ?? variable : variable;
     });
 }
 
@@ -25,7 +25,7 @@ const resolveProseComponent = (el: Base, typeMap: Record<string, string | Compon
     const type = snakeCase(el.type);
     const name: string | Component = typeMap[type] ?? "prose-mirror-" + kebabCase(el.type);
     const component: string | Component = typeof name === "string" ? resolveComponent(name) : name;
-    const parsed: string | Component = typeof component === "string" ? replaceDollarVariables(component, el.attrs) : component;
+    const parsed: string | Component = typeof component === "string" ? substituteAttributes(component, el.attrs) : component;
 
     return parsed;
 }
