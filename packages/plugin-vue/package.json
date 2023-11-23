@@ -13,12 +13,7 @@
     ".": {
       "types": "./dist/plugin.d.ts",
       "default": "./dist/plugin.js"
-    },
-    "./components": {
-      "types": "./dist/components.d.ts",
-      "default": "./dist/components.js"
-    },
-    "./*": "./dist/*"
+    }
   },
   "scripts": {
     "dev": "vite build --watch",

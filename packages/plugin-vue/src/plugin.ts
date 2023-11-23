@@ -10,6 +10,6 @@ const VueProseMirrorPlugin = {
   },
 };
 
-// export { ProseMirrorNode };
+export { ProseMirrorNode };
 
 export default VueProseMirrorPlugin;
