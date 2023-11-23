@@ -5,5 +5,8 @@
       "dependsOn": ["^build"]
     }
   },
+  "affected": {
+    "defaultBase": "main"
+  },
   "nxCloudAccessToken": "YzJiMDA2ZTUtMjY0Mi00YmM1LWIxYzgtZGVkOTQ0YjQ3OGY0fHJlYWQ="
 }
