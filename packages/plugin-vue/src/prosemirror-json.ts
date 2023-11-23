@@ -1,31 +1,38 @@
 /**
  * JSON scalar values
  */
-type JSONValue = string | number | boolean | { [x: string]: JSONValue } | Array<JSONValue> | null | undefined;
+export type ProseMirrorJSONValue =
+  | string
+  | number
+  | boolean
+  | { [x: string]: ProseMirrorJSONValue }
+  | Array<ProseMirrorJSONValue>
+  | null
+  | undefined;
 
 /**
  * JSON ProseMirror attributes
  */
-export type Attrs = Record<string, JSONValue>;
+export type ProseMirrorJSONAttrs = Record<string, ProseMirrorJSONValue>;
 
 /**
  * JSON ProseMirror common properties for Mark & Node
  */
-export type Common = {
-  readonly type: string;
-  readonly attrs?: Attrs;
+export type ProseMirrorJSONCommon = {
+  type: string;
+  attrs?: ProseMirrorJSONAttrs;
 };
 
 /**
  * JSON ProseMirror Mark
  */
-export type Mark = Common;
+export type ProseMirrorJSONMark = ProseMirrorJSONCommon;
 
 /**
  * JSON ProseMirror Node
  */
-export type Node = Common & {
-  readonly marks?: Mark[];
-  readonly content?: Node[];
-  readonly text?: string;
+export type ProseMirrorJSONNode = ProseMirrorJSONCommon & {
+  marks?: ProseMirrorJSONMark[];
+  content?: ProseMirrorJSONNode[];
+  text?: string;
 };

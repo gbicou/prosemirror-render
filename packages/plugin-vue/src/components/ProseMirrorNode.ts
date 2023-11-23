@@ -1,6 +1,6 @@
 import { type Component, computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
 import { kebabCase, snakeCase } from "change-case";
-import type { Attrs, Common, Node } from "../prosemirror-json";
+import type { ProseMirrorJSONAttrs, ProseMirrorJSONCommon, ProseMirrorJSONNode } from "../prosemirror-json";
 import { defaultOptions, VueProseMirrorOptionsKey } from "../options";
 
 /**
@@ -9,7 +9,7 @@ import { defaultOptions, VueProseMirrorOptionsKey } from "../options";
  * @param attrs - An optional object containing attribute values.
  * @returns - The string with attribute placeholders replaced by their values.
  */
-function substituteAttributes(name: string, attrs?: Attrs): string {
+function substituteAttributes(name: string, attrs?: ProseMirrorJSONAttrs): string {
   const regex = /\[([a-zA-Z_]\w*)]/g;
 
   return name.replace(regex, (_match: string, variable: string) => {
@@ -23,7 +23,7 @@ function substituteAttributes(name: string, attrs?: Attrs): string {
  * @param typeMap - Mapping from node type to element or component.
  * @returns - The component to render the node or mark.
  */
-function resolveProseComponent(node: Common, typeMap: Record<string, string | Component>): string | Component {
+function resolveProseComponent(node: ProseMirrorJSONCommon, typeMap: Record<string, string | Component>): string | Component {
   const type = snakeCase(node.type);
 
   // translate type to component or element
@@ -44,7 +44,7 @@ const ProseMirrorNode = defineComponent({
   name: "ProseMirrorNode",
   props: {
     // curent prosemirror node
-    node: { type: Object as PropType<Node>, required: true },
+    node: { type: Object as PropType<ProseMirrorJSONNode>, required: true },
     // mark index to render
     mark: { type: Number, default: 0 },
   },
