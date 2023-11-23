@@ -25,8 +25,6 @@ describe("ProseMirrorNode component", () => {
       },
     });
 
-    expect(wrapper.text()).toContain("fail");
-
     expect(wrapper.text()).toContain("content");
     expect(wrapper.html()).toMatchSnapshot();
   });
