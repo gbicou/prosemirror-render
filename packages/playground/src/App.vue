@@ -5,10 +5,11 @@
     <h1>Vue ProseMirror rendering</h1>
     <ul>
       <li><router-link to="/">Index</router-link></li>
-      <li><router-link to="/table">TABLE</router-link></li>
-      <li><router-link to="/img">IMG</router-link></li>
-      <li><router-link to="/link">LINK</router-link></li>
+      <li><router-link to="/table">table</router-link></li>
+      <li><router-link to="/img">img</router-link></li>
+      <li><router-link to="/link">link</router-link></li>
       <li><router-link to="/router-link">RouterLink</router-link></li>
+      <li><router-link to="/custom-component">Custom Component</router-link></li>
     </ul>
     <router-view />
   </div>
