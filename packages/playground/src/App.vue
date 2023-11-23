@@ -1,4 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
   <div>
@@ -7,6 +8,7 @@
       <li><router-link to="/">Index</router-link></li>
       <li><router-link to="/table">table</router-link></li>
       <li><router-link to="/img">img</router-link></li>
+      <li><router-link to="/etc">etc</router-link></li>
       <li><router-link to="/link">link</router-link></li>
       <li><router-link to="/router-link">RouterLink</router-link></li>
       <li><router-link to="/custom-component">Custom Component</router-link></li>
@@ -15,4 +17,15 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped lang="postcss">
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3em;
+
+  > li {
+    margin-right: 1em;
+  }
+}
+</style>
