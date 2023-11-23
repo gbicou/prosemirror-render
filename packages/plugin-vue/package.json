@@ -6,19 +6,23 @@
   "files": [
     "dist"
   ],
-  "types": "./dist/vue-prosemirror-render.d.ts",
-  "main": "./dist/vue-prosemirror-render.umd.cjs",
-  "module": "./dist/vue-prosemirror-render.js",
+  "types": "./dist/plugin.d.ts",
+  "main": "./dist/plugin.js",
+  "module": "./dist/plugin.js",
   "exports": {
     ".": {
-      "import": "./dist/vue-prosemirror-render.js",
-      "require": "./dist/vue-prosemirror-render.umd.cjs"
-    }
+      "types": "./dist/plugin.d.ts",
+      "default": "./dist/plugin.js"
+    },
+    "./components": {
+      "types": "./dist/components.d.ts",
+      "default": "./dist/components.js"
+    },
+    "./*": "./dist/*"
   },
   "scripts": {
-    "dev": "vite",
+    "dev": "vite build --watch",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview",
     "lint": "eslint ."
   },
   "dependencies": {

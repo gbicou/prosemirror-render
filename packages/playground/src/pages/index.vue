@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ProseMirrorNode } from "@bicou/vue-prosemirror-render";
+import { ProseMirrorNode } from "@bicou/vue-prosemirror-render/components";
 
 const node = {
   type: "doc",

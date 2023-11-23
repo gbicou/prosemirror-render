@@ -1,7 +1,7 @@
 import { type Component, computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
 import { kebabCase, snakeCase } from "change-case";
-import type { Attrs, Common, Node } from "../prosemirror-json.ts";
-import { defaultOptions, VueProseMirrorOptionsKey } from "../options.ts";
+import type { Attrs, Common, Node } from "../prosemirror-json";
+import { defaultOptions, VueProseMirrorOptionsKey } from "../options";
 
 /**
  * Replaces attribute placeholders in an element name with their corresponding values.
