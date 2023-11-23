@@ -1,8 +1,12 @@
 /**
+ * JSON scalar values
+ */
+type JSONValue = string | number | boolean | { [x: string]: JSONValue } | Array<JSONValue> | null | undefined;
+
+/**
  * JSON ProseMirror attributes
  */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type Attrs = Record<string, any>;
+export type Attrs = Record<string, JSONValue>;
 
 /**
  * JSON ProseMirror common properties for Mark & Node

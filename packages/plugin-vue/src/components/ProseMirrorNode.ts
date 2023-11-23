@@ -13,7 +13,7 @@ function substituteAttributes(name: string, attrs?: Attrs): string {
   const regex = /\[([a-zA-Z_]\w*)]/g;
 
   return name.replace(regex, (_match: string, variable: string) => {
-    return attrs ? attrs[variable] ?? variable : variable;
+    return attrs?.[variable]?.toString() ?? variable;
   });
 }
 
