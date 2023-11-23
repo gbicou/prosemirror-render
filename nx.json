@@ -4,5 +4,6 @@
       "cache": true,
       "dependsOn": ["^build"]
     }
-  }
+  },
+  "nxCloudAccessToken": "YzJiMDA2ZTUtMjY0Mi00YmM1LWIxYzgtZGVkOTQ0YjQ3OGY0fHJlYWQ="
 }
