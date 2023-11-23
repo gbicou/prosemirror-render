@@ -91,4 +91,12 @@ describe("resolveProseComponent", () => {
   it("finds the type in pascal case", () => {
     expect(resolveProseComponent({ type: "kebab-case" }, { kebab_case: "p" })).toBe("p");
   });
+
+  it("returns a component", () => {
+    expect(resolveProseComponent({ type: "p" }, { p: ProseMirrorNode })).toBe(ProseMirrorNode);
+  });
+
+  it("tries to resolve to a component", () => {
+    expect(resolveProseComponent({ type: "foo-bar" }, {})).toBe("foo-bar");
+  });
 });
