@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "dev": "nx run-many -t dev",
     "build": "nx run-many -t build",
     "lint": "eslint ."
   },
