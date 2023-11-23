@@ -7,6 +7,8 @@
       <li><router-link to="/">Index</router-link></li>
       <li><router-link to="/table">TABLE</router-link></li>
       <li><router-link to="/img">IMG</router-link></li>
+      <li><router-link to="/link">LINK</router-link></li>
+      <li><router-link to="/router-link">RouterLink</router-link></li>
     </ul>
     <router-view />
   </div>
