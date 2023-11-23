@@ -12,6 +12,7 @@ export default defineConfig({
     vue(),
     dts({
       include: ["src"],
+      exclude: ["**/*.test.ts"],
     }),
     {
       ...nodeExternals(),
