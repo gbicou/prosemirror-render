@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nx run-many -t dev",
     "build": "nx run-many -t build",
+    "test": "nx run-many -t test",
     "lint": "eslint ."
   },
   "devDependencies": {
