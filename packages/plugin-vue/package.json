@@ -19,6 +19,7 @@
     "dev": "vite build --watch",
     "build": "vue-tsc && vite build",
     "test": "vitest run",
+    "coverage": "vitest run --coverage",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.0",
+    "@vitest/coverage-v8": "^0.34.6",
     "@vue/test-utils": "^2.4.2",
     "happy-dom": "^12.10.3",
     "rollup-plugin-node-externals": "^6.1.2",

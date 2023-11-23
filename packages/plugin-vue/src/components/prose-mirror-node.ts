@@ -1,33 +1,36 @@
 import { type Component, computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
 import { kebabCase, snakeCase } from "change-case";
-import type { ProseMirrorJSONAttrs, ProseMirrorJSONCommon, ProseMirrorJSONNode } from "../prosemirror-json";
+import type { ProseMirrorJSONAttributes, ProseMirrorJSONCommon, ProseMirrorJSONNode } from "../prosemirror-json";
 import { defaultOptions, VueProseMirrorOptionsKey } from "../options";
 
 /**
  * Replaces attribute placeholders in an element name with their corresponding values.
  * @param name - The name of the element.
- * @param attrs - An optional object containing attribute values.
+ * @param attributes - An optional object containing attribute values.
  * @returns - The string with attribute placeholders replaced by their values.
  */
-function substituteAttributes(name: string, attrs?: ProseMirrorJSONAttrs): string {
-  const regex = /\[([a-zA-Z_]\w*)]/g;
+export function substituteAttributes(name: string, attributes?: ProseMirrorJSONAttributes): string {
+  const regex = /\[([A-Z_a-z]\w*)]/g;
 
-  return name.replace(regex, (_match: string, variable: string) => {
-    return attrs?.[variable]?.toString() ?? variable;
+  return name.replaceAll(regex, (_match: string, variable: string) => {
+    return attributes?.[variable]?.toString() ?? variable;
   });
 }
 
 /**
  * Resolves the component for the given ProseMirror node or mark.
  * @param node - The ProseMirror node or mark.
- * @param typeMap - Mapping from node type to element or component.
+ * @param components - Mapping from node type to element or component.
  * @returns - The component to render the node or mark.
  */
-function resolveProseComponent(node: ProseMirrorJSONCommon, typeMap: Record<string, string | Component>): string | Component {
+export function resolveProseComponent(
+  node: ProseMirrorJSONCommon,
+  components: Record<string, string | Component>,
+): string | Component {
   const type = snakeCase(node.type);
 
   // translate type to component or element
-  const name: string | Component = typeMap[type] ?? "prose-mirror-" + kebabCase(node.type);
+  const name: string | Component = components[type] ?? kebabCase(node.type);
 
   // replace placeholders in the component name
   const parsed: string | Component = typeof name === "string" ? substituteAttributes(name, node.attrs) : name;
@@ -51,7 +54,7 @@ const ProseMirrorNode = defineComponent({
   setup(properties) {
     const self = resolveComponent("ProseMirrorNode", true);
 
-    const { typeMap } = inject(VueProseMirrorOptionsKey, defaultOptions);
+    const { components } = inject(VueProseMirrorOptionsKey, defaultOptions);
 
     const { node, mark } = toRefs(properties);
 
@@ -62,7 +65,7 @@ const ProseMirrorNode = defineComponent({
     return () => {
       // render the current mark
       if (markItem.value) {
-        const markComponent = resolveProseComponent(markItem.value, typeMap);
+        const markComponent = resolveProseComponent(markItem.value, components);
         return h(
           markComponent,
           markItem.value.attrs,
@@ -76,7 +79,7 @@ const ProseMirrorNode = defineComponent({
       }
       // render the current node when marks are done
       else {
-        const proseComponent = resolveProseComponent(node.value, typeMap);
+        const proseComponent = resolveProseComponent(node.value, components);
         return h(
           proseComponent,
           { ...node.value.attrs, node: node.value },

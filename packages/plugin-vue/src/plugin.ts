@@ -1,4 +1,4 @@
-import ProseMirrorNode from "./components/ProseMirrorNode";
+import ProseMirrorNode from "./components/prose-mirror-node";
 import { type App, inject, provide } from "vue";
 import { type VueProseMirrorOptions, defaultOptions, VueProseMirrorOptionsKey } from "./options";
 import defu from "defu";
@@ -18,8 +18,8 @@ export function useProseMirrorOptions(options: Partial<VueProseMirrorOptions>) {
   provide(VueProseMirrorOptionsKey, defu(options, inject(VueProseMirrorOptionsKey, defaultOptions)));
 }
 
-export { ProseMirrorNode };
-
 export { type ProseMirrorJSONNode } from "./prosemirror-json";
 
 export default VueProseMirrorPlugin;
+
+export { default as ProseMirrorNode } from "./components/prose-mirror-node";

@@ -1,2 +1,4 @@
 node_modules
 dist
+coverage
+typed-router.d.ts

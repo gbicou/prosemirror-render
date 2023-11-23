@@ -13,14 +13,14 @@ export type ProseMirrorJSONValue =
 /**
  * JSON ProseMirror attributes
  */
-export type ProseMirrorJSONAttrs = Record<string, ProseMirrorJSONValue>;
+export type ProseMirrorJSONAttributes = Record<string, ProseMirrorJSONValue>;
 
 /**
  * JSON ProseMirror common properties for Mark & Node
  */
 export type ProseMirrorJSONCommon = {
   type: string;
-  attrs?: ProseMirrorJSONAttrs;
+  attrs?: ProseMirrorJSONAttributes;
 };
 
 /**

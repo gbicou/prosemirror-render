@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { useProseMirrorOptions, ProseMirrorNode, type ProseMirrorJSONNode } from "@bicou/vue-prosemirror-render";
-import PmMention from "../components/PmMention.vue";
+import PmMention from "../components/pm-mention.vue";
 
 useProseMirrorOptions({
-  typeMap: {
+  components: {
     mention: PmMention,
   },
 });
@@ -27,7 +27,6 @@ const node: ProseMirrorJSONNode = {
           type: "mention",
           attrs: {
             id: "Jennifer Grey",
-            label: null,
           },
         },
         {
@@ -43,7 +42,6 @@ const node: ProseMirrorJSONNode = {
           type: "mention",
           attrs: {
             id: "Winona Ryder",
-            label: null,
           },
         },
         {
@@ -54,7 +52,6 @@ const node: ProseMirrorJSONNode = {
           type: "mention",
           attrs: {
             id: "Axl Rose",
-            label: null,
           },
         },
         {
@@ -74,7 +71,6 @@ const node: ProseMirrorJSONNode = {
           type: "mention",
           attrs: {
             id: "Christina Applegate",
-            label: null,
           },
         },
         {

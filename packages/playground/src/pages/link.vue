@@ -18,7 +18,6 @@ const node: ProseMirrorJSONNode = {
               type: "link",
               attrs: {
                 href: "https://en.wikipedia.org/wiki/World_Wide_Web",
-                class: null,
               },
             },
           ],

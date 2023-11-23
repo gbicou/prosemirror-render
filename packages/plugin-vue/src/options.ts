@@ -3,13 +3,13 @@ import type { InjectionKey } from "vue";
 
 export interface VueProseMirrorOptions {
   /** Map node types to component names */
-  typeMap: Record<string, string | Component>;
+  components: Record<string, string | Component>;
 }
 
 export const VueProseMirrorOptionsKey: InjectionKey<VueProseMirrorOptions> = Symbol("prosemirror-options");
 
 export const defaultOptions: VueProseMirrorOptions = {
-  typeMap: {
+  components: {
     doc: "div",
     heading: "h[level]",
     paragraph: "p",

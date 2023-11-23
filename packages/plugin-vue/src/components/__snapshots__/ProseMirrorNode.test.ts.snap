@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`ProseMirrorNode component > render simple node 1`] = `
-"<div node=\\"[object Object]\\">
-  <p node=\\"[object Object]\\">content</p>
-</div>"
-`;

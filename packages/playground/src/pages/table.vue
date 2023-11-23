@@ -15,7 +15,6 @@ const node = {
               attrs: {
                 colspan: 1,
                 rowspan: 1,
-                colwidth: null,
               },
               content: [
                 {
@@ -34,7 +33,6 @@ const node = {
               attrs: {
                 colspan: 3,
                 rowspan: 1,
-                colwidth: null,
               },
               content: [
                 {
@@ -58,7 +56,6 @@ const node = {
               attrs: {
                 colspan: 1,
                 rowspan: 1,
-                colwidth: null,
               },
               content: [
                 {
@@ -77,7 +74,6 @@ const node = {
               attrs: {
                 colspan: 1,
                 rowspan: 1,
-                colwidth: null,
               },
               content: [
                 {
@@ -96,7 +92,6 @@ const node = {
               attrs: {
                 colspan: 1,
                 rowspan: 1,
-                colwidth: null,
               },
               content: [
                 {
@@ -115,7 +110,6 @@ const node = {
               attrs: {
                 colspan: 1,
                 rowspan: 1,
-                colwidth: null,
               },
               content: [
                 {

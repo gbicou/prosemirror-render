@@ -2,7 +2,7 @@
 import { useProseMirrorOptions, ProseMirrorNode, type ProseMirrorJSONNode } from "@bicou/vue-prosemirror-render";
 
 useProseMirrorOptions({
-  typeMap: {
+  components: {
     link: "router-link",
   },
 });
@@ -24,7 +24,6 @@ const node: ProseMirrorJSONNode = {
               type: "link",
               attrs: {
                 to: "/hr",
-                class: null,
               },
             },
           ],
