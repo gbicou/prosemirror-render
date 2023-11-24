@@ -1,21 +1,13 @@
-import { type Component, computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
+import { computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
 import { kebabCase, snakeCase } from "change-case";
-import type { ProseMirrorJSONAttributes, ProseMirrorJSONCommon, ProseMirrorJSONNode } from "../prosemirror-json";
-import { defaultOptions, VueProseMirrorOptionsKey } from "../options";
-
-/**
- * Replaces attribute placeholders in an element name with their corresponding values.
- * @param name - The name of the element.
- * @param attributes - An optional object containing attribute values.
- * @returns - The string with attribute placeholders replaced by their values.
- */
-export function substituteAttributes(name: string, attributes?: ProseMirrorJSONAttributes): string {
-  const regex = /\[([A-Z_a-z]\w*)]/g;
-
-  return name.replaceAll(regex, (_match: string, variable: string) => {
-    return attributes?.[variable]?.toString() ?? variable;
-  });
-}
+import type { ProseMirrorJSONCommon, ProseMirrorJSONNode } from "../prosemirror-json";
+import {
+  defaultOptions,
+  VueProseMirrorComponent,
+  VueProseMirrorComponentOption,
+  VueProseMirrorComponents,
+  VueProseMirrorOptionsKey,
+} from "../options";
 
 /**
  * Resolves the component for the given ProseMirror node or mark.
@@ -25,22 +17,22 @@ export function substituteAttributes(name: string, attributes?: ProseMirrorJSONA
  */
 export function resolveProseComponent(
   node: ProseMirrorJSONCommon,
-  components: Record<string, string | Component>,
-): string | Component {
+  components: VueProseMirrorComponents,
+): VueProseMirrorComponent {
   const type = snakeCase(node.type);
 
   // translate type to component or element
-  const name: string | Component = components[type] ?? kebabCase(node.type);
+  const option: VueProseMirrorComponentOption = components[type] ?? kebabCase(node.type);
 
-  // replace placeholders in the component name
-  const parsed: string | Component = typeof name === "string" ? substituteAttributes(name, node.attrs) : name;
+  // call option with node attributes if it's a function
+  const name: VueProseMirrorComponent = typeof option === "function" ? option(node.attrs ?? {}) : option;
 
   // don't try to resolve the component if it looks like a DOM element name
-  if (typeof parsed === "string" && !parsed.includes("-")) {
-    return parsed;
+  if (typeof name === "string" && !name.includes("-") && name === name.toLowerCase()) {
+    return name;
   }
 
-  return typeof parsed === "string" ? resolveComponent(parsed) : parsed;
+  return typeof name === "string" ? resolveComponent(name) : name;
 }
 
 const ProseMirrorNode = defineComponent({

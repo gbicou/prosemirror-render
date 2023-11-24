@@ -1,9 +1,16 @@
 import type { Component } from "vue";
 import type { InjectionKey } from "vue";
+import { ProseMirrorJSONAttributes } from "./prosemirror-json";
+
+export type VueProseMirrorComponent = string | Component;
+export type VuePromeMirrorComponentFunction = (attributes: ProseMirrorJSONAttributes) => VueProseMirrorComponent;
+export type VueProseMirrorComponentOption = string | VuePromeMirrorComponentFunction;
+
+export type VueProseMirrorComponents = Record<string, VueProseMirrorComponentOption>;
 
 export interface VueProseMirrorOptions {
   /** Map node types to component names */
-  components: Record<string, string | Component>;
+  components: VueProseMirrorComponents;
 }
 
 export const VueProseMirrorOptionsKey: InjectionKey<VueProseMirrorOptions> = Symbol("prosemirror-options");
@@ -11,7 +18,7 @@ export const VueProseMirrorOptionsKey: InjectionKey<VueProseMirrorOptions> = Sym
 export const defaultOptions: VueProseMirrorOptions = {
   components: {
     doc: "div",
-    heading: "h[level]",
+    heading: ({ level }) => (level ? `h${level}` : "header"),
     paragraph: "p",
     code: "code",
     code_block: "pre",

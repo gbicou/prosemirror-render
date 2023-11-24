@@ -1,6 +1,7 @@
 import { mount } from "@vue/test-utils";
-import ProseMirrorNode, { resolveProseComponent, substituteAttributes } from "./prose-mirror-node.ts";
+import ProseMirrorNode, { resolveProseComponent } from "./prose-mirror-node";
 import { describe, it, expect } from "vitest";
+import { VueProseMirrorComponents } from "../options";
 
 describe("component ProseMirrorNode", () => {
   it("renders simple node", async () => {
@@ -62,41 +63,48 @@ describe("component ProseMirrorNode", () => {
   });
 });
 
-describe("substituteAttributes", () => {
-  it("replaces placeholders", () => {
-    expect(substituteAttributes("paragraph[foo]")).toBe("paragraphfoo");
-    expect(substituteAttributes("paragraph[foo]", { foo: "bar" })).toBe("paragraphbar");
-
-    expect(substituteAttributes("h[level]", { level: 1 })).toBe("h1");
-  });
-
-  it("noop if no placeholder", () => {
-    expect(substituteAttributes("h", { level: 1 })).toBe("h");
-  });
-});
-
 describe("resolveProseComponent", () => {
+  const components: VueProseMirrorComponents = {
+    heading: ({ level }) => `h${level}`,
+    paragraph: "p",
+    camel_case: "camel",
+    kebab_case: "kebab",
+    comp: () => ProseMirrorNode,
+  };
+
   it("returns the element name", () => {
-    expect(resolveProseComponent({ type: "paragraph" }, { paragraph: "p" })).toBe("p");
+    expect(resolveProseComponent({ type: "paragraph" }, components)).toBe("p");
   });
 
   it("returns the node type if no correspondance", () => {
-    expect(resolveProseComponent({ type: "paragraph" }, {})).toBe("paragraph");
+    expect(resolveProseComponent({ type: "unknown" }, components)).toBe("unknown");
   });
 
   it("finds the type in camel case", () => {
-    expect(resolveProseComponent({ type: "camelCase" }, { camel_case: "p" })).toBe("p");
+    expect(resolveProseComponent({ type: "camelCase" }, components)).toBe("camel");
   });
 
   it("finds the type in pascal case", () => {
-    expect(resolveProseComponent({ type: "kebab-case" }, { kebab_case: "p" })).toBe("p");
+    expect(resolveProseComponent({ type: "kebab-case" }, components)).toBe("kebab");
   });
 
   it("returns a component", () => {
-    expect(resolveProseComponent({ type: "p" }, { p: ProseMirrorNode })).toBe(ProseMirrorNode);
+    expect(resolveProseComponent({ type: "comp" }, components)).toBe(ProseMirrorNode);
   });
 
   it("tries to resolve to a component", () => {
-    expect(resolveProseComponent({ type: "foo-bar" }, {})).toBe("foo-bar");
+    expect(resolveProseComponent({ type: "foo-bar" }, components)).toBe("foo-bar");
+  });
+
+  it("can use node attributes", () => {
+    expect(
+      resolveProseComponent(
+        {
+          type: "heading",
+          attrs: { level: 1 },
+        },
+        components,
+      ),
+    ).toBe("h1");
   });
 });

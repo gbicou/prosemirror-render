@@ -4,7 +4,7 @@ import PmMention from "../components/pm-mention.vue";
 
 useProseMirrorOptions({
   components: {
-    mention: PmMention,
+    mention: () => PmMention,
   },
 });
 
