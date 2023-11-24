@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { ProseMirrorNode } from "@bicou/vue-prosemirror-render";
+import { ProseMirrorNode, useProseMirrorOptions } from "@bicou/vue-prosemirror-render";
+
+useProseMirrorOptions({
+  components: {
+    // pass fontFamily attribute to font-family style of a span
+    textStyle: ({ fontFamily }) => ["span", { style: { fontFamily } }],
+  },
+});
 
 const node = {
   type: "doc",

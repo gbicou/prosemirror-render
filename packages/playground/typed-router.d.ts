@@ -46,6 +46,7 @@ declare module 'vue-router/auto/routes' {
     '/link': RouteRecordInfo<'/link', '/link', Record<never, never>, Record<never, never>>,
     '/router-link': RouteRecordInfo<'/router-link', '/router-link', Record<never, never>, Record<never, never>>,
     '/table': RouteRecordInfo<'/table', '/table', Record<never, never>, Record<never, never>>,
+    '/tailwind': RouteRecordInfo<'/tailwind', '/tailwind', Record<never, never>, Record<never, never>>,
     '/text-style': RouteRecordInfo<'/text-style', '/text-style', Record<never, never>, Record<never, never>>,
   }
 }
