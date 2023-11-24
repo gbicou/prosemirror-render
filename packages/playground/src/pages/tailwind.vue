@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ProseMirrorNode, useProseMirrorOptions } from "@bicou/vue-prosemirror-render";
-import "../tailwind.css";
 import PmMention from "../components/pm-mention.vue";
+import "../tailwind.css";
 
 useProseMirrorOptions({
   components: {
@@ -57,5 +57,7 @@ const node = {
 </script>
 
 <template>
-  <prose-mirror-node :node="node" />
+  <div id="tailwind">
+    <prose-mirror-node :node="node" />
+  </div>
 </template>

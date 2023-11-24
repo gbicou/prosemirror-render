@@ -8,4 +8,5 @@ export default {
   corePlugins: {
     preflight: false,
   },
+  important: "#tailwind",
 } satisfies Config;
