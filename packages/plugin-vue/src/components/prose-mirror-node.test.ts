@@ -67,8 +67,8 @@ describe("resolveProseComponent", () => {
   const components: VueProseMirrorComponents = {
     heading: ({ level }) => `h${level}`,
     paragraph: "p",
-    camel_case: "camel",
-    kebab_case: "kebab",
+    camelCase: "camel",
+    snake_case: "snake",
     comp: () => ProseMirrorNode,
     tw: ["tailwind", { class: "bg-white" }],
   };
@@ -83,10 +83,14 @@ describe("resolveProseComponent", () => {
 
   it("finds the type in camel case", () => {
     expect(resolveProseComponent({ type: "camelCase" }, components)).toStrictEqual(["camel", {}]);
+    expect(resolveProseComponent({ type: "camel-case" }, components)).toStrictEqual(["camel", {}]);
+    expect(resolveProseComponent({ type: "camel_case" }, components)).toStrictEqual(["camel", {}]);
   });
 
-  it("finds the type in pascal case", () => {
-    expect(resolveProseComponent({ type: "kebab-case" }, components)).toStrictEqual(["kebab", {}]);
+  it("finds the type in snake case", () => {
+    expect(resolveProseComponent({ type: "snakeCase" }, components)).toStrictEqual(["snake", {}]);
+    expect(resolveProseComponent({ type: "snake-case" }, components)).toStrictEqual(["snake", {}]);
+    expect(resolveProseComponent({ type: "snake_case" }, components)).toStrictEqual(["snake", {}]);
   });
 
   it("returns a component", () => {

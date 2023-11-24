@@ -1,5 +1,5 @@
 import { computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
-import { kebabCase, snakeCase } from "change-case";
+import { camelCase, kebabCase, snakeCase } from "change-case";
 import type { ProseMirrorJSONCommon, ProseMirrorJSONNode } from "../prosemirror-json";
 import {
   defaultOptions,
@@ -20,10 +20,9 @@ export function resolveProseComponent(
   node: ProseMirrorJSONCommon,
   components: VueProseMirrorComponents,
 ): VueProseMirrorComponentAndProperties {
-  const type = snakeCase(node.type);
-
   // translate type to component or element
-  const option: VueProseMirrorComponentOption = components[type] ?? kebabCase(node.type);
+  const option: VueProseMirrorComponentOption =
+    components[snakeCase(node.type)] ?? components[camelCase(node.type)] ?? kebabCase(node.type);
 
   // call option with node attributes if it's a function
   const r: VueProseMirrorComponentReturns = typeof option === "function" ? option(node.attrs ?? {}) : option;
