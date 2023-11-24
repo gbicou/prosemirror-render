@@ -6,7 +6,7 @@ export type ProseMirrorJSONValue =
   | number
   | boolean
   | { [x: string]: ProseMirrorJSONValue }
-  | Array<ProseMirrorJSONValue>
+  | ProseMirrorJSONValue[]
   | null
   | undefined;
 
@@ -18,10 +18,10 @@ export type ProseMirrorJSONAttributes = Record<string, ProseMirrorJSONValue>;
 /**
  * JSON ProseMirror common properties for Mark & Node
  */
-export type ProseMirrorJSONCommon = {
+export interface ProseMirrorJSONCommon {
   type: string;
   attrs?: ProseMirrorJSONAttributes;
-};
+}
 
 /**
  * JSON ProseMirror Mark
