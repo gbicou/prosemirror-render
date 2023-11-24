@@ -3,8 +3,11 @@ import type { InjectionKey } from "vue";
 import { ProseMirrorJSONAttributes } from "./prosemirror-json";
 
 export type VueProseMirrorComponent = string | Component;
-export type VuePromeMirrorComponentFunction = (attributes: ProseMirrorJSONAttributes) => VueProseMirrorComponent;
-export type VueProseMirrorComponentOption = string | VuePromeMirrorComponentFunction;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type VueProseMirrorComponentAndProperties = [VueProseMirrorComponent, Record<string, any>];
+export type VueProseMirrorComponentReturns = VueProseMirrorComponent | VueProseMirrorComponentAndProperties;
+export type VuePromeMirrorComponentFunction = (attributes: ProseMirrorJSONAttributes) => VueProseMirrorComponentReturns;
+export type VueProseMirrorComponentOption = string | VueProseMirrorComponentAndProperties | VuePromeMirrorComponentFunction;
 
 export type VueProseMirrorComponents = Record<string, VueProseMirrorComponentOption>;
 

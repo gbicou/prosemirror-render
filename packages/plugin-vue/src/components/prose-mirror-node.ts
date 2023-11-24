@@ -3,8 +3,9 @@ import { kebabCase, snakeCase } from "change-case";
 import type { ProseMirrorJSONCommon, ProseMirrorJSONNode } from "../prosemirror-json";
 import {
   defaultOptions,
-  VueProseMirrorComponent,
+  VueProseMirrorComponentAndProperties,
   VueProseMirrorComponentOption,
+  VueProseMirrorComponentReturns,
   VueProseMirrorComponents,
   VueProseMirrorOptionsKey,
 } from "../options";
@@ -18,21 +19,24 @@ import {
 export function resolveProseComponent(
   node: ProseMirrorJSONCommon,
   components: VueProseMirrorComponents,
-): VueProseMirrorComponent {
+): VueProseMirrorComponentAndProperties {
   const type = snakeCase(node.type);
 
   // translate type to component or element
   const option: VueProseMirrorComponentOption = components[type] ?? kebabCase(node.type);
 
   // call option with node attributes if it's a function
-  const name: VueProseMirrorComponent = typeof option === "function" ? option(node.attrs ?? {}) : option;
+  const r: VueProseMirrorComponentReturns = typeof option === "function" ? option(node.attrs ?? {}) : option;
+
+  const component = Array.isArray(r) ? r[0] : r;
+  const properties = Array.isArray(r) ? r[1] : {};
 
   // don't try to resolve the component if it looks like a DOM element name
-  if (typeof name === "string" && !name.includes("-") && name === name.toLowerCase()) {
-    return name;
+  if (typeof component === "string" && !component.includes("-") && component === component.toLowerCase()) {
+    return [component, properties];
   }
 
-  return typeof name === "string" ? resolveComponent(name) : name;
+  return typeof component === "string" ? [resolveComponent(component), properties] : [component, properties];
 }
 
 const ProseMirrorNode = defineComponent({
@@ -57,10 +61,10 @@ const ProseMirrorNode = defineComponent({
     return () => {
       // render the current mark
       if (markItem.value) {
-        const markComponent = resolveProseComponent(markItem.value, components);
+        const [component, properties_] = resolveProseComponent(markItem.value, components);
         return h(
-          markComponent,
-          markItem.value.attrs,
+          component,
+          { ...markItem.value.attrs, ...properties_ },
           // recurse the next mark for child
           h(self, { node: node.value, mark: markIndex.value + 1 }),
         );
@@ -71,10 +75,10 @@ const ProseMirrorNode = defineComponent({
       }
       // render the current node when marks are done
       else {
-        const proseComponent = resolveProseComponent(node.value, components);
+        const [component, properties_] = resolveProseComponent(node.value, components);
         return h(
-          proseComponent,
-          { ...node.value.attrs, node: node.value },
+          component,
+          { ...node.value.attrs, ...properties_, node: node.value },
           // node content build the children
           node.value.content?.map((child) => h(self, { node: child })),
         );
