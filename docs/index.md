@@ -3,16 +3,16 @@
 layout: home
 
 hero:
-  name: "Vue ProseMirror render"
-  text: "A Vue3 plugin to render ProseMirror json data with components"
-  tagline: My great project tagline
+  name: "@bicou/vue-prosemirror-render"
+  text: "Vue ProseMirror render"
+  tagline: "A Vue3 plugin to render ProseMirror json data with components"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Examples
+      link: /prosemirror-examples
     - theme: alt
       text: API Examples
-      link: /api-examples
+      link: /prosemirror-examples
 
 features:
   - title: Feature A

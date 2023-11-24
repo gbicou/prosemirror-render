@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vitepress": "1.0.0-rc.30"
+    "vitepress": "1.0.0-rc.30",
+    "@bicou/vue-prosemirror-render": "workspace:*"
   }
 }
