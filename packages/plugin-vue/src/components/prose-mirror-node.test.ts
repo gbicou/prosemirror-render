@@ -27,6 +27,7 @@ describe("component ProseMirrorNode", () => {
     });
 
     expect(wrapper.text()).toContain("content");
+    expect(wrapper.html()).not.toContain("object Object");
     expect(wrapper.html()).toMatchSnapshot();
   });
 

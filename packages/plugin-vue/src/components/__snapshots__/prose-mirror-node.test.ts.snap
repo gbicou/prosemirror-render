@@ -1,13 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`component ProseMirrorNode > renders simple mark 1`] = `
-"<div node=\\"[object Object]\\">
-  <p node=\\"[object Object]\\"><b>content</b></p>
+"<div>
+  <p><b>content</b></p>
 </div>"
 `;
 
 exports[`component ProseMirrorNode > renders simple node 1`] = `
-"<div node=\\"[object Object]\\">
-  <p node=\\"[object Object]\\">content</p>
+"<div>
+  <p>content</p>
 </div>"
 `;

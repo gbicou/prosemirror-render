@@ -77,7 +77,7 @@ const ProseMirrorNode = defineComponent({
         const [component, properties_] = resolveProseComponent(node.value, components);
         return h(
           component,
-          { ...node.value.attrs, ...properties_, node: node.value },
+          { ...node.value.attrs, ...properties_, node: typeof component === "string" ? undefined : node.value },
           // node content build the children
           node.value.content?.map((child) => h(self, { node: child })),
         );
