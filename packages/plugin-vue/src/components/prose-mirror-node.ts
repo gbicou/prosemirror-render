@@ -54,8 +54,7 @@ const ProseMirrorNode = defineComponent({
     const { node, mark } = toRefs(properties);
 
     // point to the mark
-    const markIndex = computed(() => mark.value ?? 0);
-    const markItem = computed(() => node.value.marks?.at(markIndex.value));
+    const markItem = computed(() => node.value.marks?.at(mark.value));
 
     return () => {
       // render the current mark
@@ -65,7 +64,7 @@ const ProseMirrorNode = defineComponent({
           component,
           { ...markItem.value.attrs, ...properties_ },
           // recurse the next mark for child
-          h(self, { node: node.value, mark: markIndex.value + 1 }),
+          h(self, { node: node.value, mark: mark.value + 1 }),
         );
       }
       // render text as is
