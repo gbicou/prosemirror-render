@@ -14,6 +14,7 @@ dist-ssr
 .vite
 .nx
 coverage
+cache
 
 # Editor directories and files
 .vscode/*
