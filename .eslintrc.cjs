@@ -5,11 +5,11 @@ module.exports = {
   root: true,
   extends: [
     "eslint:recommended",
+    "plugin:unicorn/recommended",
+    "plugin:jsdoc/recommended-typescript",
     "plugin:vue/vue3-recommended",
     "@vue/eslint-config-typescript/recommended",
-    "plugin:unicorn/recommended",
     "@vue/eslint-config-prettier",
-    "plugin:jsdoc/recommended-typescript",
   ],
   plugins: [],
   parserOptions: {
