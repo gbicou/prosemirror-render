@@ -4,7 +4,7 @@ import { describe, it, expect } from "vitest";
 import { VueProsemirrorComponents } from "../options";
 
 describe("component ProsemirrorRender", () => {
-  it("renders simple node", async () => {
+  it("renders simple node", () => {
     expect(ProsemirrorRender).toBeTruthy();
 
     const wrapper = mount(ProsemirrorRender, {
@@ -31,7 +31,7 @@ describe("component ProsemirrorRender", () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  it("renders simple mark", async () => {
+  it("renders simple mark", () => {
     expect(ProsemirrorRender).toBeTruthy();
 
     const wrapper = mount(ProsemirrorRender, {
