@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ProsemirrorRender } from "@bicou/vue-prosemirror-render";
-import basic from "@bicou/vue-prosemirror-render-demo/basic.json";
+import basic from "../../../examples/basic.json";
 </script>
 
 <template>

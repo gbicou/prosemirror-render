@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import basic from "@bicou/vue-prosemirror-render-demo/basic.json";
+import basic from "../../examples/basic.json";
 
 const helloWorld = { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Hello world!" }] }] };
 
