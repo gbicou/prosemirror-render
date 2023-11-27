@@ -60,11 +60,12 @@ const ProsemirrorRender = defineComponent({
       // render the current mark
       if (markItem.value) {
         const [component, properties_] = resolveProseComponent(markItem.value, components);
+        const children = () => h(self, { node: node.value, mark: mark.value + 1 });
         return h(
           component,
           { ...markItem.value.attrs, ...properties_ },
           // recurse the next mark for child
-          h(self, { node: node.value, mark: mark.value + 1 }),
+          typeof component === "string" ? children() : children,
         );
       }
       // render text as is
@@ -74,11 +75,12 @@ const ProsemirrorRender = defineComponent({
       // render the current node when marks are done
       else {
         const [component, properties_] = resolveProseComponent(node.value, components);
+        const children = () => node.value.content?.map((child) => h(self, { node: child }));
         return h(
           component,
           { ...node.value.attrs, ...properties_, node: typeof component === "string" ? undefined : node.value },
           // node content build the children
-          node.value.content?.map((child) => h(self, { node: child })),
+          typeof component === "string" ? children() : children,
         );
       }
     };
