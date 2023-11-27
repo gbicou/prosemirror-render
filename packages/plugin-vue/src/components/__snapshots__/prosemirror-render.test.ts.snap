@@ -1,12 +1,12 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`component ProseMirrorNode > renders simple mark 1`] = `
+exports[`component ProsemirrorRender > renders simple mark 1`] = `
 "<div>
   <p><b>content</b></p>
 </div>"
 `;
 
-exports[`component ProseMirrorNode > renders simple node 1`] = `
+exports[`component ProsemirrorRender > renders simple node 1`] = `
 "<div>
   <p>content</p>
 </div>"

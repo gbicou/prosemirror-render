@@ -1,13 +1,13 @@
 import { mount } from "@vue/test-utils";
-import ProseMirrorNode, { resolveProseComponent } from "./prose-mirror-node";
+import ProsemirrorRender, { resolveProseComponent } from "./prosemirror-render";
 import { describe, it, expect } from "vitest";
-import { VueProseMirrorComponents } from "../options";
+import { VueProsemirrorComponents } from "../options";
 
-describe("component ProseMirrorNode", () => {
+describe("component ProsemirrorRender", () => {
   it("renders simple node", async () => {
-    expect(ProseMirrorNode).toBeTruthy();
+    expect(ProsemirrorRender).toBeTruthy();
 
-    const wrapper = mount(ProseMirrorNode, {
+    const wrapper = mount(ProsemirrorRender, {
       props: {
         node: {
           type: "doc",
@@ -32,9 +32,9 @@ describe("component ProseMirrorNode", () => {
   });
 
   it("renders simple mark", async () => {
-    expect(ProseMirrorNode).toBeTruthy();
+    expect(ProsemirrorRender).toBeTruthy();
 
-    const wrapper = mount(ProseMirrorNode, {
+    const wrapper = mount(ProsemirrorRender, {
       props: {
         node: {
           type: "doc",
@@ -65,12 +65,12 @@ describe("component ProseMirrorNode", () => {
 });
 
 describe("resolveProseComponent", () => {
-  const components: VueProseMirrorComponents = {
+  const components: VueProsemirrorComponents = {
     heading: ({ level }) => `h${level}`,
     paragraph: "p",
     camelCase: "camel",
     snake_case: "snake",
-    comp: () => ProseMirrorNode,
+    comp: () => ProsemirrorRender,
     tw: ["tailwind", { class: "bg-white" }],
   };
 
@@ -95,7 +95,7 @@ describe("resolveProseComponent", () => {
   });
 
   it("returns a component", () => {
-    expect(resolveProseComponent({ type: "comp" }, components)).toStrictEqual([ProseMirrorNode, {}]);
+    expect(resolveProseComponent({ type: "comp" }, components)).toStrictEqual([ProsemirrorRender, {}]);
   });
 
   it("tries to resolve to a component", () => {

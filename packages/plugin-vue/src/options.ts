@@ -1,24 +1,24 @@
 import type { Component } from "vue";
 import type { InjectionKey } from "vue";
-import { ProseMirrorJSONAttributes } from "./prosemirror-json";
+import { ProsemirrorJSONAttributes } from "./prosemirror-json";
 
-export type VueProseMirrorComponent = string | Component;
+export type VueProsemirrorComponent = string | Component;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type VueProseMirrorComponentAndProperties = [VueProseMirrorComponent, Record<string, any>];
-export type VueProseMirrorComponentReturns = VueProseMirrorComponent | VueProseMirrorComponentAndProperties;
-export type VuePromeMirrorComponentFunction = (attributes: ProseMirrorJSONAttributes) => VueProseMirrorComponentReturns;
-export type VueProseMirrorComponentOption = string | VueProseMirrorComponentAndProperties | VuePromeMirrorComponentFunction;
+export type VueProsemirrorComponentAndProperties = [VueProsemirrorComponent, Record<string, any>];
+export type VueProsemirrorComponentReturns = VueProsemirrorComponent | VueProsemirrorComponentAndProperties;
+export type VueProsemirrorComponentFunction = (attributes: ProsemirrorJSONAttributes) => VueProsemirrorComponentReturns;
+export type VueProsemirrorComponentOption = string | VueProsemirrorComponentAndProperties | VueProsemirrorComponentFunction;
 
-export type VueProseMirrorComponents = Record<string, VueProseMirrorComponentOption>;
+export type VueProsemirrorComponents = Record<string, VueProsemirrorComponentOption>;
 
-export interface VueProseMirrorOptions {
+export interface VueProsemirrorOptions {
   /** Map node types to component names */
-  components: VueProseMirrorComponents;
+  components: VueProsemirrorComponents;
 }
 
-export const VueProseMirrorOptionsKey: InjectionKey<VueProseMirrorOptions> = Symbol("prosemirror-options");
+export const VueProsemirrorOptionsKey: InjectionKey<VueProsemirrorOptions> = Symbol("prosemirror-options");
 
-export const defaultOptions: VueProseMirrorOptions = {
+export const defaultOptions: VueProsemirrorOptions = {
   components: {
     doc: "div",
     heading: ({ level }) => (level ? `h${level}` : "header"),

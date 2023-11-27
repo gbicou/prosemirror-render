@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ProseMirrorNode, type ProseMirrorJSONNode } from "@bicou/vue-prosemirror-render";
+import { ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/vue-prosemirror-render";
 
-const node: ProseMirrorJSONNode = {
+const node: ProsemirrorJSONNode = {
   type: "doc",
   content: [
     {
@@ -52,7 +52,7 @@ const node: ProseMirrorJSONNode = {
 
 <template>
   <div>
-    <prose-mirror-node :node="node" />
+    <prosemirror-render :node="node" />
   </div>
 </template>
 

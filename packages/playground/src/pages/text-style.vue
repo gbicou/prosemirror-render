@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ProseMirrorNode, useProseMirrorOptions } from "@bicou/vue-prosemirror-render";
+import { ProsemirrorRender, useProsemirrorOptions } from "@bicou/vue-prosemirror-render";
 
-useProseMirrorOptions({
+useProsemirrorOptions({
   components: {
     // pass fontFamily attribute to font-family style of a span
     textStyle: ({ fontFamily }) => ["span", { style: { fontFamily } }],
@@ -124,7 +124,7 @@ const node = {
 
 <template>
   <div>
-    <prose-mirror-node :node="node" />
+    <prosemirror-render :node="node" />
   </div>
 </template>
 

@@ -1,13 +1,13 @@
 import { computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
 import { camelCase, kebabCase, snakeCase } from "change-case";
-import type { ProseMirrorJSONCommon, ProseMirrorJSONNode } from "../prosemirror-json";
+import type { ProsemirrorJSONCommon, ProsemirrorJSONNode } from "../prosemirror-json";
 import {
   defaultOptions,
-  VueProseMirrorComponentAndProperties,
-  VueProseMirrorComponentOption,
-  VueProseMirrorComponentReturns,
-  VueProseMirrorComponents,
-  VueProseMirrorOptionsKey,
+  VueProsemirrorComponentAndProperties,
+  VueProsemirrorComponentOption,
+  VueProsemirrorComponentReturns,
+  VueProsemirrorComponents,
+  VueProsemirrorOptionsKey,
 } from "../options";
 
 /**
@@ -17,15 +17,15 @@ import {
  * @returns - The component to render the node or mark.
  */
 export function resolveProseComponent(
-  node: ProseMirrorJSONCommon,
-  components: VueProseMirrorComponents,
-): VueProseMirrorComponentAndProperties {
+  node: ProsemirrorJSONCommon,
+  components: VueProsemirrorComponents,
+): VueProsemirrorComponentAndProperties {
   // translate type to component or element
-  const option: VueProseMirrorComponentOption =
+  const option: VueProsemirrorComponentOption =
     components[snakeCase(node.type)] ?? components[camelCase(node.type)] ?? kebabCase(node.type);
 
   // call option with node attributes if it's a function
-  const r: VueProseMirrorComponentReturns = typeof option === "function" ? option(node.attrs ?? {}) : option;
+  const r: VueProsemirrorComponentReturns = typeof option === "function" ? option(node.attrs ?? {}) : option;
 
   const component = Array.isArray(r) ? r[0] : r;
   const properties = Array.isArray(r) ? r[1] : {};
@@ -38,18 +38,18 @@ export function resolveProseComponent(
   return typeof component === "string" ? [resolveComponent(component), properties] : [component, properties];
 }
 
-const ProseMirrorNode = defineComponent({
-  name: "ProseMirrorNode",
+const ProsemirrorRender = defineComponent({
+  name: "ProsemirrorRender",
   props: {
     // curent prosemirror node
-    node: { type: Object as PropType<ProseMirrorJSONNode>, required: true },
+    node: { type: Object as PropType<ProsemirrorJSONNode>, required: true },
     // mark index to render
     mark: { type: Number, default: 0 },
   },
   setup(properties) {
-    const self = resolveComponent("ProseMirrorNode", true);
+    const self = resolveComponent("ProsemirrorRender", true);
 
-    const { components } = inject(VueProseMirrorOptionsKey, defaultOptions);
+    const { components } = inject(VueProsemirrorOptionsKey, defaultOptions);
 
     const { node, mark } = toRefs(properties);
 
@@ -85,4 +85,4 @@ const ProseMirrorNode = defineComponent({
   },
 });
 
-export default ProseMirrorNode;
+export default ProsemirrorRender;

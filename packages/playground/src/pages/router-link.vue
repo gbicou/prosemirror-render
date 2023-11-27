@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useProseMirrorOptions, ProseMirrorNode, type ProseMirrorJSONNode } from "@bicou/vue-prosemirror-render";
+import { useProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/vue-prosemirror-render";
 
-useProseMirrorOptions({
+useProsemirrorOptions({
   components: {
     link: "router-link",
   },
 });
 
-const node: ProseMirrorJSONNode = {
+const node: ProsemirrorJSONNode = {
   type: "doc",
   content: [
     {
@@ -23,7 +23,7 @@ const node: ProseMirrorJSONNode = {
             {
               type: "link",
               attrs: {
-                to: "/hr",
+                to: "/etc",
               },
             },
           ],
@@ -58,7 +58,7 @@ const node: ProseMirrorJSONNode = {
 
 <template>
   <div>
-    <prose-mirror-node :node="node" />
+    <prosemirror-render :node="node" />
   </div>
 </template>
 

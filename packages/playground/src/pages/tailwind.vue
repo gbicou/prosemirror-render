@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ProseMirrorNode, useProseMirrorOptions } from "@bicou/vue-prosemirror-render";
+import { ProsemirrorRender, useProsemirrorOptions } from "@bicou/vue-prosemirror-render";
 import PmMention from "../components/pm-mention.vue";
 import "../tailwind.css";
 
-useProseMirrorOptions({
+useProsemirrorOptions({
   components: {
     doc: ["div", { class: "bg-neutral-100 font-sans p-10" }],
     highlight: ["span", { class: "bg-red-300" }],
@@ -58,6 +58,6 @@ const node = {
 
 <template>
   <div id="tailwind">
-    <prose-mirror-node :node="node" />
+    <prosemirror-render :node="node" />
   </div>
 </template>

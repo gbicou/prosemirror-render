@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { useProseMirrorOptions, ProseMirrorNode, type ProseMirrorJSONNode } from "@bicou/vue-prosemirror-render";
+import { useProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/vue-prosemirror-render";
 import PmMention from "../components/pm-mention.vue";
 
-useProseMirrorOptions({
+useProsemirrorOptions({
   components: {
     mention: () => PmMention,
   },
 });
 
-const node: ProseMirrorJSONNode = {
+const node: ProsemirrorJSONNode = {
   type: "doc",
   content: [
     {
@@ -94,7 +94,7 @@ const node: ProseMirrorJSONNode = {
 
 <template>
   <div>
-    <prose-mirror-node :node="node" />
+    <prosemirror-render :node="node" />
   </div>
 </template>
 

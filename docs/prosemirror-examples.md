@@ -4,7 +4,7 @@ import { p1 } from "./documents";
 
 # ProseMirror Examples
 
-This page demonstrates the basics of ProseMirrorNode component.
+This page demonstrates the basics of ProsemirrorRender component.
 
 ## Basic document
 
@@ -15,7 +15,7 @@ const node = {{ p1 }};
 ```
 
 ```vue
-<prose-mirror-node :node="node" />
+<prosemirror-render :node="node" />
 ```
 
 **Output**
@@ -26,4 +26,4 @@ const node = {{ p1 }};
 </div>
 ```
 
-<prose-mirror-node :node="p1" />
+<prosemirror-render :node="p1" />

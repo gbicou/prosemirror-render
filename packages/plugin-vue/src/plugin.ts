@@ -1,12 +1,12 @@
-import ProseMirrorNode from "./components/prose-mirror-node";
+import ProsemirrorRender from "./components/prosemirror-render";
 import { type App, inject, provide } from "vue";
-import { type VueProseMirrorOptions, defaultOptions, VueProseMirrorOptionsKey } from "./options";
+import { type VueProsemirrorOptions, defaultOptions, VueProsemirrorOptionsKey } from "./options";
 import defu from "defu";
 
-const VueProseMirrorPlugin = {
-  install: (app: App, options: Partial<VueProseMirrorOptions> = {}) => {
-    app.provide(VueProseMirrorOptionsKey, defu(options, defaultOptions));
-    app.component("ProseMirrorNode", ProseMirrorNode);
+const VueProsemirrorPlugin = {
+  install: (app: App, options: Partial<VueProsemirrorOptions> = {}) => {
+    app.provide(VueProsemirrorOptionsKey, defu(options, defaultOptions));
+    app.component("ProsemirrorRender", ProsemirrorRender);
   },
 };
 
@@ -14,12 +14,12 @@ const VueProseMirrorPlugin = {
  * Updates the ProseMirror plugin options.
  * @param options - The new options to merge with current.
  */
-export function useProseMirrorOptions(options: Partial<VueProseMirrorOptions>) {
-  provide(VueProseMirrorOptionsKey, defu(options, inject(VueProseMirrorOptionsKey, defaultOptions)));
+export function useProsemirrorOptions(options: Partial<VueProsemirrorOptions>) {
+  provide(VueProsemirrorOptionsKey, defu(options, inject(VueProsemirrorOptionsKey, defaultOptions)));
 }
 
-export { type ProseMirrorJSONNode } from "./prosemirror-json";
+export { type ProsemirrorJSONNode } from "./prosemirror-json";
 
-export default VueProseMirrorPlugin;
+export default VueProsemirrorPlugin;
 
-export { default as ProseMirrorNode } from "./components/prose-mirror-node";
+export { default as ProsemirrorRender } from "./components/prosemirror-render";
