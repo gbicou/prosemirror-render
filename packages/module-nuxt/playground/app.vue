@@ -3,10 +3,13 @@
     <h1>Nuxt module playground!</h1>
     <prosemirror-render :node="helloWorld" />
     <prosemirror-render :node="link" />
+    <prosemirror-render :node="basic" />
   </div>
 </template>
 
 <script setup lang="ts">
+import basic from "@bicou/vue-prosemirror-render-demo/basic.json";
+
 const helloWorld = { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Hello world!" }] }] };
 
 const link = {

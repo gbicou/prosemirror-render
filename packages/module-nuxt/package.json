@@ -31,6 +31,7 @@
     "@nuxt/kit": "^3.8.2"
   },
   "devDependencies": {
+    "@bicou/vue-prosemirror-render-demo": "workspace:*",
     "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@nuxt/module-builder": "^0.5.4",

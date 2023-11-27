@@ -1,0 +1,11 @@
+{
+  "name": "@bicou/vue-prosemirror-render-demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

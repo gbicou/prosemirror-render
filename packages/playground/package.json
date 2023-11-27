@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@bicou/vue-prosemirror-render": "workspace:*",
+    "@bicou/vue-prosemirror-render-demo": "workspace:*",
     "vue": "^3.3.9"
   },
   "peerDependencies": {

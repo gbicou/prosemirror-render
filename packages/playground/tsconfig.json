@@ -20,7 +20,8 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@bicou/vue-prosemirror-render": ["../plugin-vue/src/plugin.ts"]
+      "@bicou/vue-prosemirror-render": ["../plugin-vue/src/plugin.ts"],
+      "@bicou/vue-prosemirror-render-demo": ["../demo"],
     }
   },
   "include": ["*.config.ts", "src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "typed-router.d.ts"],
