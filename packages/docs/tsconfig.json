@@ -20,7 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "@bicou/vue-prosemirror-render": ["../packages/plugin-vue/src/plugin.ts"]
+      "@bicou/vue-prosemirror-render": ["../plugin-vue/src/plugin.ts"]
     }
   },
   "include": ["*.ts"],
