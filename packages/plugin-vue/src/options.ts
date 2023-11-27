@@ -3,8 +3,7 @@ import type { InjectionKey } from "vue";
 import { ProsemirrorJSONAttributes } from "./prosemirror-json";
 
 export type VueProsemirrorComponent = string | Component;
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export type VueProsemirrorComponentAndProperties = [VueProsemirrorComponent, Record<string, any>];
+export type VueProsemirrorComponentAndProperties = [VueProsemirrorComponent, Record<string, unknown>];
 export type VueProsemirrorComponentReturns = VueProsemirrorComponent | VueProsemirrorComponentAndProperties;
 export type VueProsemirrorComponentFunction = (attributes: ProsemirrorJSONAttributes) => VueProsemirrorComponentReturns;
 export type VueProsemirrorComponentOption = string | VueProsemirrorComponentAndProperties | VueProsemirrorComponentFunction;
