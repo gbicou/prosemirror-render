@@ -1,4 +1,4 @@
-import { computed, defineComponent, h, inject, type PropType, resolveComponent, toRefs } from "vue";
+import {computed, defineComponent, h, inject, mergeProps, type PropType, resolveComponent, toRefs} from "vue";
 import { camelCase, kebabCase, snakeCase } from "change-case";
 import type { ProsemirrorJSONCommon, ProsemirrorJSONNode } from "../prosemirror-json";
 import {
@@ -63,7 +63,7 @@ const ProsemirrorRender = defineComponent({
         const children = () => h(self, { node: node.value, mark: mark.value + 1 });
         return h(
           component,
-          { ...markItem.value.attrs, ...properties_ },
+          mergeProps(markItem.value.attrs ?? {}, properties_),
           // recurse the next mark for child
           typeof component === "string" ? children() : children,
         );
@@ -78,7 +78,7 @@ const ProsemirrorRender = defineComponent({
         const children = () => node.value.content?.map((child) => h(self, { node: child }));
         return h(
           component,
-          { ...node.value.attrs, ...properties_, node: typeof component === "string" ? undefined : node.value },
+          mergeProps(node.value.attrs ?? {}, properties_, typeof component === "string" ? {} : { node: node.value }),
           // node content build the children
           typeof component === "string" ? children() : children,
         );
