@@ -1,4 +1,4 @@
-import {computed, defineComponent, h, inject, mergeProps, type PropType, resolveComponent, toRefs} from "vue";
+import { computed, defineComponent, h, inject, mergeProps, type PropType, resolveComponent, toRefs } from "vue";
 import { camelCase, kebabCase, snakeCase } from "change-case";
 import type { ProsemirrorJSONCommon, ProsemirrorJSONNode } from "../prosemirror-json";
 import {
