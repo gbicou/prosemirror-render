@@ -18,7 +18,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@bicou/vue-prosemirror-render": ["../packages/plugin-vue/src/plugin.ts"]
+    }
   },
   "include": ["*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
