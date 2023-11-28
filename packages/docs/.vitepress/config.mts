@@ -1,4 +1,8 @@
 import { defineConfig } from 'vitepress'
+import {dirname, resolve} from "node:path";
+import {fileURLToPath} from "node:url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -28,8 +32,8 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        "@bicou/vue-prosemirror-render": "../../../plugin-vue/src/plugin.ts",
-        "#examples": "../examples"
+        "@bicou/vue-prosemirror-render": resolve(__dirname, "../../plugin-vue/src/plugin.ts"),
+        "#examples": resolve(__dirname, "../../examples"),
       }
     }
   }
