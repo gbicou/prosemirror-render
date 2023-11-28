@@ -1,5 +1,5 @@
 {
-  "name": "@bicou/vue-prosemirror-render-docs",
+  "name": "@bicou/prosemirror-render-docs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,6 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "vitepress": "1.0.0-rc.31",
-    "@bicou/vue-prosemirror-render": "workspace:*"
+    "@bicou/prosemirror-render-vue": "workspace:*"
   }
 }

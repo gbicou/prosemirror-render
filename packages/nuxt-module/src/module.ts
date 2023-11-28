@@ -1,6 +1,6 @@
 import {defineNuxtModule, addPlugin, createResolver, addTemplate, addComponent} from '@nuxt/kit'
 import serialize from "serialize-javascript";
-import type { VueProsemirrorComponents } from "@bicou/vue-prosemirror-render";
+import type { VueProsemirrorComponents } from "@bicou/prosemirror-render-vue";
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
@@ -22,7 +22,7 @@ export default defineNuxtModule<ModuleOptions>({
     addComponent({
       name: 'ProsemirrorRender',
       export: 'ProsemirrorRender',
-      filePath: '@bicou/vue-prosemirror-render',
+      filePath: '@bicou/prosemirror-render-vue',
     })
 
     nuxt.options.alias['#prosemirror-options'] = addTemplate({

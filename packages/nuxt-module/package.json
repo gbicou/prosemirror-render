@@ -1,5 +1,5 @@
 {
-  "name": "@bicou/nuxt-prosemirror-render",
+  "name": "@bicou/prosemirror-render-nuxt",
   "version": "1.0.0",
   "description": "My new Nuxt module",
   "license": "MIT",
@@ -27,7 +27,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@bicou/vue-prosemirror-render": "workspace:*",
+    "@bicou/prosemirror-render-vue": "workspace:*",
     "@nuxt/kit": "^3.8.2",
     "serialize-javascript": "^6.0.1"
   },

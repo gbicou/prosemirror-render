@@ -22,8 +22,8 @@
     "noFallthroughCasesInSwitch": true,
 
     "paths": {
-      "@bicou/vue-prosemirror-render": [
-        "./packages/plugin-vue/src/plugin.ts"
+      "@bicou/prosemirror-render-vue": [
+        "./packages/vue-plugin/src/plugin.ts"
       ],
       "#examples/*": [
         "./packages/examples/*"

@@ -1,5 +1,5 @@
 {
-  "name": "@bicou/vue-prosemirror-render-playground",
+  "name": "@bicou/prosemirror-render-vue-playground",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@bicou/vue-prosemirror-render": "workspace:*",
+    "@bicou/prosemirror-render-vue": "workspace:*",
     "vue": "^3.3.9"
   },
   "peerDependencies": {

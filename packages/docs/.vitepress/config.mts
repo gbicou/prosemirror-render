@@ -32,7 +32,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        "@bicou/vue-prosemirror-render": resolve(__dirname, "../../plugin-vue/src/plugin.ts"),
+        "@bicou/prosemirror-render-vue": resolve(__dirname, "../../vue-plugin/src/plugin.ts"),
         "#examples": resolve(__dirname, "../../examples"),
       }
     }

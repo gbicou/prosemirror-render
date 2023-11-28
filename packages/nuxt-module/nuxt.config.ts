@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   alias: {
-    "@bicou/vue-prosemirror-render": "../plugin-vue/src/plugin.ts",
+    "@bicou/prosemirror-render-vue": "../vue-plugin/src/plugin.ts",
     "#examples": "../examples",
   },
 });

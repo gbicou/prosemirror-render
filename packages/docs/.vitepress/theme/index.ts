@@ -1,6 +1,6 @@
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
-import { ProsemirrorRender } from "@bicou/vue-prosemirror-render";
+import { ProsemirrorRender } from "@bicou/prosemirror-render-vue";
 
 export default {
   extends: DefaultTheme,

@@ -1,5 +1,5 @@
 {
-  "name": "@bicou/vue-prosemirror-render-workspace",
+  "name": "@bicou/prosemirror-render-workspace",
   "private": true,
   "version": "0.0.0",
   "type": "module",
