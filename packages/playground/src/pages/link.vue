@@ -1,58 +1,11 @@
 <script setup lang="ts">
-import { ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/vue-prosemirror-render";
-
-const node: ProsemirrorJSONNode = {
-  type: "doc",
-  content: [
-    {
-      type: "paragraph",
-      content: [
-        {
-          type: "text",
-          text: "Wow, this has support for links to the whole ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "link",
-              attrs: {
-                href: "https://en.wikipedia.org/wiki/World_Wide_Web",
-              },
-            },
-          ],
-          text: "world wide web",
-        },
-        {
-          type: "text",
-          text: ". We tested a lot of URLs and I think you can add *every URL* you want. Isn’t that cool? Let’s try ",
-        },
-        {
-          type: "text",
-          marks: [
-            {
-              type: "link",
-              attrs: {
-                href: "https://google.com",
-                target: "_blank",
-              },
-            },
-          ],
-          text: "another one!",
-        },
-        {
-          type: "text",
-          text: " Yep, seems to work.",
-        },
-      ],
-    },
-  ],
-};
+import { ProsemirrorRender } from "@bicou/vue-prosemirror-render";
+import link from "#examples/link.json";
 </script>
 
 <template>
   <div>
-    <prosemirror-render :node="node" />
+    <prosemirror-render :node="link" />
   </div>
 </template>
 
