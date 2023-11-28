@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "@bicou/vue-prosemirror-render"
+  name: "@bicou/prosemirror-render"
   text: "Vue ProseMirror render"
   tagline: "A Vue3 plugin to render ProseMirror json data with components"
   actions:

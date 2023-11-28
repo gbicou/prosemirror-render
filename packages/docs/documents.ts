@@ -1,4 +1,4 @@
-import type { ProsemirrorJSONNode } from "@bicou/vue-prosemirror-render";
+import type { ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
 
 export const p1: ProsemirrorJSONNode = {
   type: "doc",
