@@ -20,7 +20,7 @@ export const VueProsemirrorOptionsKey: InjectionKey<VueProsemirrorOptions> = Sym
 export const defaultOptions: VueProsemirrorOptions = {
   components: {
     doc: "div",
-    heading: ({ level }) => (level ? `h${level}` : "header"),
+    heading: ({ level }) => [level ? `h${level}` : "header", { level: undefined }],
     paragraph: "p",
     code: "code",
     code_block: "pre",
