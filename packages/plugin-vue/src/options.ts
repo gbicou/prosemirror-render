@@ -1,6 +1,6 @@
 import type { Component } from "vue";
 import type { InjectionKey } from "vue";
-import { ProsemirrorJSONAttributes } from "./prosemirror-json";
+import type { ProsemirrorJSONAttributes } from "./prosemirror-json";
 
 export type VueProsemirrorComponent = string | Component;
 export type VueProsemirrorComponentAndProperties = [VueProsemirrorComponent, Record<string, unknown>];

@@ -3,10 +3,10 @@ import { camelCase, kebabCase, snakeCase } from "change-case";
 import type { ProsemirrorJSONCommon, ProsemirrorJSONNode } from "../prosemirror-json";
 import {
   defaultOptions,
-  VueProsemirrorComponentAndProperties,
-  VueProsemirrorComponentOption,
-  VueProsemirrorComponentReturns,
-  VueProsemirrorComponents,
+  type VueProsemirrorComponentAndProperties,
+  type VueProsemirrorComponentOption,
+  type VueProsemirrorComponentReturns,
+  type VueProsemirrorComponents,
   VueProsemirrorOptionsKey,
 } from "../options";
 
