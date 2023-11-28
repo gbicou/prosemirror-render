@@ -28,7 +28,8 @@
   },
   "dependencies": {
     "@bicou/vue-prosemirror-render": "workspace:*",
-    "@nuxt/kit": "^3.8.2"
+    "@nuxt/kit": "^3.8.2",
+    "serialize-javascript": "^6.0.1"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.4",
@@ -36,6 +37,7 @@
     "@nuxt/module-builder": "^0.5.4",
     "@nuxt/schema": "^3.8.2",
     "@nuxt/test-utils": "^3.8.1",
+    "@types/serialize-javascript": "^5.0.4",
     "@types/node": "^20.9.3",
     "eslint": "^8.54.0",
     "nuxt": "^3.8.2",

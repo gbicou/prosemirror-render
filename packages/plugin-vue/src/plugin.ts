@@ -10,6 +10,8 @@ const VueProsemirrorPlugin = {
   },
 };
 
+export default VueProsemirrorPlugin;
+
 /**
  * Updates the ProseMirror plugin options.
  * @param options - The new options to merge with current.
@@ -19,7 +21,6 @@ export function useProsemirrorOptions(options: Partial<VueProsemirrorOptions>) {
 }
 
 export { type ProsemirrorJSONNode } from "./prosemirror-json";
-
-export default VueProsemirrorPlugin;
+export { type VueProsemirrorOptions, type VueProsemirrorComponents } from "./options";
 
 export { default as ProsemirrorRender } from "./components/prosemirror-render";

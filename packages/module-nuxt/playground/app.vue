@@ -18,7 +18,7 @@ const link = {
       type: "paragraph",
       content: [
         { type: "text", text: "This is a link to " },
-        { type: "link", attrs: { to: "https://nuxt.com", "target": "_blank" }, content: [{ type: "text", text: "Nuxt" }] },
+        { type: "link", attrs: { href: "https://nuxt.com", "target": "_blank" }, content: [{ type: "text", text: "Nuxt" }] },
       ],
     },
   ],
