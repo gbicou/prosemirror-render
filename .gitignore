@@ -1,29 +1,45 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
+# Dependencies
 node_modules
-dist
-dist-ssr
-*.local
-.vite
-.nx
-coverage
+
+# Logs
+*.log*
+logs
+pnpm-debug.log*
+
+# Temp directories
+.temp
+.tmp
+.cache
 cache
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+# Vite
+.vite
+
+# Nx
+.nx
+
+# Generated dirs
+dist
+
+# Nuxt
+.nuxt
+.output
+.data
+.vercel_build_output
+.build-*
+.netlify
+
+# Env
+.env
+.envrc
+*.local
+
+# Testing
+reports
+coverage
+*.lcov
+.nyc_output
+
+# Intellij idea
+*.iml
 .idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.env*

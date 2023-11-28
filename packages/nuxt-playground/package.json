@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "@bicou/prosemirror-render-nuxt-playground",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "prepare": "nuxi prepare"
+  },
+  "dependencies": {
+    "@bicou/prosemirror-render-nuxt": "workspace:*"
+  },
+  "devDependencies": {
+    "nuxt": "latest"
+  }
+}

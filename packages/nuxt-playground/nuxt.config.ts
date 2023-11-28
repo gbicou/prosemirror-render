@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
-  extends: "..",
-  modules: ["../src/module"],
+  extends: "../nuxt-module",
+  modules: ["../nuxt-module/src/module"],
   prosemirrorRender: {},
   devtools: { enabled: true },
 });
