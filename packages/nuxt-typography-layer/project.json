@@ -1,0 +1,4 @@
+{
+  "name": "nuxt-typography-layer",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json"
+}

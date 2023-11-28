@@ -1,0 +1,30 @@
+{
+  "name": "@bicou/prosemirror-render-nuxt-typography",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./nuxt.config.ts",
+  "scripts": {
+    "dev": "nuxi dev .playground",
+    "build": "nuxt build .playground",
+    "generate": "nuxt generate .playground",
+    "preview": "nuxt preview .playground",
+    "lint": "eslint .",
+    "prepare": "nuxt prepare .playground"
+  },
+  "dependencies": {
+    "@bicou/prosemirror-render-nuxt": "workspace:*",
+    "@nuxt-themes/typography": "^1.0.1",
+    "@vueuse/core": "^10.6.1",
+    "@vueuse/nuxt": "^10.6.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.2.0",
+    "eslint": "^8.54.0",
+    "nuxt": "^3.8.2",
+    "typescript": "^5.3.2",
+    "vue": "^3.3.9"
+  },
+  "optionalDependencies": {
+    "shiki-es": "^0.14.0"
+  }
+}
