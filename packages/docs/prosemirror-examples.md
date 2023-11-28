@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { p1 } from "./documents";
+import helloWorld from "#examples/hello-world.json";
 </script>
 
 # ProseMirror Examples
@@ -11,19 +11,19 @@ This page demonstrates the basics of ProsemirrorRender component.
 **Input**
 
 ```js-vue
-const node = {{ p1 }};
+const helloWorld = {{ helloWorld }};
 ```
 
 ```vue
-<prosemirror-render :node="node" />
+<prosemirror-render :node="helloWorld" />
 ```
 
 **Output**
 
 ```html
 <div>
-    <p>a paragraph</p>
+    <p>Hello world!</p>
 </div>
 ```
 
-<prosemirror-render :node="p1" />
+<prosemirror-render :node="helloWorld" />
