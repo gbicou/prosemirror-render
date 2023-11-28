@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@bicou/vue-prosemirror-render": [
+        "./packages/plugin-vue/src/plugin.ts"
+      ],
+      "#examples/*": [
+        "./packages/examples/*"
+      ]
+    }
+  }
+}

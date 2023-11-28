@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-const helloWorld = { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Hello world!" }] }] };
+import helloWorld from "#examples/hello-world.json";
 </script>

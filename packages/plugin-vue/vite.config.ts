@@ -2,10 +2,9 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import dts from "vite-plugin-dts";
-import { resolve, dirname } from "node:path";
+import { resolve } from "path";
 import nodeExternals from "rollup-plugin-node-externals";
 import GithubActionsReporter from "vitest-github-actions-reporter";
-import { fileURLToPath } from "node:url";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -13,7 +12,6 @@ export default defineConfig({
     vue(),
     dts({
       include: ["src"],
-      exclude: ["**/*.test.ts"],
     }),
     {
       ...nodeExternals(),
@@ -24,7 +22,7 @@ export default defineConfig({
     target: "esnext",
     copyPublicDir: false,
     lib: {
-      entry: resolve(dirname(fileURLToPath(import.meta.url)), "src/plugin.ts"),
+      entry: resolve(__dirname, "src/plugin.ts"),
       formats: ["es"],
       fileName: "plugin",
     },

@@ -8,9 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import basic from "../../examples/basic.json";
-
-const helloWorld = { type: "doc", content: [{ type: "paragraph", content: [{ type: "text", text: "Hello world!" }] }] };
+import basic from "#examples/basic.json";
+import helloWorld from "#examples/hello-world.json";
 
 const link = {
   type: "doc",
