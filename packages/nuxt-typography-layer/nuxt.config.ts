@@ -30,5 +30,4 @@ export default defineNuxtConfig({
       table_cell: "prose-td",
     }
   },
-  devtools: { enabled: true }
 })
