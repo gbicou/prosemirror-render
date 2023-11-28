@@ -26,7 +26,9 @@ export interface ProsemirrorJSONCommon {
 /**
  * JSON ProseMirror Mark
  */
-export type ProsemirrorJSONMark = ProsemirrorJSONCommon;
+export type ProsemirrorJSONMark = ProsemirrorJSONCommon & {
+  [p: string]: unknown;
+};
 
 /**
  * JSON ProseMirror Node
@@ -35,4 +37,5 @@ export type ProsemirrorJSONNode = ProsemirrorJSONCommon & {
   marks?: ProsemirrorJSONMark[];
   content?: ProsemirrorJSONNode[];
   text?: string;
+  [p: string]: unknown;
 };
