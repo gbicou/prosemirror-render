@@ -13,7 +13,9 @@ module.exports = {
   ],
   plugins: [],
   parserOptions: {
-    project: true,
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.eslint.json", "./packages/*/tsconfig.json"],
     tsconfigRootDir: __dirname,
   },
   overrides: [
