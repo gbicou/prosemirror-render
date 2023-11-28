@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/vue-prosemirror-render";
+import { useProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
 import PmMention from "../components/pm-mention.vue";
 
 useProsemirrorOptions({
