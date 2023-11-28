@@ -13,9 +13,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   plugins: [
     vue(),
-    dts({
-      include: ["src"],
-    }),
+    dts(),
     {
       ...nodeExternals(),
       enforce: "pre",
