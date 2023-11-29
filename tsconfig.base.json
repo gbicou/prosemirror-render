@@ -23,7 +23,7 @@
 
     "paths": {
       "@bicou/prosemirror-render-vue": [
-        "./packages/vue-plugin/src/plugin.ts"
+        "./packages/vue-plugin/src/index.ts"
       ],
       "#examples/*": [
         "./packages/examples/*"

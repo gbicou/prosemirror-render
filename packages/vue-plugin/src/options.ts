@@ -1,6 +1,6 @@
-import type { Component } from "vue";
-import type { InjectionKey } from "vue";
+import { type Component, type InjectionKey, inject, provide } from "vue";
 import type { ProsemirrorJSONAttributes } from "./prosemirror-json";
+import defu from "defu";
 
 export type VueProsemirrorComponent = string | Component;
 export type VueProsemirrorComponentAndProperties = [VueProsemirrorComponent, Record<string, unknown>];
@@ -47,3 +47,11 @@ export const defaultOptions: VueProsemirrorOptions = {
     table_cell: "td",
   },
 };
+
+/**
+ * Updates the ProseMirror plugin options.
+ * @param options - The new options to merge with current.
+ */
+export function useProsemirrorOptions(options: Partial<VueProsemirrorOptions>) {
+  provide(VueProsemirrorOptionsKey, defu(options, inject(VueProsemirrorOptionsKey, defaultOptions)));
+}

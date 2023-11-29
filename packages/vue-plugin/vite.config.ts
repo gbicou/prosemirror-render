@@ -23,11 +23,19 @@ export default defineConfig({
     target: "esnext",
     copyPublicDir: false,
     lib: {
-      entry: resolve(__dirname, "src/plugin.ts"),
-      formats: ["es"],
-      fileName: "plugin",
+      entry: resolve(__dirname, "src/index.ts"),
+      name: "VueProsemirrorRender",
+      fileName: "index",
     },
-    rollupOptions: {},
+    rollupOptions: {
+      output: {
+        globals: {
+          vue: "Vue",
+          defu: "defu",
+          "change-case": "changeCase",
+        },
+      },
+    },
   },
   test: {
     globals: true,
