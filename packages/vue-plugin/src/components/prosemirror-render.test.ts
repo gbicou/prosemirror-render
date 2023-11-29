@@ -93,9 +93,15 @@ describe("component ProsemirrorRender", () => {
             marks: [
               {
                 type: "bold",
+                attrs: {
+                  "data-test": "bold",
+                },
               },
               {
                 type: "italic",
+                attrs: {
+                  "data-test": "italic",
+                },
               },
             ],
             text: "content",
@@ -107,7 +113,11 @@ describe("component ProsemirrorRender", () => {
   const vueDoubleMark = mount(ProsemirrorRender, { props: { node: nodeDoubleMark } });
 
   it("renders marks in order", () => {
-    expect(vueDoubleMark.html()).toContain("<b><i>content</i></b>");
+    expect(vueDoubleMark.get("[data-test=bold]").get("[data-test=italic]")).toBeDefined();
+    expect(vueDoubleMark.get("[data-test=bold]").get("[data-test=italic]").text()).toBe("content");
+
+    expect(vueDoubleMark.text()).toContain("content");
+    expect(vueDoubleMark.html()).toMatchSnapshot();
   });
 
   const nodeEmpty: ProsemirrorJSONNode = {

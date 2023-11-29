@@ -1,5 +1,11 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`component ProsemirrorRender > renders marks in order 1`] = `
+"<div>
+  <p><b data-test=\\"bold\\"><i data-test=\\"italic\\">content</i></b></p>
+</div>"
+`;
+
 exports[`component ProsemirrorRender > renders simple mark 1`] = `
 "<div data-test=\\"doc\\">
   <p data-test=\\"paragraph\\"><b data-test=\\"bold\\">content</b></p>

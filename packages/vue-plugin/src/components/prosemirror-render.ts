@@ -54,34 +54,30 @@ const ProsemirrorRender: Component<{ node: ProsemirrorJSONNode; mark?: number }>
     // point to the mark
     const markItem = computed(() => node.value.marks?.at(mark.value));
 
-    return () => {
-      // render the current mark
-      if (markItem.value) {
-        const [component, properties_] = resolveProseComponent(markItem.value, components);
-        // recurse the next mark for child
-        const children = () => h(ProsemirrorRender, { node: node.value, mark: mark.value + 1 });
-        return h(
-          component,
-          mergeProps(markItem.value.attrs ?? {}, properties_),
-          typeof component === "string" ? children() : children,
-        );
-      }
-      // render text as is
-      else if (node.value.type === "text") {
-        return node.value.text;
-      }
-      // render the current node when marks are done
-      else {
-        const [component, properties_] = resolveProseComponent(node.value, components);
-        // children are the content of the node built by self
-        const children = () => node.value.content?.map((child) => h(ProsemirrorRender, { node: child }));
-        return h(
-          component,
-          mergeProps(node.value.attrs ?? {}, properties_, typeof component === "string" ? {} : { node: node.value }),
-          typeof component === "string" ? children() : children,
-        );
-      }
-    };
+    // render the current mark
+    if (markItem.value) {
+      const [component, properties_] = resolveProseComponent(markItem.value, components);
+      const markProperties = mergeProps(markItem.value.attrs ?? {}, properties_);
+      // recurse the next mark for child
+      const children = () => h(ProsemirrorRender, { node: node.value, mark: mark.value + 1 });
+      return () => h(component, markProperties, typeof component === "string" ? children() : children);
+    }
+    // render text as is
+    else if (node.value.type === "text") {
+      return () => node.value.text;
+    }
+    // render the current node when marks are done
+    else {
+      const [component, properties_] = resolveProseComponent(node.value, components);
+      const nodeProperties = mergeProps(
+        node.value.attrs ?? {},
+        properties_,
+        typeof component === "string" ? {} : { node: node.value },
+      );
+      // children are the content of the node built by self
+      const children = () => node.value.content?.map((child) => h(ProsemirrorRender, { node: child }));
+      return () => h(component, nodeProperties, typeof component === "string" ? children() : children);
+    }
   },
 });
 
