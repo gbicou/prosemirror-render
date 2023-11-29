@@ -1,4 +1,4 @@
 {
-  "name": "playground",
+  "name": "vue-playground",
   "$schema": "../../node_modules/nx/schemas/project-schema.json"
 }
