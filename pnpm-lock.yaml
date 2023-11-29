@@ -121,6 +121,9 @@ importers:
       nuxt:
         specifier: latest
         version: 3.8.2(@types/node@20.10.0)(eslint@8.54.0)(typescript@5.3.2)(vite@4.5.0)
+      vue:
+        specifier: ^3.3.9
+        version: 3.3.9(typescript@5.3.2)
 
   packages/nuxt-typography-layer:
     dependencies:
