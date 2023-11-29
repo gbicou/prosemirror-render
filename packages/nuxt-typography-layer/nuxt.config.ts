@@ -1,12 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  extends: [
-    "@nuxt-themes/typography"
-  ],
-  modules: [
-    "@bicou/prosemirror-render-nuxt",
-    "@vueuse/nuxt",
-  ],
+  extends: ["@nuxt-themes/typography"],
+  modules: ["@bicou/prosemirror-render-nuxt", "@vueuse/nuxt"],
   prosemirrorRender: {
     components: {
       heading: ({ level }) => [level ? `prose-h${level}` : "header", { level: undefined }],
@@ -28,6 +23,6 @@ export default defineNuxtConfig({
       table_row: "prose-tr",
       table_header: "prose-th",
       table_cell: "prose-td",
-    }
+    },
   },
-})
+});

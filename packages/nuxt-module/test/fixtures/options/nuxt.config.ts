@@ -1,12 +1,15 @@
-import MyModule from '../../../src/module'
+import MyModule from "../../../src/module";
 
 export default defineNuxtConfig({
-  extends: '../../..',
+  extends: "../../..",
   modules: [
-    [MyModule, {
-      components: {
-          italic: () => ['span', { class: "italic" }],
-      }
-    }]
-  ]
-})
+    [
+      MyModule,
+      {
+        components: {
+          italic: () => ["span", { class: "italic" }],
+        },
+      },
+    ],
+  ],
+});

@@ -9,7 +9,9 @@
 <script setup lang="ts">
 import type { ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
 
-const { prosemirror: { shiki } } = useAppConfig();
+const {
+  prosemirror: { shiki },
+} = useAppConfig();
 
 const properties = defineProps<{
   node: ProsemirrorJSONNode;
