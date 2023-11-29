@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["@nuxt/eslint-config"],
+  extends: ["@nuxt/eslint-config", "@vue/eslint-config-prettier"],
 };
