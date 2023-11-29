@@ -3,7 +3,7 @@ import basic from "#examples/basic.json";
 </script>
 
 <template>
-  <prosemirror-render :node="basic" id="basic" />
+  <prosemirror-render id="basic" :node="basic" />
 </template>
 
 <style>

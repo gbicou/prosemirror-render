@@ -1,0 +1,23 @@
+{
+  "name": "@bicou/prosemirror-render-nuxt-typography-playground",
+  "private": true,
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "prepare": "nuxt prepare"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.6.1",
+    "@vueuse/nuxt": "^10.6.1",
+    "shiki-es": "^0.14.0"
+  },
+  "devDependencies": {
+    "@bicou/prosemirror-render-nuxt-typography": "workspace:*",
+    "nuxt": "^3.8.2",
+    "vue": "^3.3.9"
+  }
+}

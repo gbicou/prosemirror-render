@@ -3,13 +3,14 @@
   "type": "module",
   "version": "0.0.1",
   "main": "./nuxt.config.ts",
+  "files": [
+    "components/",
+    "app.config.ts",
+    "nuxt.config.ts"
+  ],
   "scripts": {
-    "dev": "nuxi dev .playground",
-    "build": "nuxt build .playground",
-    "generate": "nuxt generate .playground",
-    "preview": "nuxt preview .playground",
     "lint": "eslint .",
-    "prepare": "nuxt prepare .playground"
+    "prepare": "nuxt prepare"
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt": "workspace:*",
