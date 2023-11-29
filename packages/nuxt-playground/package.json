@@ -9,7 +9,8 @@
     "prepare": "nuxi prepare"
   },
   "dependencies": {
-    "@bicou/prosemirror-render-nuxt": "workspace:*"
+    "@bicou/prosemirror-render-nuxt": "workspace:*",
+    "vue": "^3.3.9"
   },
   "devDependencies": {
     "nuxt": "latest"
