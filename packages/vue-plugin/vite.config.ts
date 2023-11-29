@@ -24,17 +24,8 @@ export default defineConfig({
     copyPublicDir: false,
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
-      name: "VueProsemirrorRender",
+      formats: ["es"],
       fileName: "index",
-    },
-    rollupOptions: {
-      output: {
-        globals: {
-          vue: "Vue",
-          defu: "defu",
-          "change-case": "changeCase",
-        },
-      },
     },
   },
   test: {
