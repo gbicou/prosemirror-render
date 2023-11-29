@@ -2,7 +2,7 @@
   "private": true,
   "name": "@bicou/prosemirror-render-nuxt-playground",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",

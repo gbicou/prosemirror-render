@@ -1,6 +1,6 @@
 {
   "name": "@bicou/prosemirror-render-nuxt",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "My new Nuxt module",
   "license": "MIT",
   "type": "module",
