@@ -1,13 +1,13 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`component ProsemirrorRender > renders simple mark 1`] = `
-"<div>
-  <p><b>content</b></p>
+"<div data-test=\\"doc\\">
+  <p data-test=\\"paragraph\\"><b data-test=\\"bold\\">content</b></p>
 </div>"
 `;
 
 exports[`component ProsemirrorRender > renders simple node 1`] = `
-"<div>
-  <p>content</p>
+"<div data-test=\\"doc\\">
+  <p data-test=\\"paragraph\\">content</p>
 </div>"
 `;

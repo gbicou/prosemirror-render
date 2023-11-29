@@ -1,112 +1,121 @@
 import { mount } from "@vue/test-utils";
-import ProsemirrorRender, { resolveProseComponent } from "./prosemirror-render";
+import ProsemirrorRender from "./prosemirror-render";
 import { describe, it, expect } from "vitest";
-import { VueProsemirrorComponents } from "../options";
+import { ProsemirrorJSONNode } from "../prosemirror-json";
 
 describe("component ProsemirrorRender", () => {
-  it("renders simple node", () => {
-    expect(ProsemirrorRender).toBeTruthy();
-
-    const wrapper = mount(ProsemirrorRender, {
-      props: {
-        node: {
-          type: "doc",
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                {
-                  type: "text",
-                  text: "content",
-                },
-              ],
-            },
-          ],
+  const nodeSimple: ProsemirrorJSONNode = {
+    type: "doc",
+    attrs: {
+      "data-test": "doc",
+    },
+    content: [
+      {
+        type: "paragraph",
+        attrs: {
+          "data-test": "paragraph",
         },
+        content: [
+          {
+            type: "text",
+            text: "content",
+          },
+        ],
       },
-    });
+    ],
+  };
+  const vueSimple = mount(ProsemirrorRender, { props: { node: nodeSimple } });
 
-    expect(wrapper.text()).toContain("content");
-    expect(wrapper.html()).not.toContain("object Object");
-    expect(wrapper.html()).toMatchSnapshot();
+  it("exists", () => {
+    expect(ProsemirrorRender).toBeTruthy();
   });
+
+  it("renders simple node", () => {
+    expect(vueSimple.get("[data-test=doc]").element.tagName).toBe("DIV");
+    expect(vueSimple.get("[data-test=doc]").element.children).toHaveLength(1);
+
+    expect(vueSimple.get("[data-test=paragraph]").element.tagName).toBe("P");
+    expect(vueSimple.get("[data-test=paragraph]").text()).toBe("content");
+
+    expect(vueSimple.html()).toMatchSnapshot();
+  });
+
+  it("don't pollute DOM with stringified object", () => {
+    expect(vueSimple.html()).not.toContain("object Object");
+  });
+
+  const nodeSimpleMark: ProsemirrorJSONNode = {
+    type: "doc",
+    attrs: {
+      "data-test": "doc",
+    },
+    content: [
+      {
+        type: "paragraph",
+        attrs: {
+          "data-test": "paragraph",
+        },
+        content: [
+          {
+            type: "text",
+            marks: [
+              {
+                type: "bold",
+                attrs: {
+                  "data-test": "bold",
+                },
+              },
+            ],
+            text: "content",
+          },
+        ],
+      },
+    ],
+  };
+  const vueSimpleMark = mount(ProsemirrorRender, { props: { node: nodeSimpleMark } });
 
   it("renders simple mark", () => {
-    expect(ProsemirrorRender).toBeTruthy();
+    expect(vueSimpleMark.get("[data-test=paragraph]").text()).toBe("content");
+    expect(vueSimpleMark.get("[data-test=bold]").text()).toBe("content");
 
-    const wrapper = mount(ProsemirrorRender, {
-      props: {
-        node: {
-          type: "doc",
-          content: [
-            {
-              type: "paragraph",
-              content: [
-                {
-                  type: "text",
-                  marks: [
-                    {
-                      type: "bold",
-                    },
-                  ],
-                  text: "content",
-                },
-              ],
-            },
-          ],
-        },
+    expect(vueSimpleMark.text()).toContain("content");
+    expect(vueSimpleMark.html()).toMatchSnapshot();
+  });
+
+  const nodeDoubleMark: ProsemirrorJSONNode = {
+    type: "doc",
+    content: [
+      {
+        type: "paragraph",
+        content: [
+          {
+            type: "text",
+            marks: [
+              {
+                type: "bold",
+              },
+              {
+                type: "italic",
+              },
+            ],
+            text: "content",
+          },
+        ],
       },
-    });
-
-    expect(wrapper.text()).toContain("content");
-    expect(wrapper.html()).toContain("<b>content</b>");
-    expect(wrapper.html()).toMatchSnapshot();
-  });
-});
-
-describe("resolveProseComponent", () => {
-  const components: VueProsemirrorComponents = {
-    heading: ({ level }) => `h${level}`,
-    paragraph: "p",
-    camelCase: "camel",
-    snake_case: "snake",
-    comp: () => ProsemirrorRender,
-    tw: ["tailwind", { class: "bg-white" }],
+    ],
   };
+  const vueDoubleMark = mount(ProsemirrorRender, { props: { node: nodeDoubleMark } });
 
-  it("returns the element name", () => {
-    expect(resolveProseComponent({ type: "paragraph" }, components)).toStrictEqual(["p", {}]);
+  it("renders marks in order", () => {
+    expect(vueDoubleMark.html()).toContain("<b><i>content</i></b>");
   });
 
-  it("returns the node type if no correspondance", () => {
-    expect(resolveProseComponent({ type: "unknown" }, components)).toStrictEqual(["unknown", {}]);
-  });
+  const nodeEmpty: ProsemirrorJSONNode = {
+    type: "doc",
+  };
+  const vueEmpty = mount(ProsemirrorRender, { props: { node: nodeEmpty } });
 
-  it("finds the type in camel case", () => {
-    expect(resolveProseComponent({ type: "camelCase" }, components)).toStrictEqual(["camel", {}]);
-    expect(resolveProseComponent({ type: "camel-case" }, components)).toStrictEqual(["camel", {}]);
-    expect(resolveProseComponent({ type: "camel_case" }, components)).toStrictEqual(["camel", {}]);
-  });
-
-  it("finds the type in snake case", () => {
-    expect(resolveProseComponent({ type: "snakeCase" }, components)).toStrictEqual(["snake", {}]);
-    expect(resolveProseComponent({ type: "snake-case" }, components)).toStrictEqual(["snake", {}]);
-    expect(resolveProseComponent({ type: "snake_case" }, components)).toStrictEqual(["snake", {}]);
-  });
-
-  it("returns a component", () => {
-    expect(resolveProseComponent({ type: "comp" }, components)).toStrictEqual([ProsemirrorRender, {}]);
-  });
-
-  it("tries to resolve to a component", () => {
-    expect(resolveProseComponent({ type: "foo-bar" }, components)).toStrictEqual(["foo-bar", {}]);
-  });
-
-  it("can use node attributes", () => {
-    expect(resolveProseComponent({ type: "heading", attrs: { level: 1 } }, components)).toStrictEqual(["h1", {}]);
-  });
-
-  it("can returns properties", () => {
-    expect(resolveProseComponent({ type: "tw" }, components)).toStrictEqual(["tailwind", { class: "bg-white" }]);
+  it("renders an empty doc", () => {
+    expect(vueEmpty.html()).toBe("<div></div>");
   });
 });
