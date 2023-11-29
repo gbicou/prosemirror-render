@@ -30,4 +30,4 @@ jobs:
       # - run: git branch --track main origin/main
 
       # - run: pnpm nx format:check
-      - run: pnpm nx affected -t build
+      - run: pnpm nx affected -t build --exclude '*-playground'
