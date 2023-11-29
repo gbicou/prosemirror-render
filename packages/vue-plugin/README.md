@@ -152,12 +152,13 @@ useProsemirrorOptions({
 });
 ```
 
-And you can define additional attributes too :
+An example for the Tiptap FontFamily extension which generate TextStyle marks :
 
 ```ts
 useProsemirrorOptions({
   components: {
-    header: ({ level }) => [`h${level}`, { class: "my-10 font-bold text-xl" }],
+    // pass fontFamily attribute to font-family style of a span
+    textStyle: ({ fontFamily }) => ["span", { style: { fontFamily } }],
   },
 });
 ```
