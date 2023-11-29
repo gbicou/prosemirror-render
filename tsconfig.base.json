@@ -25,6 +25,12 @@
       "@bicou/prosemirror-render-vue": [
         "./packages/vue-plugin/src/index.ts"
       ],
+      "@bicou/prosemirror-render-nuxt": [
+        "./packages/nuxt-module/src/module.ts"
+      ],
+      "@bicou/prosemirror-render-nuxt-typography": [
+        "./packages/nuxt-typography"
+      ],
       "#examples/*": [
         "./packages/examples/*"
       ]
