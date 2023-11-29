@@ -2,7 +2,7 @@
   "name": "@bicou/prosemirror-render-nuxt-typography-playground",
   "private": true,
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxt build",

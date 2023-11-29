@@ -7,9 +7,12 @@
     "dev": "nx run-many -t dev",
     "build": "nx run-many -t build",
     "test": "nx run-many -t test",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "release": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
     "@nuxt/eslint-config": "^0.2.0",
     "@rushstack/eslint-patch": "^1.6.0",
     "@types/node": "^20.10.0",

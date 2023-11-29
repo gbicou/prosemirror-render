@@ -1,7 +1,7 @@
 {
   "name": "@bicou/prosemirror-render-nuxt-typography",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "main": "./nuxt.config.ts",
   "files": [
     "components/",
@@ -24,5 +24,8 @@
   },
   "optionalDependencies": {
     "shiki-es": "^0.14.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
