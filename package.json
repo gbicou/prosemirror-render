@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nx run-many -t dev",
-    "build": "nx run-many -t build",
+    "build": "nx run-many -t build --exclude *-playground",
     "test": "nx run-many -t test",
     "lint": "eslint .",
     "release": "changeset publish"
