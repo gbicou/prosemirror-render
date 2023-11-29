@@ -61,5 +61,3 @@ const node: ProsemirrorJSONNode = {
     <prosemirror-render :node="node" />
   </div>
 </template>
-
-<style scoped></style>

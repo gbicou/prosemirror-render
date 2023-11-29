@@ -8,5 +8,3 @@ import link from "#examples/link.json";
     <prosemirror-render :node="link" />
   </div>
 </template>
-
-<style scoped></style>

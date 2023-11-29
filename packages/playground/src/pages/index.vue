@@ -8,5 +8,3 @@ import basic from "#examples/basic.json";
     <prosemirror-render :node="basic" />
   </div>
 </template>
-
-<style scoped></style>

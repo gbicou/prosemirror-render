@@ -136,5 +136,3 @@ const node = {
     <prosemirror-render :node="node" />
   </div>
 </template>
-
-<style scoped></style>
