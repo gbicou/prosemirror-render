@@ -16,8 +16,6 @@ import {
   VueProsemirrorOptionsKey,
   defaultOptions,
   type VueProsemirrorComponentAndProperties,
-  type VueProsemirrorComponentOption,
-  type VueProsemirrorComponentReturns,
   type VueProsemirrorTypes,
 } from "../options";
 
@@ -32,21 +30,20 @@ export function resolveProseComponent(
   types: VueProsemirrorTypes,
 ): VueProsemirrorComponentAndProperties {
   // translate type to component or element
-  const option: VueProsemirrorComponentOption =
-    types[snakeCase(node.type)] ?? types[camelCase(node.type)] ?? kebabCase(node.type);
+  const option = types[snakeCase(node.type)] ?? types[camelCase(node.type)] ?? kebabCase(node.type);
 
   // call option with node attributes if it's a function
-  const r: VueProsemirrorComponentReturns = typeof option === "function" ? option(node.attrs ?? {}) : option;
+  const result = typeof option === "function" ? option(node.attrs ?? {}) : option;
 
-  const component = Array.isArray(r) ? r[0] : r;
-  const properties = Array.isArray(r) ? r[1] : {};
+  const component = Array.isArray(result) ? result[0] : result;
+  const properties = Array.isArray(result) ? result[1] : {};
 
   // don't try to resolve the component if it looks like a DOM element name
   if (typeof component === "string" && !component.includes("-") && component === component.toLowerCase()) {
     return [component, properties];
   }
 
-  return typeof component === "string" ? [resolveComponent(component), properties] : [component, properties];
+  return [typeof component === "string" ? resolveComponent(component) : component, properties];
 }
 
 interface ProsemirrorRenderProperties {
