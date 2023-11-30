@@ -1,8 +1,14 @@
 {
   "name": "@bicou/prosemirror-render-nuxt",
   "version": "0.0.1",
-  "description": "My new Nuxt module",
+  "description": "Nuxt module to render ProseMirror JSON data",
   "license": "MIT",
+  "author": "Benjamin VIELLARD <bicou@bicou.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbicou/prosemirror-render.git",
+    "directory": "packages/nuxt-module"
+  },
   "type": "module",
   "exports": {
     ".": {
@@ -20,7 +26,6 @@
     "prepare": "nuxt-module-build prepare",
     "build": "nuxt-module-build build",
     "stub": "nuxt-module-build build --stub && nuxt-module-build prepare",
-    "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch"
   },

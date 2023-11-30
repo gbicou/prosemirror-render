@@ -1,13 +1,12 @@
 {
-  "name": "@bicou/prosemirror-render-vue-playground",
   "private": true,
+  "name": "@bicou/prosemirror-render-vue-playground",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint ."
+    "dev": "vite",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",

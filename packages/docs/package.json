@@ -1,20 +1,20 @@
 {
-  "name": "@bicou/prosemirror-render-docs",
   "private": true,
+  "name": "@bicou/prosemirror-render-docs",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
+    "docs:dev": "vitepress dev",
     "docs:preview": "vitepress preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "vitepress": "1.0.0-rc.31",
-    "@bicou/prosemirror-render-vue": "workspace:*"
+    "@bicou/prosemirror-render-vue": "workspace:*",
+    "vitepress": "1.0.0-rc.31"
   }
 }

@@ -1,14 +1,14 @@
 {
-  "name": "@bicou/prosemirror-render-nuxt-typography-playground",
   "private": true,
-  "type": "module",
+  "name": "@bicou/prosemirror-render-nuxt-typography-playground",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "nuxi dev",
+    "prepare": "nuxt prepare",
     "build": "nuxt build",
+    "dev": "nuxi dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "prepare": "nuxt prepare"
+    "preview": "nuxt preview"
   },
   "dependencies": {
     "@vueuse/core": "^10.6.1",

@@ -1,25 +1,32 @@
 {
   "name": "@bicou/prosemirror-render-vue",
   "version": "0.0.1",
+  "description": "Vue plugin to render ProseMirror JSON data",
+  "license": "MIT",
+  "author": "Benjamin VIELLARD <bicou@bicou.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gbicou/prosemirror-render.git",
+    "directory": "packages/vue-plugin"
+  },
   "type": "module",
-  "files": [
-    "dist"
-  ],
-  "types": "./dist/index.d.ts",
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     }
   },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "vite build --watch",
     "build": "vue-tsc && vite build",
+    "dev": "vite build --watch",
     "test": "vitest run",
-    "coverage": "vitest run --coverage",
-    "lint": "eslint ."
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "change-case": "^5.2.0",
