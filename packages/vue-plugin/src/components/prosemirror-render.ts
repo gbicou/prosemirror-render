@@ -1,13 +1,24 @@
-import { type Component, computed, defineComponent, h, inject, mergeProps, type PropType, resolveComponent, toRefs, Text } from "vue";
+import {
+  type Component,
+  type PropType,
+  computed,
+  defineComponent,
+  h,
+  inject,
+  mergeProps,
+  resolveComponent,
+  toRefs,
+  Text,
+} from "vue";
 import { camelCase, kebabCase, snakeCase } from "change-case";
 import type { ProsemirrorJSONCommon, ProsemirrorJSONNode } from "../prosemirror-json";
 import {
+  VueProsemirrorOptionsKey,
   defaultOptions,
   type VueProsemirrorComponentAndProperties,
   type VueProsemirrorComponentOption,
   type VueProsemirrorComponentReturns,
   type VueProsemirrorTypes,
-  VueProsemirrorOptionsKey,
 } from "../options";
 
 /**
@@ -45,11 +56,14 @@ interface ProsemirrorRenderProperties {
   mark?: number;
 }
 
+/**
+ * Render a ProseMirror document.
+ */
 const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponent({
   name: "ProsemirrorRender",
   props: {
     // curent prosemirror node
-    node: { type: Object as PropType<ProsemirrorJSONNode>, required: true },
+    node: { type: Object as PropType<ProsemirrorRenderProperties["node"]>, required: true },
     // mark index to render
     mark: { type: Number, default: 0 },
   },
