@@ -18,6 +18,7 @@ describe("resolveProseComponent", () => {
 
   it("returns the node type if no correspondance", () => {
     expect(resolveProseComponent({ type: "unknown" }, types)).toStrictEqual(["unknown", {}]);
+    expect(resolveProseComponent({ type: "unknownType" }, types)).toStrictEqual(["unknown-type", {}]);
   });
 
   it("finds the type in camel case", () => {
