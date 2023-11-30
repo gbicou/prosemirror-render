@@ -5,7 +5,7 @@ export type ProsemirrorJSONValue =
   | string
   | number
   | boolean
-  | { [x: string]: ProsemirrorJSONValue }
+  | { [name: string]: ProsemirrorJSONValue }
   | ProsemirrorJSONValue[]
   | null
   | undefined;
@@ -27,7 +27,7 @@ export interface ProsemirrorJSONCommon {
  * JSON ProseMirror Mark
  */
 export type ProsemirrorJSONMark = ProsemirrorJSONCommon & {
-  [p: string]: unknown;
+  [other: string]: unknown;
 };
 
 /**
@@ -37,5 +37,5 @@ export type ProsemirrorJSONNode = ProsemirrorJSONCommon & {
   marks?: ProsemirrorJSONMark[];
   content?: ProsemirrorJSONNode[];
   text?: string;
-  [p: string]: unknown;
+  [other: string]: unknown;
 };
