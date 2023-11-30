@@ -51,7 +51,14 @@ export const defaultOptions: VueProsemirrorOptions = {
 /**
  * Updates the ProseMirror plugin options.
  * @param options - The new options to merge with current.
+ * @deprecated Use `provideProsemirrorOptions` instead.
  */
-export function useProsemirrorOptions(options: Partial<VueProsemirrorOptions>) {
+export const useProsemirrorOptions = provideProsemirrorOptions;
+
+/**
+ * Updates the ProseMirror plugin options.
+ * @param options - The new options to merge with current.
+ */
+export function provideProsemirrorOptions(options: Partial<VueProsemirrorOptions>) {
   provide(VueProsemirrorOptionsKey, defu(options, inject(VueProsemirrorOptionsKey, defaultOptions)));
 }
