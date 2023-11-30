@@ -1,6 +1,6 @@
 {
   "name": "@bicou/prosemirror-render-vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vue plugin to render ProseMirror JSON data",
   "license": "MIT",
   "author": "Benjamin VIELLARD <bicou@bicou.com>",
