@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
+import { provideProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
 
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     link: "router-link",
   },

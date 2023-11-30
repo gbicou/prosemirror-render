@@ -26,7 +26,7 @@ export default defineNuxtModule<ModuleOptions>({
     });
 
     addImports({
-      name: "useProsemirrorOptions",
+      name: "provideProsemirrorOptions",
       from: "@bicou/prosemirror-render-vue",
     });
 

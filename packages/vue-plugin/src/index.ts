@@ -6,7 +6,7 @@ export type { VueProsemirrorOptions, VueProsemirrorTypes } from "./options";
 export { VueProsemirrorPlugin, VueProsemirrorPlugin as default } from "./plugin";
 
 // export composable
-export { useProsemirrorOptions } from "./options";
+export { provideProsemirrorOptions } from "./options";
 
 // export component
 export { default as ProsemirrorRender } from "./components/prosemirror-render";

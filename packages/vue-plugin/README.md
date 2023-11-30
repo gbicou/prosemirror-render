@@ -98,13 +98,13 @@ createApp(App).use(ProsemirrorPlugin, {
 
 ## Options composable
 
-You can modify the types map locally with the `useProsemirrorOptions` composable :
+You can modify the types map locally with the `provideProsemirrorOptions` composable :
 
 ```vue
 <script setup lang="ts">
-import { useProsemirrorOptions } from "@bicou/prosemirror-render-vue";
+import { provideProsemirrorOptions } from "@bicou/prosemirror-render-vue";
 
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     doc: "article",
   },
@@ -123,7 +123,7 @@ The `types` is merged with the current map and defined for descendant components
 You can define additional attributes or properties by using a tuple of the element and the attributes :
 
 ```ts
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     // every node of type 'doc' will have the lang attribute set to 'en'
     doc: ["article", { lang: "en" }],
@@ -138,7 +138,7 @@ useProsemirrorOptions({
 This is useful when using CSS utilities framework like tailwind or unocss :
 
 ```ts
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     // adds 'my-10' class to all paragraphs      
     paragraph: ["p", { class: "my-10" }],
@@ -151,7 +151,7 @@ useProsemirrorOptions({
 The ProseMirror attributes of the node or mark data are available when you use a function :
 
 ```ts
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     // use the 'level' attribute from nodes of type 'header' to generate the tag name 
     header: ({ level }) => `h${level}`,
@@ -162,7 +162,7 @@ useProsemirrorOptions({
 An example for the Tiptap FontFamily extension which generate TextStyle marks :
 
 ```ts
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     // pass 'fontFamily' attribute to the 'font-family' CSS property of a span
     textStyle: ({ fontFamily }) => ["span", { style: { fontFamily } }],
@@ -177,7 +177,7 @@ You can even use your components, but you will still have to use a function defi
 ```ts
 import { MyComponent } from "...";
 
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     paragraph: () => MyComponent,
     // paragraph: MyComponent, // [WON'T WORK]  

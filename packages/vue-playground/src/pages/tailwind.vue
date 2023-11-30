@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { ProsemirrorRender, useProsemirrorOptions } from "@bicou/prosemirror-render-vue";
+import { ProsemirrorRender, provideProsemirrorOptions } from "@bicou/prosemirror-render-vue";
 import PmMention from "../components/pm-mention.vue";
 import "../tailwind.css";
 
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     doc: ["div", { class: "bg-neutral-100 font-sans p-10" }],
     highlight: ["span", { class: "bg-red-300" }],

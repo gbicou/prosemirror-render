@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { useProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
+import { provideProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
 import PmMention from "../components/pm-mention.vue";
 
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     mention: () => PmMention,
   },

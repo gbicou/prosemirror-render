@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ProsemirrorRender, useProsemirrorOptions } from "@bicou/prosemirror-render-vue";
+import { ProsemirrorRender, provideProsemirrorOptions } from "@bicou/prosemirror-render-vue";
 
-useProsemirrorOptions({
+provideProsemirrorOptions({
   types: {
     // pass fontFamily attribute to font-family style of a span
     textStyle: ({ fontFamily }) => ["span", { style: { fontFamily } }],
