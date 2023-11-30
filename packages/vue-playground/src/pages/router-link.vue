@@ -2,7 +2,7 @@
 import { useProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
 
 useProsemirrorOptions({
-  components: {
+  types: {
     link: "router-link",
   },
 });

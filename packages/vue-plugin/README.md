@@ -60,7 +60,7 @@ import ProsemirrorPlugin from "@bicou/prosemirror-render-vue";
 createApp(App).use(ProsemirrorPlugin).mount("#app");
 ```
 
-This adds the `ProsemirrorRender` component to the Vue application with defaults components configuration.
+This adds the `ProsemirrorRender` component to the Vue application with defaults types map configuration.
 
 ### ProsemirrorRender component
 
@@ -68,11 +68,12 @@ When you have to render a ProseMirror JSON content, you call the component with 
 
 ```vue
 <script setup>
-const node = {...}; // retrieved from where you stored the editor content
+// retrieved from where you stored the editor content  
+const node = {...};
 </script>
 
 <template>
-  <prosemirror-render node="node" />
+  <prosemirror-render :node="node" />
 </template>
 ```
 
@@ -80,12 +81,13 @@ const node = {...}; // retrieved from where you stored the editor content
 
 The output of the `ProsemirrorRender` component can be customized with the plugin's options.
 
-The `components` key defines a map from Prosemirror types to Vnode names :
+The `types` key defines a map from Prosemirror types to Vnode names :
 
 ```ts
 createApp(App).use(ProsemirrorPlugin, {
-  components: {
-    doc: "article", // maps nodes with 'doc' type to HTML <article> 
+  types: {
+    // maps nodes with 'doc' type to HTML <article />      
+    doc: "article", 
   },
 });
 ```
@@ -96,14 +98,14 @@ createApp(App).use(ProsemirrorPlugin, {
 
 ## Options composable
 
-You can modify the components map locally with the `useProsemirrorOptions` composable :
+You can modify the types map locally with the `useProsemirrorOptions` composable :
 
 ```vue
 <script setup lang="ts">
 import { useProsemirrorOptions } from "@bicou/prosemirror-render-vue";
 
 useProsemirrorOptions({
-  components: {
+  types: {
     doc: "article",
   },
 });
@@ -114,13 +116,16 @@ useProsemirrorOptions({
 </template>
 ```
 
+The `types` is merged with the current map and defined for descendant components.
+
 ## Vnode attributes
 
 You can define additional attributes or properties by using a tuple of the element and the attributes :
 
 ```ts
 useProsemirrorOptions({
-  components: {
+  types: {
+    // every node of type 'doc' will have the lang attribute set to 'en'
     doc: ["article", { lang: "en" }],
   },
 });
@@ -134,7 +139,8 @@ This is useful when using CSS utilities framework like tailwind or unocss :
 
 ```ts
 useProsemirrorOptions({
-  components: {
+  types: {
+    // adds 'my-10' class to all paragraphs      
     paragraph: ["p", { class: "my-10" }],
   },
 });
@@ -146,7 +152,8 @@ The ProseMirror attributes of the node or mark data are available when you use a
 
 ```ts
 useProsemirrorOptions({
-  components: {
+  types: {
+    // use the 'level' attribute from nodes of type 'header' to generate the tag name 
     header: ({ level }) => `h${level}`,
   },
 });
@@ -156,8 +163,8 @@ An example for the Tiptap FontFamily extension which generate TextStyle marks :
 
 ```ts
 useProsemirrorOptions({
-  components: {
-    // pass fontFamily attribute to font-family style of a span
+  types: {
+    // pass 'fontFamily' attribute to the 'font-family' CSS property of a span
     textStyle: ({ fontFamily }) => ["span", { style: { fontFamily } }],
   },
 });
@@ -165,23 +172,24 @@ useProsemirrorOptions({
 
 ## Custom components
 
-You can even use your components, but you will still have to use a function :
+You can even use your components, but you will still have to use a function definition :
 
 ```ts
 import { MyComponent } from "...";
 
 useProsemirrorOptions({
-  components: {
+  types: {
     paragraph: () => MyComponent,
+    // paragraph: MyComponent, // [WON'T WORK]  
   },
 });
 ```
 
-The node or mark attributes will be available to your component as properties.
+The node or mark attributes will be available to the component as properties.
 
 ## Default options
 
-The `components` is merged with the following default type to element map :
+The default `types` map consist of the following HTML tag names :
 
 | ProseMirror type  | Vue vnode name         |
 |-------------------|------------------------|

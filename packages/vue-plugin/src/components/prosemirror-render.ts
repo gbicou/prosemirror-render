@@ -1,4 +1,4 @@
-import { type Component, computed, defineComponent, h, inject, mergeProps, type PropType, resolveComponent, toRefs } from "vue";
+import { type Component, computed, defineComponent, h, inject, mergeProps, type PropType, resolveComponent, toRefs, Text } from "vue";
 import { camelCase, kebabCase, snakeCase } from "change-case";
 import type { ProsemirrorJSONCommon, ProsemirrorJSONNode } from "../prosemirror-json";
 import {
@@ -6,23 +6,23 @@ import {
   type VueProsemirrorComponentAndProperties,
   type VueProsemirrorComponentOption,
   type VueProsemirrorComponentReturns,
-  type VueProsemirrorComponents,
+  type VueProsemirrorTypes,
   VueProsemirrorOptionsKey,
 } from "../options";
 
 /**
  * Resolves the component for the given ProseMirror node or mark.
  * @param node - The ProseMirror node or mark.
- * @param components - Mapping from node type to element or component.
+ * @param types - Mapping from node type to element or component.
  * @returns - The component to render the node or mark.
  */
 export function resolveProseComponent(
   node: ProsemirrorJSONCommon,
-  components: VueProsemirrorComponents,
+  types: VueProsemirrorTypes,
 ): VueProsemirrorComponentAndProperties {
   // translate type to component or element
   const option: VueProsemirrorComponentOption =
-    components[snakeCase(node.type)] ?? components[camelCase(node.type)] ?? kebabCase(node.type);
+    types[snakeCase(node.type)] ?? types[camelCase(node.type)] ?? kebabCase(node.type);
 
   // call option with node attributes if it's a function
   const r: VueProsemirrorComponentReturns = typeof option === "function" ? option(node.attrs ?? {}) : option;
@@ -38,7 +38,14 @@ export function resolveProseComponent(
   return typeof component === "string" ? [resolveComponent(component), properties] : [component, properties];
 }
 
-const ProsemirrorRender: Component<{ node: ProsemirrorJSONNode; mark?: number }> = defineComponent({
+interface ProsemirrorRenderProperties {
+  // curent prosemirror node
+  node: ProsemirrorJSONNode;
+  // mark index to render
+  mark?: number;
+}
+
+const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponent({
   name: "ProsemirrorRender",
   props: {
     // curent prosemirror node
@@ -47,7 +54,7 @@ const ProsemirrorRender: Component<{ node: ProsemirrorJSONNode; mark?: number }>
     mark: { type: Number, default: 0 },
   },
   setup(properties) {
-    const { components } = inject(VueProsemirrorOptionsKey, defaultOptions);
+    const { types } = inject(VueProsemirrorOptionsKey, defaultOptions);
 
     const { node, mark } = toRefs(properties);
 
@@ -56,7 +63,7 @@ const ProsemirrorRender: Component<{ node: ProsemirrorJSONNode; mark?: number }>
 
     // render the current mark
     if (markItem.value) {
-      const [component, properties_] = resolveProseComponent(markItem.value, components);
+      const [component, properties_] = resolveProseComponent(markItem.value, types);
       const markProperties = mergeProps(markItem.value.attrs ?? {}, properties_);
       // recurse the next mark for child
       const children = () => h(ProsemirrorRender, { node: node.value, mark: mark.value + 1 });
@@ -64,11 +71,11 @@ const ProsemirrorRender: Component<{ node: ProsemirrorJSONNode; mark?: number }>
     }
     // render text as is
     else if (node.value.type === "text") {
-      return () => node.value.text;
+      return () => h(Text, node.value.text);
     }
     // render the current node when marks are done
     else {
-      const [component, properties_] = resolveProseComponent(node.value, components);
+      const [component, properties_] = resolveProseComponent(node.value, types);
       const nodeProperties = mergeProps(
         node.value.attrs ?? {},
         properties_,

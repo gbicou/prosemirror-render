@@ -4,7 +4,7 @@ import PmMention from "../components/pm-mention.vue";
 import "../tailwind.css";
 
 useProsemirrorOptions({
-  components: {
+  types: {
     doc: ["div", { class: "bg-neutral-100 font-sans p-10" }],
     highlight: ["span", { class: "bg-red-300" }],
     mention: () => [PmMention, { class: "bg-blue-400 border-blue-800" }],

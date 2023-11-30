@@ -1,6 +1,6 @@
 // export types
 export type { ProsemirrorJSONNode } from "./prosemirror-json";
-export type { VueProsemirrorOptions, VueProsemirrorComponents } from "./options";
+export type { VueProsemirrorOptions, VueProsemirrorTypes } from "./options";
 
 // export plugin
 export { VueProsemirrorPlugin, VueProsemirrorPlugin as default } from "./plugin";

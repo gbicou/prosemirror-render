@@ -3,7 +3,7 @@ import { useProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } fr
 import PmMention from "../components/pm-mention.vue";
 
 useProsemirrorOptions({
-  components: {
+  types: {
     mention: () => PmMention,
   },
 });

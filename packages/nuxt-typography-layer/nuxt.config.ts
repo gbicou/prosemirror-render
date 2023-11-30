@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   extends: ["@nuxt-themes/typography"],
   modules: ["@bicou/prosemirror-render-nuxt", "@vueuse/nuxt"],
   prosemirrorRender: {
-    components: {
+    types: {
       heading: ({ level }) => [level ? `prose-h${level}` : "header", { level: undefined }],
       paragraph: "prose-p",
       code: "prose-code-inline",

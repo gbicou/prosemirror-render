@@ -2,7 +2,7 @@
 import { ProsemirrorRender, useProsemirrorOptions } from "@bicou/prosemirror-render-vue";
 
 useProsemirrorOptions({
-  components: {
+  types: {
     // pass fontFamily attribute to font-family style of a span
     textStyle: ({ fontFamily }) => ["span", { style: { fontFamily } }],
   },

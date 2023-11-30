@@ -1,10 +1,10 @@
 import { defineNuxtModule, addPlugin, createResolver, addTemplate, addComponent } from "@nuxt/kit";
 import serialize from "serialize-javascript";
-import type { VueProsemirrorComponents } from "@bicou/prosemirror-render-vue";
+import type { VueProsemirrorTypes } from "@bicou/prosemirror-render-vue";
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
-  components: VueProsemirrorComponents;
+  types: VueProsemirrorTypes;
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -14,7 +14,7 @@ export default defineNuxtModule<ModuleOptions>({
   },
   // Default configuration options of the Nuxt module
   defaults: {
-    components: {},
+    types: {},
   },
   setup(options, nuxt) {
     const resolver = createResolver(import.meta.url);

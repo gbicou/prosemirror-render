@@ -8,17 +8,17 @@ export type VueProsemirrorComponentReturns = VueProsemirrorComponent | VueProsem
 export type VueProsemirrorComponentFunction = (attributes: ProsemirrorJSONAttributes) => VueProsemirrorComponentReturns;
 export type VueProsemirrorComponentOption = string | VueProsemirrorComponentAndProperties | VueProsemirrorComponentFunction;
 
-export type VueProsemirrorComponents = Record<string, VueProsemirrorComponentOption>;
+export type VueProsemirrorTypes = Record<string, VueProsemirrorComponentOption>;
 
 export interface VueProsemirrorOptions {
-  /** Map node types to component names */
-  components: VueProsemirrorComponents;
+  /** Map ProseMirror node and mark types to Vue components and properties */
+  types: VueProsemirrorTypes;
 }
 
 export const VueProsemirrorOptionsKey: InjectionKey<VueProsemirrorOptions> = Symbol("prosemirror-options");
 
 export const defaultOptions: VueProsemirrorOptions = {
-  components: {
+  types: {
     doc: "div",
     heading: ({ level }) => [level ? `h${level}` : "header", { level: undefined }],
     paragraph: "p",

@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     [
       MyModule,
       {
-        components: {
+        types: {
           italic: () => ["span", { class: "italic" }],
         },
       },
