@@ -50,7 +50,7 @@ npm install @bicou/prosemirror-render-vue
 ### Vue plugin
 
 To use the plugin, you first need to import it into your Vue application.
-You can do this by adding the following lines to your main.ts file :
+You can do this by adding the following lines to your file :
 
 ```ts
 import { createApp } from "vue";
@@ -116,7 +116,7 @@ useProsemirrorOptions({
 
 ## Vnode attributes
 
-You can define additional attributes or properties by using an array :
+You can define additional attributes or properties by using a tuple of the element and the attributes :
 
 ```ts
 useProsemirrorOptions({
@@ -130,7 +130,7 @@ useProsemirrorOptions({
 <article lang="en"><p>The line.</p></article>
 ```
 
-This is useful when using CSS utilies framework like tailwind or unocss :
+This is useful when using CSS utilities framework like tailwind or unocss :
 
 ```ts
 useProsemirrorOptions({
