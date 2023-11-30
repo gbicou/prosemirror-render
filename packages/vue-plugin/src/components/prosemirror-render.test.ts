@@ -128,4 +128,32 @@ describe("component ProsemirrorRender", () => {
   it("renders an empty doc", () => {
     expect(vueEmpty.html()).toBe("<div></div>");
   });
+
+  const nodeMixedTextNodes: ProsemirrorJSONNode = {
+    type: "doc",
+    content: [
+      {
+        type: "heading",
+        attrs: { level: 2 },
+        content: [{ type: "text", text: "Simple" }],
+      },
+      {
+        type: "paragraph",
+        attrs: {
+          "data-test": "paragraph",
+        },
+        content: [
+          { type: "text", text: "This is a " },
+          { type: "text", marks: [{ type: "strong" }], text: "basic" },
+          { type: "text", text: " example." },
+        ],
+      },
+    ],
+  };
+  const vueMixedTextNodes = mount(ProsemirrorRender, { props: { node: nodeMixedTextNodes } });
+
+  it("renders mixed text and marks", () => {
+    expect(vueMixedTextNodes.get("[data-test=paragraph]").text()).toBe("This is a basic example.");
+    expect(vueMixedTextNodes.html()).toMatchSnapshot();
+  });
 });
