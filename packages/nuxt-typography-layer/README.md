@@ -1,73 +1,82 @@
-# Nuxt Layer Starter
+# @bicou/prosemirror-render-nuxt-typography
 
-Create Nuxt extendable layer with this GitHub template.
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
+[![Nuxt][nuxt-src]][nuxt-href]
+
+Nuxt layer to render [ProseMirror](https://prosemirror.net/) JSON data (from [Tiptap](https://tiptap.dev/) editor for example) through [Nuxt Typography](https://typography.nuxt.space/)
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-pnpm install
+pnpm install @bicou/prosemirror-render-nuxt-typography
 ```
 
-## Working on your theme
-
-Your theme is at the root of this repository, it is exactly like a regular Nuxt project, except you can publish it on NPM.
-
-The `.playground` directory should help you on trying your theme during development.
-
-Running `pnpm dev` will prepare and boot `.playground` directory, which imports your theme itself.
-
-## Distributing your theme
-
-Your Nuxt layer is shaped exactly the same as any other Nuxt project, except you can publish it on NPM.
-
-To do so, you only have to check if `files` in `package.json` are valid, then run:
-
-```bash
-npm publish --access public
-```
-
-Once done, your users will only have to run:
-
-```bash
-npm install --save your-theme
-```
+## Usage
 
 Then add the dependency to their `extends` in `nuxt.config`:
 
 ```ts
 defineNuxtConfig({
-  extends: 'your-theme'
+  extends: ['@bicou/prosemirror-render-nuxt-typography']
 })
 ```
 
-## Development Server
+Use the `ProsemirrorRender` component to render the prosemirror node:
 
-Start the development server on http://localhost:3000
+```vue
+<script setup lang="ts">
+// prosemirror document
+const document = {
+  type: "doc",
+  content: [
+    {
+      type: "heading",
+      attrs: { level: 2 },
+      content: [{ type: "text", text: "Simple" }],
+    },
+    {
+      type: "paragraph",
+      content: [
+        { type: "text", text: "This is a " },
+        { type: "text", marks: [{ type: "strong" }], text: "basic" },
+        { type: "text", text: " example." },
+      ],
+    },
+    // ...
+  ],
+};
+</script>
 
-```bash
-pnpm dev
+<template>
+  <!-- render document through nuxt typography -->
+  <prosemirror-render :node="document" />
+</template>
 ```
 
-## Production
+This example translates to:
 
-Build the application for production:
-
-```bash
-pnpm build
+```html 
+<div>
+  <prose-h2>Simple</prose-h2>
+  <prose-p>This is a <prose-strong>basic</prose-strong> example.</prose-p>
+</div>
 ```
 
-Or statically generate it with:
+Consult online demo : https://prosemirror-render-nuxt-typography.vercel.app
 
-```bash
-pnpm generate
-```
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/@bicou/prosemirror-render-nuxt-typography/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/@bicou/prosemirror-render-nuxt-typography
 
-Locally preview production build:
+[npm-downloads-src]: https://img.shields.io/npm/dm/@bicou/prosemirror-render-nuxt-typography.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/@bicou/prosemirror-render-nuxt-typography
 
-```bash
-pnpm preview
-```
+[license-src]: https://img.shields.io/npm/l/@bicou/prosemirror-render-nuxt-typography.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/@bicou/prosemirror-render-nuxt-typography
 
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
+[nuxt-href]: https://nuxt.com
