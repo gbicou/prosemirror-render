@@ -18,6 +18,7 @@
   "devDependencies": {
     "@bicou/prosemirror-render-nuxt-typography": "workspace:*",
     "nuxt": "^3.8.2",
-    "vue": "^3.3.9"
+    "vue": "^3.3.9",
+    "vue-router": "^4.2.5"
   }
 }
