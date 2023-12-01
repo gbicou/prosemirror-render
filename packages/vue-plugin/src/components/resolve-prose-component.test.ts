@@ -42,7 +42,7 @@ describe("resolveProseComponent", () => {
   });
 
   it("can use node attributes", () => {
-    expect(resolveProseComponent({ type: "heading", attrs: { level: 1 } }, types)).toStrictEqual(["h1", {}]);
+    expect(resolveProseComponent({ type: "heading", attrs: { level: 1 } }, types)).toStrictEqual(["h1", { level: 1 }]);
   });
 
   it("can returns properties", () => {

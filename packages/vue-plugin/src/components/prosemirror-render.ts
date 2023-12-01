@@ -1,6 +1,8 @@
 import {
   type Component,
   type PropType,
+  type VNodeChild,
+  type VNode,
   computed,
   defineComponent,
   h,
@@ -11,7 +13,7 @@ import {
   Text,
 } from "vue";
 import { camelCase, kebabCase, snakeCase } from "change-case";
-import type { ProsemirrorJSONCommon, ProsemirrorJSONNode } from "../prosemirror-json";
+import type { ProsemirrorJSONElement, ProsemirrorJSONNode } from "../prosemirror-json";
 import {
   VueProsemirrorOptionsKey,
   defaultOptions,
@@ -21,22 +23,24 @@ import {
 
 /**
  * Resolves the component for the given ProseMirror node or mark.
- * @param node - The ProseMirror node or mark.
+ * @param element - The ProseMirror node or mark.
  * @param types - Mapping from node type to element or component.
- * @returns - The component to render the node or mark.
+ * @returns - The component to render the node or mark and its properties.
  */
 export function resolveProseComponent(
-  node: ProsemirrorJSONCommon,
+  element: ProsemirrorJSONElement,
   types: VueProsemirrorTypes,
 ): VueProsemirrorComponentAndProperties {
-  // translate type to component or element
-  const option = types[snakeCase(node.type)] ?? types[camelCase(node.type)] ?? kebabCase(node.type);
+  // translate type to component or tag name
+  const option = types[snakeCase(element.type)] ?? types[camelCase(element.type)] ?? kebabCase(element.type);
 
   // call option with node attributes if it's a function
-  const result = typeof option === "function" ? option(node.attrs ?? {}) : option;
+  const result = typeof option === "function" ? option(element.attrs ?? {}) : option;
 
   const component = Array.isArray(result) ? result[0] : result;
-  const properties = Array.isArray(result) ? result[1] : {};
+
+  // merge element and returned properties
+  const properties = mergeProps(element.attrs ?? {}, Array.isArray(result) ? result[1] : {});
 
   // don't try to resolve the component if it looks like a DOM element name
   if (typeof component === "string" && !component.includes("-") && component === component.toLowerCase()) {
@@ -72,13 +76,24 @@ const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponen
     // point to the mark
     const markItem = computed(() => node.value.marks?.at(mark.value));
 
+    const render = (element: ProsemirrorJSONElement, children: () => VNodeChild): (() => VNode) => {
+      // resolve component and properties
+      const [component, properties] = resolveProseComponent(element, types);
+
+      // call children function if it's not a component
+      if (typeof component === "string") {
+        return () => h(component, properties, children() ?? undefined);
+      }
+
+      // render the component with element as a property
+      return () => h(component, mergeProps(properties, { node: element }), children);
+    };
+
     // render the current mark
     if (markItem.value) {
-      const [component, properties_] = resolveProseComponent(markItem.value, types);
-      const markProperties = mergeProps(markItem.value.attrs ?? {}, properties_);
       // recurse the next mark for child
-      const children = () => h(ProsemirrorRender, { node: node.value, mark: mark.value + 1 });
-      return () => h(component, markProperties, typeof component === "string" ? children() : children);
+      const child = () => h(ProsemirrorRender, { node: node.value, mark: mark.value + 1 });
+      return render(markItem.value, child);
     }
     // render text as is
     else if (node.value.type === "text") {
@@ -86,15 +101,9 @@ const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponen
     }
     // render the current node when marks are done
     else {
-      const [component, properties_] = resolveProseComponent(node.value, types);
-      const nodeProperties = mergeProps(
-        node.value.attrs ?? {},
-        properties_,
-        typeof component === "string" ? {} : { node: node.value },
-      );
       // children are the content of the node built by self
       const children = () => node.value.content?.map((child) => h(ProsemirrorRender, { node: child }));
-      return () => h(component, nodeProperties, typeof component === "string" ? children() : children);
+      return render(node.value, children);
     }
   },
 });
