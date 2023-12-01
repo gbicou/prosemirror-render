@@ -1,0 +1,502 @@
+{
+  "type": "doc",
+  "from": 0,
+  "to": 382,
+  "content": [
+    {
+      "type": "heading",
+      "from": 0,
+      "to": 45,
+      "attrs": {
+        "level": 3
+      },
+      "content": [
+        {
+          "type": "text",
+          "from": 1,
+          "to": 44,
+          "text": "Have you seen our tables? They are amazing!"
+        }
+      ]
+    },
+    {
+      "type": "bulletList",
+      "from": 45,
+      "to": 174,
+      "content": [
+        {
+          "type": "listItem",
+          "from": 46,
+          "to": 96,
+          "content": [
+            {
+              "type": "paragraph",
+              "from": 47,
+              "to": 95,
+              "content": [
+                {
+                  "type": "text",
+                  "from": 48,
+                  "to": 94,
+                  "text": "tables with rows, cells and headers (optional)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "from": 96,
+          "to": 132,
+          "content": [
+            {
+              "type": "paragraph",
+              "from": 97,
+              "to": 131,
+              "content": [
+                {
+                  "type": "text",
+                  "from": 98,
+                  "to": 110,
+                  "text": "support for "
+                },
+                {
+                  "type": "text",
+                  "from": 110,
+                  "to": 118,
+                  "marks": [
+                    {
+                      "type": "code"
+                    }
+                  ],
+                  "text": "colgroup"
+                },
+                {
+                  "type": "text",
+                  "from": 118,
+                  "to": 123,
+                  "text": " and "
+                },
+                {
+                  "type": "text",
+                  "from": 123,
+                  "to": 130,
+                  "marks": [
+                    {
+                      "type": "code"
+                    }
+                  ],
+                  "text": "rowspan"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "from": 132,
+          "to": 173,
+          "content": [
+            {
+              "type": "paragraph",
+              "from": 133,
+              "to": 172,
+              "content": [
+                {
+                  "type": "text",
+                  "from": 134,
+                  "to": 171,
+                  "text": "and even resizable columns (optional)"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "from": 174,
+      "to": 195,
+      "content": [
+        {
+          "type": "text",
+          "from": 175,
+          "to": 194,
+          "text": "Here is an example:"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "from": 195,
+      "to": 380,
+      "content": [
+        {
+          "type": "tableRow",
+          "from": 196,
+          "to": 221,
+          "content": [
+            {
+              "type": "tableHeader",
+              "from": 197,
+              "to": 205,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 198,
+                  "to": 204,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 199,
+                      "to": 203,
+                      "text": "Name"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableHeader",
+              "from": 205,
+              "to": 220,
+              "attrs": {
+                "colspan": 3,
+                "rowspan": 1,
+                "colwidth": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 206,
+                  "to": 219,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 207,
+                      "to": 218,
+                      "text": "Description"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "tableRow",
+          "from": 221,
+          "to": 274,
+          "content": [
+            {
+              "type": "tableCell",
+              "from": 222,
+              "to": 238,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 223,
+                  "to": 237,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 224,
+                      "to": 236,
+                      "text": "Cyndi Lauper"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "from": 238,
+              "to": 248,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 239,
+                  "to": 247,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 240,
+                      "to": 246,
+                      "text": "singer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "from": 248,
+              "to": 262,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 249,
+                  "to": 261,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 250,
+                      "to": 260,
+                      "text": "songwriter"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "from": 262,
+              "to": 273,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 263,
+                  "to": 272,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 264,
+                      "to": 271,
+                      "text": "actress"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "tableRow",
+          "from": 274,
+          "to": 328,
+          "content": [
+            {
+              "type": "tableCell",
+              "from": 275,
+              "to": 290,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 276,
+                  "to": 289,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 277,
+                      "to": 288,
+                      "text": "Marie Curie"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "from": 290,
+              "to": 303,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 291,
+                  "to": 302,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 292,
+                      "to": 301,
+                      "text": "scientist"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "from": 303,
+              "to": 314,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 304,
+                  "to": 313,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 305,
+                      "to": 312,
+                      "text": "chemist"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "from": 314,
+              "to": 327,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 315,
+                  "to": 326,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 316,
+                      "to": 325,
+                      "text": "physicist"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "tableRow",
+          "from": 328,
+          "to": 379,
+          "content": [
+            {
+              "type": "tableCell",
+              "from": 329,
+              "to": 346,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 330,
+                  "to": 345,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 331,
+                      "to": 344,
+                      "text": "Indira Gandhi"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "from": 346,
+              "to": 364,
+              "attrs": {
+                "colspan": 1,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 347,
+                  "to": 363,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 348,
+                      "to": 362,
+                      "text": "prime minister"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "from": 364,
+              "to": 378,
+              "attrs": {
+                "colspan": 2,
+                "rowspan": 1,
+                "colwidth": null,
+                "backgroundColor": null
+              },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "from": 365,
+                  "to": 377,
+                  "content": [
+                    {
+                      "type": "text",
+                      "from": 366,
+                      "to": 376,
+                      "text": "politician"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
