@@ -1,10 +1,13 @@
-import { defineNuxtModule, addPlugin, createResolver, addTemplate, addComponent, addImports } from "@nuxt/kit";
-import serialize from "serialize-javascript";
-import type { VueProsemirrorTypes } from "@bicou/prosemirror-render-vue";
+import { defineNuxtModule, addPlugin, createResolver, addComponent, addImports } from "@nuxt/kit";
+import type { VueProsemirrorOptions } from "@bicou/prosemirror-render-vue";
 
 // Module options TypeScript interface definition
-export interface ModuleOptions {
-  types: VueProsemirrorTypes;
+export interface ModuleOptions {}
+
+declare module "nuxt/schema" {
+  interface AppConfigInput {
+    prosemirror?: Partial<VueProsemirrorOptions>;
+  }
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -13,10 +16,8 @@ export default defineNuxtModule<ModuleOptions>({
     configKey: "prosemirrorRender",
   },
   // Default configuration options of the Nuxt module
-  defaults: {
-    types: {},
-  },
-  setup(options, nuxt) {
+  defaults: {},
+  setup() {
     const resolver = createResolver(import.meta.url);
 
     addComponent({
@@ -29,13 +30,6 @@ export default defineNuxtModule<ModuleOptions>({
       name: "provideProsemirrorOptions",
       from: "@bicou/prosemirror-render-vue",
     });
-
-    nuxt.options.alias["#prosemirror-options"] = addTemplate({
-      filename: "prosemirror-options.mjs",
-      getContents: () => {
-        return `export const options = ${serialize(options)};`;
-      },
-    }).dst;
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addPlugin(resolver.resolve("./runtime/plugin"));

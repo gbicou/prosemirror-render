@@ -10,7 +10,7 @@
 import type { ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
 
 const {
-  prosemirror: { shiki },
+  prosemirrorTypography: { shiki },
 } = useAppConfig();
 
 const properties = defineProps<{
