@@ -11,9 +11,9 @@ hero:
       text: Examples
       link: /prosemirror-examples
     - theme: alt
-      text: API Examples
+      text: Guide
       link: /prosemirror-examples
-
+      
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
