@@ -26,7 +26,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/gbicou/vue-prosemirror-render' }
+      { icon: 'github', link: 'https://github.com/gbicou/prosemirror-render' }
     ]
   },
   vite: {
