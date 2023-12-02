@@ -1,7 +1,5 @@
 # Vue plugin
 
-# @bicou/prosemirror-render-vue
-
 ## Installation
 
 To install the plugin, you can run the following command with your preferred package manager :
