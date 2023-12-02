@@ -1,9 +1,9 @@
 <template>
   <div>
-    <prosemirror-render :node="node" />
+    <prosemirror-render :node="book" />
   </div>
 </template>
 
 <script setup lang="ts">
-import node from "#examples/book.json";
+import book from "#examples/book.json";
 </script>

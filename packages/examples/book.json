@@ -8,7 +8,8 @@
       "from": 0,
       "to": 27,
       "attrs": {
-        "level": 1
+        "level": 1,
+        "id": "moby-dickor-the-whale"
       },
       "content": [
         {
@@ -53,7 +54,8 @@
       "from": 48,
       "to": 70,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-1-loomings"
       },
       "content": [
         {
@@ -298,7 +300,8 @@
       "from": 12255,
       "to": 12283,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-2-the-carpet-bag"
       },
       "content": [
         {
@@ -470,7 +473,8 @@
       "from": 20196,
       "to": 20225,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-3-the-spouter-inn"
       },
       "content": [
         {
@@ -1618,7 +1622,8 @@
       "from": 52188,
       "to": 52217,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-4-the-counterpane"
       },
       "content": [
         {
@@ -1725,7 +1730,8 @@
       "from": 61316,
       "to": 61339,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-5-breakfast"
       },
       "content": [
         {
@@ -1892,7 +1898,8 @@
       "from": 65511,
       "to": 65535,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-6-the-street"
       },
       "content": [
         {
@@ -2025,7 +2032,8 @@
       "from": 70330,
       "to": 70354,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-7-the-chapel"
       },
       "content": [
         {
@@ -2290,7 +2298,8 @@
       "from": 75703,
       "to": 75727,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-8-the-pulpit"
       },
       "content": [
         {
@@ -2397,7 +2406,8 @@
       "from": 81116,
       "to": 81140,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-9-the-sermon"
       },
       "content": [
         {
@@ -2800,7 +2810,8 @@
       "from": 100916,
       "to": 100945,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-10-a-bosom-friend"
       },
       "content": [
         {
@@ -2980,7 +2991,8 @@
       "from": 109623,
       "to": 109647,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-11-nightgown"
       },
       "content": [
         {
@@ -3048,7 +3060,8 @@
       "from": 113574,
       "to": 113601,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-12-biographical"
       },
       "content": [
         {
@@ -3185,7 +3198,8 @@
       "from": 118463,
       "to": 118489,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-13-wheelbarrow"
       },
       "content": [
         {
@@ -3430,7 +3444,8 @@
       "from": 128160,
       "to": 128184,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-14-nantucket"
       },
       "content": [
         {
@@ -3545,7 +3560,8 @@
       "from": 132502,
       "to": 132524,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-15-chowder"
       },
       "content": [
         {
@@ -3820,7 +3836,8 @@
       "from": 139102,
       "to": 139125,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-16-the-ship"
       },
       "content": [
         {
@@ -5168,7 +5185,8 @@
       "from": 169608,
       "to": 169634,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-17-the-ramadan"
       },
       "content": [
         {
@@ -5591,7 +5609,8 @@
       "from": 182256,
       "to": 182279,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-18-his-mark"
       },
       "content": [
         {
@@ -5992,7 +6011,8 @@
       "from": 189962,
       "to": 189988,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-19-the-prophet"
       },
       "content": [
         {
@@ -6548,7 +6568,8 @@
       "from": 196531,
       "to": 196555,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-20-all-astir"
       },
       "content": [
         {
@@ -6685,7 +6706,8 @@
       "from": 201694,
       "to": 201721,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-21-going-aboard"
       },
       "content": [
         {
@@ -7195,7 +7217,8 @@
       "from": 207854,
       "to": 207884,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-22-merry-christmas"
       },
       "content": [
         {
@@ -7500,7 +7523,8 @@
       "from": 217051,
       "to": 217079,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-23-the-lee-shore"
       },
       "content": [
         {
@@ -7568,7 +7592,8 @@
       "from": 219228,
       "to": 219255,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-24-the-advocate"
       },
       "content": [
         {
@@ -7938,7 +7963,8 @@
       "from": 228934,
       "to": 228959,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-25-postscript"
       },
       "content": [
         {
@@ -8006,7 +8032,8 @@
       "from": 230553,
       "to": 230587,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-26-knights-and-squires"
       },
       "content": [
         {
@@ -8100,7 +8127,8 @@
       "from": 237586,
       "to": 237620,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-27-knights-and-squires"
       },
       "content": [
         {
@@ -8267,7 +8295,8 @@
       "from": 247106,
       "to": 247125,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-28-ahab"
       },
       "content": [
         {
@@ -8374,7 +8403,8 @@
       "from": 255189,
       "to": 255229,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-29-enter-ahab-to-him-stubb"
       },
       "content": [
         {
@@ -8571,7 +8601,8 @@
       "from": 261753,
       "to": 261776,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-30-the-pipe"
       },
       "content": [
         {
@@ -8639,7 +8670,8 @@
       "from": 263355,
       "to": 263379,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-31-queen-mab"
       },
       "content": [
         {
@@ -8831,7 +8863,8 @@
       "from": 267801,
       "to": 267824,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-32-cetology"
       },
       "content": [
         {
@@ -10266,11 +10299,6 @@
     },
     {
       "type": "paragraph",
-      "from": 295883,
-      "to": 295885
-    },
-    {
-      "type": "paragraph",
       "from": 295885,
       "to": 297050,
       "content": [
@@ -10300,7 +10328,8 @@
       "from": 297660,
       "to": 297690,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-33-the-specksnyder"
       },
       "content": [
         {
@@ -10424,7 +10453,8 @@
       "from": 303482,
       "to": 303512,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-34-the-cabin-table"
       },
       "content": [
         {
@@ -10583,7 +10613,8 @@
       "from": 316179,
       "to": 316207,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-35-the-mast-head"
       },
       "content": [
         {
@@ -10822,7 +10853,8 @@
       "from": 330937,
       "to": 330968,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-36-the-quarter-deck"
       },
       "content": [
         {
@@ -11603,7 +11635,8 @@
       "from": 346805,
       "to": 346826,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-37-sunset"
       },
       "content": [
         {
@@ -11746,7 +11779,8 @@
       "from": 349577,
       "to": 349596,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-38-dusk"
       },
       "content": [
         {
@@ -11842,7 +11876,8 @@
       "from": 351669,
       "to": 351701,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-39-first-night-watch"
       },
       "content": [
         {
@@ -11977,7 +12012,8 @@
       "from": 353142,
       "to": 353177,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-40-midnight-forecastle"
       },
       "content": [
         {
@@ -13053,7 +13089,8 @@
       "from": 362053,
       "to": 362077,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-41-moby-dick"
       },
       "content": [
         {
@@ -13381,7 +13418,8 @@
       "from": 384026,
       "to": 384067,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-42-the-whiteness-of-the-whale"
       },
       "content": [
         {
@@ -13834,7 +13872,8 @@
       "from": 405176,
       "to": 405195,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-43-hark"
       },
       "content": [
         {
@@ -14019,7 +14058,8 @@
       "from": 406907,
       "to": 406931,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-44-the-chart"
       },
       "content": [
         {
@@ -14228,7 +14268,8 @@
       "from": 418946,
       "to": 418974,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-45-the-affidavit"
       },
       "content": [
         {
@@ -14637,7 +14678,8 @@
       "from": 439073,
       "to": 439096,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-46-surmises"
       },
       "content": [
         {
@@ -14731,7 +14773,8 @@
       "from": 445065,
       "to": 445093,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-47-the-mat-maker"
       },
       "content": [
         {
@@ -14929,7 +14972,8 @@
       "from": 450430,
       "to": 450463,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-48-the-first-lowering"
       },
       "content": [
         {
@@ -15642,7 +15686,8 @@
       "from": 472900,
       "to": 472924,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-49-the-hyena"
       },
       "content": [
         {
@@ -15775,7 +15820,8 @@
       "from": 477587,
       "to": 477632,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-50-ahabs-boat-and-crew-fedallah"
       },
       "content": [
         {
@@ -15895,7 +15941,8 @@
       "from": 483332,
       "to": 483363,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-51-the-spirit-spout"
       },
       "content": [
         {
@@ -16067,7 +16114,8 @@
       "from": 492022,
       "to": 492050,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-52-the-albatross"
       },
       "content": [
         {
@@ -16187,7 +16235,8 @@
       "from": 496076,
       "to": 496098,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-53-the-gam"
       },
       "content": [
         {
@@ -16399,7 +16448,8 @@
       "from": 505444,
       "to": 505478,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-54-the-town-hos-story"
       },
       "content": [
         {
@@ -17867,11 +17917,6 @@
     },
     {
       "type": "paragraph",
-      "from": 549891,
-      "to": 549893
-    },
-    {
-      "type": "paragraph",
       "from": 549893,
       "to": 550018,
       "content": [
@@ -17914,7 +17959,8 @@
       "from": 550411,
       "to": 550461,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-55-of-the-monstrous-pictures-of-whales"
       },
       "content": [
         {
@@ -18112,7 +18158,8 @@
       "from": 561349,
       "to": 561445,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-56-of-the-less-erroneous-pictures-of-whales-and-the-true-pictures-of-whaling-scenes"
       },
       "content": [
         {
@@ -18232,7 +18279,8 @@
       "from": 568932,
       "to": 569033,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-57-of-whales-in-paint-in-teeth-in-wood-in-sheet-iron-in-stone-in-mountains-in-stars"
       },
       "content": [
         {
@@ -18442,7 +18490,8 @@
       "from": 574506,
       "to": 574525,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-58-brit"
       },
       "content": [
         {
@@ -18614,7 +18663,8 @@
       "from": 580274,
       "to": 580294,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-59-squid"
       },
       "content": [
         {
@@ -18799,7 +18849,8 @@
       "from": 585626,
       "to": 585649,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-60-the-line"
       },
       "content": [
         {
@@ -18945,7 +18996,8 @@
       "from": 593844,
       "to": 593878,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-61-stubb-kills-a-whale"
       },
       "content": [
         {
@@ -19273,7 +19325,8 @@
       "from": 604956,
       "to": 604979,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-62-the-dart"
       },
       "content": [
         {
@@ -19354,7 +19407,8 @@
       "from": 608106,
       "to": 608131,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-63-the-crotch"
       },
       "content": [
         {
@@ -19435,7 +19489,8 @@
       "from": 610940,
       "to": 610969,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-64-stubbs-supper"
       },
       "content": [
         {
@@ -20218,7 +20273,8 @@
       "from": 627473,
       "to": 627507,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-65-the-whale-as-a-dish"
       },
       "content": [
         {
@@ -20342,7 +20398,8 @@
       "from": 632961,
       "to": 632994,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-66-the-shark-massacre"
       },
       "content": [
         {
@@ -20423,7 +20480,8 @@
       "from": 636586,
       "to": 636611,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-67-cutting-in"
       },
       "content": [
         {
@@ -20478,7 +20536,8 @@
       "from": 640788,
       "to": 640814,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-68-the-blanket"
       },
       "content": [
         {
@@ -20598,7 +20657,8 @@
       "from": 647568,
       "to": 647594,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-69-the-funeral"
       },
       "content": [
         {
@@ -20709,7 +20769,8 @@
       "from": 650084,
       "to": 650109,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-70-the-sphynx"
       },
       "content": [
         {
@@ -20868,7 +20929,8 @@
       "from": 655132,
       "to": 655167,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-71-the-jeroboams-story"
       },
       "content": [
         {
@@ -21261,7 +21323,8 @@
       "from": 668320,
       "to": 668350,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-72-the-monkey-rope"
       },
       "content": [
         {
@@ -21537,7 +21600,8 @@
       "from": 677631,
       "to": 677711,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-73-stubb-and-flask-kill-a-right-whale-and-then-have-a-talk-over-him"
       },
       "content": [
         {
@@ -22099,7 +22163,8 @@
       "from": 689264,
       "to": 689317,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-74-the-sperm-whales-headcontrasted-view"
       },
       "content": [
         {
@@ -22297,7 +22362,8 @@
       "from": 698360,
       "to": 698413,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-75-the-right-whales-headcontrasted-view"
       },
       "content": [
         {
@@ -22473,7 +22539,8 @@
       "from": 705181,
       "to": 705213,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-76-the-battering-ram"
       },
       "content": [
         {
@@ -22541,7 +22608,8 @@
       "from": 710243,
       "to": 710283,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-77-the-great-heidelburgh-tun"
       },
       "content": [
         {
@@ -22661,7 +22729,8 @@
       "from": 714049,
       "to": 714083,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-78-cistern-and-buckets"
       },
       "content": [
         {
@@ -22872,7 +22941,8 @@
       "from": 723347,
       "to": 723373,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-79-the-prairie"
       },
       "content": [
         {
@@ -22966,7 +23036,8 @@
       "from": 728732,
       "to": 728754,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-80-the-nut"
       },
       "content": [
         {
@@ -23073,7 +23144,8 @@
       "from": 733885,
       "to": 733927,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-81-the-pequod-meets-the-virgin"
       },
       "content": [
         {
@@ -23866,7 +23938,8 @@
       "from": 758320,
       "to": 758365,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-82-the-honor-and-glory-of-whaling"
       },
       "content": [
         {
@@ -23999,7 +24072,8 @@
       "from": 764829,
       "to": 764871,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-83-jonah-historically-regarded"
       },
       "content": [
         {
@@ -24097,7 +24171,8 @@
       "from": 769365,
       "to": 769391,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-84-pitchpoling"
       },
       "content": [
         {
@@ -24217,7 +24292,8 @@
       "from": 774055,
       "to": 774082,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-85-the-fountain"
       },
       "content": [
         {
@@ -24406,7 +24482,8 @@
       "from": 785526,
       "to": 785549,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-86-the-tail"
       },
       "content": [
         {
@@ -24634,7 +24711,8 @@
       "from": 795963,
       "to": 795994,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-87-the-grand-armada"
       },
       "content": [
         {
@@ -25139,7 +25217,8 @@
       "from": 823667,
       "to": 823707,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-88-schools-and-schoolmasters"
       },
       "content": [
         {
@@ -25315,7 +25394,8 @@
       "from": 830784,
       "to": 830823,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-89-fast-fish-and-loose-fish"
       },
       "content": [
         {
@@ -25552,7 +25632,8 @@
       "from": 838970,
       "to": 838999,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-90-heads-or-tails"
       },
       "content": [
         {
@@ -25852,7 +25933,8 @@
       "from": 844875,
       "to": 844919,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-91-the-pequod-meets-the-rose-bud"
       },
       "content": [
         {
@@ -26631,7 +26713,8 @@
       "from": 858977,
       "to": 859001,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-92-ambergris"
       },
       "content": [
         {
@@ -26738,7 +26821,8 @@
       "from": 864501,
       "to": 864528,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-93-the-castaway"
       },
       "content": [
         {
@@ -26970,7 +27054,8 @@
       "from": 873763,
       "to": 873799,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-94-a-squeeze-of-the-hand"
       },
       "content": [
         {
@@ -27155,7 +27240,8 @@
       "from": 881077,
       "to": 881103,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-95-the-cassock"
       },
       "content": [
         {
@@ -27223,7 +27309,8 @@
       "from": 883902,
       "to": 883930,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-96-the-try-works"
       },
       "content": [
         {
@@ -27412,7 +27499,8 @@
       "from": 894164,
       "to": 894187,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-97-the-lamp"
       },
       "content": [
         {
@@ -27467,7 +27555,8 @@
       "from": 895518,
       "to": 895561,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-98-stowing-down-and-clearing-up"
       },
       "content": [
         {
@@ -27621,7 +27710,8 @@
       "from": 901341,
       "to": 901368,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-99-the-doubloon"
       },
       "content": [
         {
@@ -27923,7 +28013,8 @@
       "from": 914704,
       "to": 914731,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-100-leg-and-arm"
       },
       "content": [
         {
@@ -27939,7 +28030,8 @@
       "from": 914731,
       "to": 914795,
       "attrs": {
-        "level": 3
+        "level": 3,
+        "id": "the-pequod-of-nantucket-meets-the-samuel-enderby-of-london"
       },
       "content": [
         {
@@ -28518,7 +28610,8 @@
       "from": 929610,
       "to": 929638,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-101-the-decanter"
       },
       "content": [
         {
@@ -28703,7 +28796,8 @@
       "from": 939538,
       "to": 939578,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-102-a-bower-in-the-arsacides"
       },
       "content": [
         {
@@ -28901,7 +28995,8 @@
       "from": 948623,
       "to": 948674,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-103-measurement-of-the-whales-skeleton"
       },
       "content": [
         {
@@ -29060,7 +29155,8 @@
       "from": 953832,
       "to": 953864,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-104-the-fossil-whale"
       },
       "content": [
         {
@@ -29219,7 +29315,8 @@
       "from": 962213,
       "to": 962280,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-105-does-the-whales-magnitude-diminishwill-he-perish"
       },
       "content": [
         {
@@ -29430,7 +29527,8 @@
       "from": 971293,
       "to": 971319,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-106-ahabs-leg"
       },
       "content": [
         {
@@ -29524,7 +29622,8 @@
       "from": 976753,
       "to": 976782,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-107-the-carpenter"
       },
       "content": [
         {
@@ -29635,7 +29734,8 @@
       "from": 982986,
       "to": 983024,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-108-ahab-and-the-carpenter"
       },
       "content": [
         {
@@ -29651,7 +29751,8 @@
       "from": 983024,
       "to": 983053,
       "attrs": {
-        "level": 3
+        "level": 3,
+        "id": "the-deckfirst-night-watch"
       },
       "content": [
         {
@@ -30373,7 +30474,8 @@
       "from": 991552,
       "to": 991598,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-109-ahab-and-starbuck-in-the-cabin"
       },
       "content": [
         {
@@ -30649,7 +30751,8 @@
       "from": 996668,
       "to": 996706,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-110-queequeg-in-his-coffin"
       },
       "content": [
         {
@@ -30912,7 +31015,8 @@
       "from": 1009241,
       "to": 1009268,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-111-the-pacific"
       },
       "content": [
         {
@@ -30980,7 +31084,8 @@
       "from": 1011751,
       "to": 1011781,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-112-the-blacksmith"
       },
       "content": [
         {
@@ -31117,7 +31222,8 @@
       "from": 1017309,
       "to": 1017334,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-113-the-forge"
       },
       "content": [
         {
@@ -31531,7 +31637,8 @@
       "from": 1024181,
       "to": 1024207,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-114-the-gilder"
       },
       "content": [
         {
@@ -31677,7 +31784,8 @@
       "from": 1027955,
       "to": 1028000,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-115-the-pequod-meets-the-bachelor"
       },
       "content": [
         {
@@ -31892,7 +32000,8 @@
       "from": 1033122,
       "to": 1033153,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-116-the-dying-whale"
       },
       "content": [
         {
@@ -31999,7 +32108,8 @@
       "from": 1036121,
       "to": 1036152,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-117-the-whale-watch"
       },
       "content": [
         {
@@ -32210,7 +32320,8 @@
       "from": 1038668,
       "to": 1038696,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-118-the-quadrant"
       },
       "content": [
         {
@@ -32381,7 +32492,8 @@
       "from": 1043722,
       "to": 1043749,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-119-the-candles"
       },
       "content": [
         {
@@ -32928,7 +33040,8 @@
       "from": 1057768,
       "to": 1057833,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-120-the-deck-towards-the-end-of-the-first-night-watch"
       },
       "content": [
         {
@@ -33040,7 +33153,8 @@
       "from": 1058805,
       "to": 1058854,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-121-midnightthe-forecastle-bulwarks"
       },
       "content": [
         {
@@ -33143,7 +33257,8 @@
       "from": 1062248,
       "to": 1062301,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-122-midnight-aloftthunder-and-lightning"
       },
       "content": [
         {
@@ -33213,7 +33328,8 @@
       "from": 1062545,
       "to": 1062571,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-123-the-musket"
       },
       "content": [
         {
@@ -33449,7 +33565,8 @@
       "from": 1069354,
       "to": 1069380,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-124-the-needle"
       },
       "content": [
         {
@@ -33738,7 +33855,8 @@
       "from": 1076326,
       "to": 1076358,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-125-the-log-and-line"
       },
       "content": [
         {
@@ -34131,7 +34249,8 @@
       "from": 1082499,
       "to": 1082528,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-126-the-life-buoy"
       },
       "content": [
         {
@@ -34394,7 +34513,8 @@
       "from": 1090023,
       "to": 1090047,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-127-the-deck"
       },
       "content": [
         {
@@ -34731,7 +34851,8 @@
       "from": 1093961,
       "to": 1094004,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-128-the-pequod-meets-the-rachel"
       },
       "content": [
         {
@@ -35045,7 +35166,8 @@
       "from": 1101820,
       "to": 1101845,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-129-the-cabin"
       },
       "content": [
         {
@@ -35225,7 +35347,8 @@
       "from": 1104863,
       "to": 1104886,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-130-the-hat"
       },
       "content": [
         {
@@ -35436,7 +35559,8 @@
       "from": 1114483,
       "to": 1114527,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-131-the-pequod-meets-the-delight"
       },
       "content": [
         {
@@ -35625,7 +35749,8 @@
       "from": 1116968,
       "to": 1116996,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-132-the-symphony"
       },
       "content": [
         {
@@ -35888,7 +36013,8 @@
       "from": 1125760,
       "to": 1125795,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-133-the-chasefirst-day"
       },
       "content": [
         {
@@ -36584,7 +36710,8 @@
       "from": 1146137,
       "to": 1146173,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-134-the-chasesecond-day"
       },
       "content": [
         {
@@ -37296,7 +37423,8 @@
       "from": 1164740,
       "to": 1164776,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "chapter-135-the-chasethird-day"
       },
       "content": [
         {
@@ -38220,7 +38348,8 @@
       "from": 1189820,
       "to": 1189830,
       "attrs": {
-        "level": 2
+        "level": 2,
+        "id": "epilogue"
       },
       "content": [
         {
@@ -38236,7 +38365,8 @@
       "from": 1189830,
       "to": 1189879,
       "attrs": {
-        "level": 3
+        "level": 3,
+        "id": "and-i-only-am-escaped-alone-to-tell-thee-job"
       },
       "content": [
         {
