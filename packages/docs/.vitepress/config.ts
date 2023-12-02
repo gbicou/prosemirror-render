@@ -13,10 +13,22 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/prosemirror-examples' }
+      { text: 'Vue plugin', link: '/vue-plugin/' },
+      { text: 'Nuxt module', link: '/nuxt-module/' },
+      { text: 'Nuxt typography layer', link: '/nuxt-typography-layer/' },
     ],
 
     sidebar: [
+      {
+        text: 'Introduction',
+        link: '/introduction',
+      },
+      {
+        text: 'Vue plugin',
+        items: [
+          { text: 'Examples', link: '/prosemirror-examples' },
+        ]
+      },
       {
         text: 'Examples',
         items: [

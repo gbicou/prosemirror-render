@@ -8,10 +8,16 @@ hero:
   tagline: "A Vue3 plugin to render ProseMirror json data with components"
   actions:
     - theme: brand
-      text: Examples
-      link: /prosemirror-examples
+      text: Vue plugin
+      link: /vue-plugin/
+    - theme: brand
+      text: Nuxt module
+      link: /nuxt-module/
+    - theme: brand
+      text: Nuxt typography layer
+      link: /nuxt-typography-layer/
     - theme: alt
-      text: Guide
+      text: Examples
       link: /prosemirror-examples
       
 features:
