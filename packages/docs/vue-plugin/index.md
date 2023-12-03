@@ -23,22 +23,7 @@ import ProsemirrorPlugin from "@bicou/prosemirror-render-vue";
 createApp(App).use(ProsemirrorPlugin).mount("#app");
 ```
 
-This adds the `ProsemirrorRender` component to the Vue application with defaults types map configuration.
-
-### ProsemirrorRender component
-
-When you have to render a ProseMirror JSON content, you call the component with the `node` property :
-
-```vue
-<script setup>
-// retrieved from where you stored the editor content  
-const node = {...};
-</script>
-
-<template>
-  <prosemirror-render :node="node" />
-</template>
-```
+This adds the [`ProsemirrorRender`](prosemirror-render.md) component to the Vue application with defaults types map configuration.
 
 ## Configuration
 

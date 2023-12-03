@@ -7,7 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/prosemirror-render/',
-  title: "Prosemirror render",
+  title: "ProsemirrorRender",
   description: "A Vue3+Nuxt plugin to render ProseMirror json data with components",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -25,8 +25,9 @@ export default defineConfig({
       },
       {
         text: 'Vue plugin',
+        link : '/vue-plugin/',
         items: [
-          { text: 'Examples', link: '/prosemirror-examples' },
+          { text: 'ProsemirrorRender', link: '/vue-plugin/prosemirror-render' },
         ]
       },
       {
