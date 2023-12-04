@@ -15,7 +15,7 @@
   "devDependencies": {
     "nuxt": "^3.8.2",
     "postcss-nesting": "^12.0.1",
-    "vue": "^3.3.9",
+    "vue": "^3.3.10",
     "vue-router": "^4.2.5"
   }
 }

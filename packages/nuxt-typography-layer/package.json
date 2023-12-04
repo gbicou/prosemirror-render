@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "nuxt": "^3.8.2",
-    "vue": "^3.3.9"
+    "vue": "^3.3.10"
   },
   "publishConfig": {
     "access": "public"

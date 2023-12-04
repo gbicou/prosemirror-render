@@ -41,7 +41,7 @@
     "@nuxt/test-utils": "^3.8.1",
     "nuxt": "^3.8.2",
     "vitest": "^0.34.6",
-    "vue": "^3.3.9"
+    "vue": "^3.3.10"
   },
   "publishConfig": {
     "access": "public"
