@@ -32,7 +32,7 @@
         "./packages/nuxt-typography"
       ],
       "#examples/*": [
-        "./packages/examples/*"
+        "./examples/*"
       ]
     }
   }

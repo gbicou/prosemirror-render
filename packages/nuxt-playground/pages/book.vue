@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import node from "#examples/book.json";
+import node from "#examples/documents/book.json";
 </script>

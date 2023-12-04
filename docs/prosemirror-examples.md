@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import helloWorld from "#examples/hello-world.json";
+import helloWorld from "#examples/documents/hello-world.json";
 </script>
 
 # ProseMirror Examples

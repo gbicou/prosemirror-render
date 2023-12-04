@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [VueRouter(), vue()],
   resolve: {
     alias: {
-      "#examples": resolve(__dirname, "../examples"),
+      "#examples": resolve(__dirname, "../../examples"),
     },
   },
 });

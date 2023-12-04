@@ -7,8 +7,8 @@
 </template>
 
 <script setup lang="ts">
-import basic from "#examples/basic.json";
-import helloWorld from "#examples/hello-world.json";
+import basic from "#examples/documents/basic.json";
+import helloWorld from "#examples/documents/hello-world.json";
 
 const link = {
   type: "doc",

@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import basic from "#examples/basic.json";
+import basic from "#examples/documents/basic.json";
 </script>

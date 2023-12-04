@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   alias: {
     "@bicou/prosemirror-render-vue": "../vue-plugin/src/index.ts",
     "@bicou/prosemirror-render-nuxt": "../nuxt-module/src/module.ts",
-    "#examples": "../examples",
+    "#examples": "../../examples",
   },
   devtools: { enabled: true },
 });
