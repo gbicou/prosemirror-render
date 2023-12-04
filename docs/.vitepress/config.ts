@@ -36,7 +36,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/gbicou/prosemirror-render' }
-    ]
+    ],
+
+    search: {
+      provider: 'local'
+    }
   },
   vite: {
     resolve: {
