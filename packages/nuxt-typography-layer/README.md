@@ -7,6 +7,9 @@
 
 Nuxt layer to render [ProseMirror](https://prosemirror.net/) JSON data (from [Tiptap](https://tiptap.dev/) editor for example) through [Nuxt Typography](https://typography.nuxt.space/)
 
+- [✨ &nbsp;Release Notes](/CHANGELOG.md)
+- [📖 &nbsp;Documentation](https://gbicou.github.io/prosemirror-render/nuxt-typography-layer/)
+
 ## Setup
 
 Make sure to install the dependencies:

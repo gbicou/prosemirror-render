@@ -10,20 +10,8 @@ This page demonstrates the basics of ProsemirrorRender component.
 
 **Input**
 
-```js-vue
-const helloWorld = {{ helloWorld }};
-```
-
-```vue
-<prosemirror-render :node="helloWorld" />
-```
+<<< @/../examples/documents/hello-world.json{json}
 
 **Output**
-
-```html
-<div>
-    <p>Hello world!</p>
-</div>
-```
 
 <prosemirror-render :node="helloWorld" />

@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   base: '/prosemirror-render/',
   title: "ProsemirrorRender",
-  description: "A Vue3+Nuxt plugin to render ProseMirror json data with components",
+  description: "A Vue plugin and Nuxt module to render ProseMirror json data with components",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -25,17 +25,31 @@ export default defineConfig({
       },
       {
         text: 'Vue plugin',
-        link : '/vue-plugin/',
         items: [
-          { text: 'ProsemirrorRender', link: '/vue-plugin/prosemirror-render' },
+          { text: 'Quick start', link: '/vue-plugin/' },
+          { text: 'Configuration', link: '/vue-plugin/configuration' },
         ]
       },
+      {
+        text: 'Nuxt module',
+        items: [
+          { text: 'Quick start', link: '/nuxt-module/' },
+        ]
+      },
+      {
+        text: 'Nuxt typography layer',
+        items: [
+          { text: 'Quick start', link: '/nuxt-typography-layer/' },
+        ]
+      },
+      /*
       {
         text: 'Examples',
         items: [
           { text: 'Examples', link: '/prosemirror-examples' },
         ]
       }
+      */
     ],
 
     socialLinks: [
