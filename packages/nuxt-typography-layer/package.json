@@ -9,6 +9,7 @@
     "url": "https://github.com/gbicou/prosemirror-render.git",
     "directory": "packages/nuxt-typography-layer"
   },
+  "homepage": "https://gbicou.github.io/prosemirror-render/nuxt-typography-layer/",
   "type": "module",
   "main": "./nuxt.config.ts",
   "files": [

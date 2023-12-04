@@ -9,6 +9,7 @@
     "url": "https://github.com/gbicou/prosemirror-render.git",
     "directory": "packages/vue-plugin"
   },
+  "homepage": "https://gbicou.github.io/prosemirror-render/vue-plugin/",
   "type": "module",
   "exports": {
     ".": {

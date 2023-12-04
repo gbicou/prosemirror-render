@@ -9,6 +9,7 @@
     "url": "https://github.com/gbicou/prosemirror-render.git",
     "directory": "packages/nuxt-module"
   },
+  "homepage": "https://gbicou.github.io/prosemirror-render/nuxt-module/",
   "type": "module",
   "exports": {
     ".": {

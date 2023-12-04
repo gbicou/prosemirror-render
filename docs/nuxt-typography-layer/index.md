@@ -32,3 +32,44 @@ export default defineNuxtConfig({
 You can override the types map the same way as for the [Nuxt module configuration](../nuxt-module/index.md#configuration).
 
 You can configure the typography layer as described in [its documentation](https://typography.nuxt.space/#configuration).
+
+## Example
+
+::: code-group
+
+```json [document]
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Simple" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "This is a " },
+        { "type": "text", "marks": [{ "type": "strong" }], "text": "basic" },
+        { "type": "text", "text": " example." }
+      ]
+    }
+  ]
+}
+```
+
+```vue [output equivalent]
+<template>
+  <div>
+    <prose-h2>Simple</prose-h2>
+    <prose-p>This is a <prose-strong>basic</prose-strong> example.</prose-p>
+  </div>
+</template>
+```
+
+### Demo
+
+The playground of this layer is deployed at vercel here:
+
+https://prosemirror-render-nuxt-typography.vercel.app
+

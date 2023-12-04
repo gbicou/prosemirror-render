@@ -2,6 +2,9 @@
 
 Monorepo for rendering ProseMirror JSON data with Vue and Nuxt
 
+[📖 &nbsp;Documentation](https://gbicou.github.io/prosemirror-render/)
+
+
 ## Packages
 
 
