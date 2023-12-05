@@ -143,9 +143,9 @@ importers:
         specifier: ^10.6.1
         version: 10.6.1(nuxt@3.8.2)(rollup@3.29.4)(vue@3.3.10)
     optionalDependencies:
-      shiki-es:
-        specifier: ^0.14.0
-        version: 0.14.0
+      shikiji:
+        specifier: ^0.7.6
+        version: 0.7.6
     devDependencies:
       nuxt:
         specifier: ^3.8.2
@@ -162,9 +162,9 @@ importers:
       '@vueuse/nuxt':
         specifier: ^10.6.1
         version: 10.6.1(nuxt@3.8.2)(vue@3.3.10)
-      shiki-es:
-        specifier: ^0.14.0
-        version: 0.14.0
+      shikiji:
+        specifier: ^0.7.6
+        version: 0.7.6
     devDependencies:
       '@bicou/prosemirror-render-nuxt-typography':
         specifier: workspace:*
@@ -9415,11 +9415,6 @@ packages:
 
   /shell-quote@1.8.1:
     resolution: {integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==}
-
-  /shiki-es@0.14.0:
-    resolution: {integrity: sha512-e+/aueHx0YeIEut6RXC6K8gSf0PykwZiHD7q7AHtpTW8Kd8TpFUIWqTwhAnrGjOyOMyrwv+syr5WPagMpDpVYQ==}
-    requiresBuild: true
-    dev: false
 
   /shikiji-transformers@0.7.6:
     resolution: {integrity: sha512-yTp+7JMD/aXbV9ndn14eo9IK/UNt8iDsLNyqlOmCtcldlkqWE9T2YKAlOHOTVaeDfYWUWZa2EgSXb/CBfepBrw==}

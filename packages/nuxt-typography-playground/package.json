@@ -13,7 +13,7 @@
   "dependencies": {
     "@vueuse/core": "^10.6.1",
     "@vueuse/nuxt": "^10.6.1",
-    "shiki-es": "^0.14.0"
+    "shikiji": "^0.7.6"
   },
   "devDependencies": {
     "@bicou/prosemirror-render-nuxt-typography": "workspace:*",

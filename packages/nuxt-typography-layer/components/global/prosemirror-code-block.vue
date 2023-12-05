@@ -25,12 +25,12 @@ const shikiEnable = computed(() => shiki && language.value);
 
 const shikiHighlighter = computedAsync(async () => {
   if (shikiEnable.value) {
-    const { getHighlighter } = await import("shiki-es");
-    return await getHighlighter({ theme: shiki.theme, langs: [language.value] });
+    const { getHighlighter } = await import("shikiji");
+    return await getHighlighter({ themes: [shiki.theme], langs: [language.value] });
   }
 });
 
 const shikiHtml = computed(() => {
-  return shikiHighlighter.value?.codeToHtml(code.value, { lang: language.value });
+  return shikiHighlighter.value?.codeToHtml(code.value, { lang: language.value, theme: shiki.theme });
 });
 </script>

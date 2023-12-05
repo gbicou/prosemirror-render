@@ -27,7 +27,7 @@
     "@vueuse/nuxt": "^10.6.1"
   },
   "optionalDependencies": {
-    "shiki-es": "^0.14.0"
+    "shikiji": "^0.7.6"
   },
   "devDependencies": {
     "nuxt": "^3.8.2",
