@@ -1,5 +1,14 @@
 # @bicou/prosemirror-render-nuxt
 
+## 0.0.3
+
+### Patch Changes
+
+- [`404da9f`](https://github.com/gbicou/prosemirror-render/commit/404da9f3dcd1d9c8059bcc770fe1eb2c8a1d4217) Thanks [@gbicou](https://github.com/gbicou)! - Use app.config instead of nuxt.config to define types
+
+- Updated dependencies [[`a0bd804`](https://github.com/gbicou/prosemirror-render/commit/a0bd80439351ce96a57d76c7bac45bda3d54ae36)]:
+  - @bicou/prosemirror-render-vue@0.0.3
+
 ## 0.0.2
 
 ### Patch Changes
