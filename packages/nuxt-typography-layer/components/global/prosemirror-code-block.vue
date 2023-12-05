@@ -8,6 +8,7 @@
 
 <script setup lang="ts">
 import type { ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
+import { computedAsync } from "@vueuse/core";
 
 const {
   prosemirrorTypography: { shiki },

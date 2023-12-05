@@ -11,12 +11,10 @@
     "preview": "nuxt preview"
   },
   "dependencies": {
-    "@vueuse/core": "^10.6.1",
-    "@vueuse/nuxt": "^10.6.1",
+    "@bicou/prosemirror-render-nuxt-typography": "workspace:*",
     "shikiji": "^0.7.6"
   },
   "devDependencies": {
-    "@bicou/prosemirror-render-nuxt-typography": "workspace:*",
     "nuxt": "^3.8.2",
     "vue": "^3.3.10",
     "vue-router": "^4.2.5"

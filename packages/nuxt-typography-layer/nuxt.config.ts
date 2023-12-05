@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   extends: ["@nuxt-themes/typography"],
-  modules: ["@bicou/prosemirror-render-nuxt", "@vueuse/nuxt"],
+  modules: ["@bicou/prosemirror-render-nuxt"],
 });
