@@ -1,3 +1,4 @@
+// @vitest-environment happy-dom
 import { mount } from "@vue/test-utils";
 import ProsemirrorRender from "./prosemirror-render";
 import { describe, it, expect } from "vitest";
