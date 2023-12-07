@@ -10,7 +10,8 @@ import {
   mergeProps,
   resolveComponent,
   toRefs,
-  Text, Comment,
+  Text,
+  Comment,
 } from "vue";
 import { camelCase, kebabCase, snakeCase } from "change-case";
 import type { ProsemirrorJSONElement, ProsemirrorJSONNode } from "../prosemirror-json";
@@ -18,26 +19,31 @@ import {
   VueProsemirrorOptionsKey,
   defaultOptions,
   type VueProsemirrorComponentAndProperties,
-  type VueProsemirrorTypes,
+  type VueProsemirrorOptions,
 } from "../options";
 
 /**
  * Resolves the component for the given ProseMirror node or mark.
  * @param element - The ProseMirror node or mark.
- * @param types - Mapping from node type to element or component.
+ * @param options - Plugin options.
  * @returns - The component to render the node or mark and its properties.
  */
 export function resolveProseComponent(
   element: ProsemirrorJSONElement,
-  types: VueProsemirrorTypes,
+  options: VueProsemirrorOptions,
 ): VueProsemirrorComponentAndProperties {
-  // translate type to component or tag name
-  const option = types[snakeCase(element.type)] ?? types[camelCase(element.type)] ?? kebabCase(element.type);
+  // try to find a match in types map by snake or camel case
+  const option = options.types[snakeCase(element.type)] ?? options.types[camelCase(element.type)];
 
   // call option with node attributes if it's a function
   const result = typeof option === "function" ? option(element.attrs ?? {}) : option;
 
-  const component = Array.isArray(result) ? result[0] : result;
+  // not match found and global skipping is enabled or skipped from types map
+  if (result === false || (result === undefined && options.skipUnknown)) {
+    return [false, {}];
+  }
+
+  const component = (Array.isArray(result) ? result[0] : result) ?? kebabCase(element.type);
 
   // merge element and returned properties
   const properties = mergeProps(element.attrs ?? {}, Array.isArray(result) ? result[1] : {});
@@ -69,7 +75,7 @@ const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponen
     mark: { type: Number, default: 0 },
   },
   setup(properties) {
-    const { types } = inject(VueProsemirrorOptionsKey, defaultOptions);
+    const options = inject(VueProsemirrorOptionsKey, defaultOptions);
 
     const { node, mark } = toRefs(properties);
 
@@ -78,16 +84,16 @@ const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponen
 
     const render = (element: ProsemirrorJSONElement, children: () => VNodeChild): (() => VNode) => {
       // resolve component and properties
-      const [component, properties] = resolveProseComponent(element, types);
-
-      // call children function if it's not a component
-      if (typeof component === "string") {
-        return () => h(component, properties, children() ?? undefined);
-      }
+      const [component, properties] = resolveProseComponent(element, options);
 
       // skip when false
       if (component === false) {
         return () => h(Comment, ` prosemirror type '${element.type}' skipped `);
+      }
+
+      // call children function if it's not a component
+      if (typeof component === "string") {
+        return () => h(component, properties, children() ?? undefined);
       }
 
       // render the component with element as a property

@@ -3,9 +3,14 @@ import { mount } from "@vue/test-utils";
 import ProsemirrorRender from "./prosemirror-render";
 import { describe, it, expect } from "vitest";
 import { ProsemirrorJSONNode } from "../prosemirror-json";
-import { VueProsemirrorOptionsKey } from "../options";
+import { defaultOptions, VueProsemirrorOptionsKey } from "../options";
+import defu from "defu";
 
 describe("component ProsemirrorRender", () => {
+  it("exists", () => {
+    expect(ProsemirrorRender).toBeTruthy();
+  });
+
   const nodeSimple: ProsemirrorJSONNode = {
     type: "doc",
     attrs: {
@@ -26,13 +31,10 @@ describe("component ProsemirrorRender", () => {
       },
     ],
   };
-  const vueSimple = mount(ProsemirrorRender, { props: { node: nodeSimple } });
-
-  it("exists", () => {
-    expect(ProsemirrorRender).toBeTruthy();
-  });
 
   it("renders simple node", () => {
+    const vueSimple = mount(ProsemirrorRender, { props: { node: nodeSimple } });
+
     expect(vueSimple.get("[data-test=doc]").element.tagName).toBe("DIV");
     expect(vueSimple.get("[data-test=doc]").element.children).toHaveLength(1);
 
@@ -40,10 +42,14 @@ describe("component ProsemirrorRender", () => {
     expect(vueSimple.get("[data-test=paragraph]").text()).toBe("content");
 
     expect(vueSimple.html()).toMatchSnapshot();
+
+    vueSimple.unmount();
   });
 
   it("don't pollute DOM with stringified object", () => {
+    const vueSimple = mount(ProsemirrorRender, { props: { node: nodeSimple } });
     expect(vueSimple.html()).not.toContain("object Object");
+    vueSimple.unmount();
   });
 
   const nodeSimpleMark: ProsemirrorJSONNode = {
@@ -74,14 +80,17 @@ describe("component ProsemirrorRender", () => {
       },
     ],
   };
-  const vueSimpleMark = mount(ProsemirrorRender, { props: { node: nodeSimpleMark } });
 
   it("renders simple mark", () => {
+    const vueSimpleMark = mount(ProsemirrorRender, { props: { node: nodeSimpleMark } });
+
     expect(vueSimpleMark.get("[data-test=paragraph]").text()).toBe("content");
     expect(vueSimpleMark.get("[data-test=bold]").text()).toBe("content");
 
     expect(vueSimpleMark.text()).toContain("content");
     expect(vueSimpleMark.html()).toMatchSnapshot();
+
+    vueSimpleMark.unmount();
   });
 
   const nodeDoubleMark: ProsemirrorJSONNode = {
@@ -112,23 +121,25 @@ describe("component ProsemirrorRender", () => {
       },
     ],
   };
-  const vueDoubleMark = mount(ProsemirrorRender, { props: { node: nodeDoubleMark } });
 
   it("renders marks in order", () => {
+    const vueDoubleMark = mount(ProsemirrorRender, { props: { node: nodeDoubleMark } });
     expect(vueDoubleMark.get("[data-test=bold]").get("[data-test=italic]")).toBeDefined();
     expect(vueDoubleMark.get("[data-test=bold]").get("[data-test=italic]").text()).toBe("content");
 
     expect(vueDoubleMark.text()).toContain("content");
     expect(vueDoubleMark.html()).toMatchSnapshot();
+    vueDoubleMark.unmount();
   });
 
   const nodeEmpty: ProsemirrorJSONNode = {
     type: "doc",
   };
-  const vueEmpty = mount(ProsemirrorRender, { props: { node: nodeEmpty } });
 
   it("renders an empty doc", () => {
+    const vueEmpty = mount(ProsemirrorRender, { props: { node: nodeEmpty } });
     expect(vueEmpty.html()).toBe("<div></div>");
+    vueEmpty.unmount();
   });
 
   const nodeMixedTextNodes: ProsemirrorJSONNode = {
@@ -152,11 +163,12 @@ describe("component ProsemirrorRender", () => {
       },
     ],
   };
-  const vueMixedTextNodes = mount(ProsemirrorRender, { props: { node: nodeMixedTextNodes } });
 
   it("renders mixed text and marks", () => {
+    const vueMixedTextNodes = mount(ProsemirrorRender, { props: { node: nodeMixedTextNodes } });
     expect(vueMixedTextNodes.get("[data-test=paragraph]").text()).toBe("This is a basic example.");
     expect(vueMixedTextNodes.html()).toMatchSnapshot();
+    vueMixedTextNodes.unmount();
   });
 
   const unsafeScriptDocument: ProsemirrorJSONNode = {
@@ -168,21 +180,46 @@ describe("component ProsemirrorRender", () => {
       },
     ],
   };
-  const vueUnsafeScript = mount(ProsemirrorRender, {
-    props: { node: unsafeScriptDocument },
-    global: {
-      provide: {
-        [VueProsemirrorOptionsKey]: {
-          types: {
-            script: false,
-          },
+
+  it("skip types when set to false", () => {
+    const vueUnsafeScript = mount(ProsemirrorRender, {
+      props: { node: unsafeScriptDocument },
+      global: {
+        provide: {
+          [VueProsemirrorOptionsKey]: defu(
+            {
+              types: {
+                script: false,
+              },
+            },
+            defaultOptions,
+          ),
         },
       },
-    },
-  });
-
-  it("skip types when false", () => {
+    });
     expect(vueUnsafeScript.html()).not.toContain("unsafe");
     expect(vueUnsafeScript.html()).toMatchSnapshot();
+    vueUnsafeScript.unmount();
+  });
+
+  it("skip unknown types when skipUnknown option set", () => {
+    const vueUnknownSkip = mount(ProsemirrorRender, {
+      props: { node: unsafeScriptDocument },
+
+      global: {
+        provide: {
+          [VueProsemirrorOptionsKey]: defu(
+            {
+              skipUnknown: true,
+            },
+            defaultOptions,
+          ),
+        },
+      },
+    });
+
+    expect(vueUnknownSkip.html()).not.toContain("unsafe");
+    expect(vueUnknownSkip.html()).toMatchSnapshot();
+    vueUnknownSkip.unmount();
   });
 });

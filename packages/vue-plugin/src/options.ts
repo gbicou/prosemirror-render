@@ -17,6 +17,8 @@ export type VueProsemirrorTypes = Record<string, VueProsemirrorComponentOption>;
 export interface VueProsemirrorOptions {
   /** Map ProseMirror node and mark types to Vue components and properties */
   types: VueProsemirrorTypes;
+  /** Skip unknown types */
+  skipUnknown: boolean;
 }
 
 export const VueProsemirrorOptionsKey: InjectionKey<VueProsemirrorOptions> = Symbol("prosemirror-options");
@@ -50,6 +52,7 @@ export const defaultOptions: VueProsemirrorOptions = {
     table_header: "th",
     table_cell: "td",
   },
+  skipUnknown: false,
 };
 
 /**

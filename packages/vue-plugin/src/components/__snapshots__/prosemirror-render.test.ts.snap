@@ -25,8 +25,14 @@ exports[`component ProsemirrorRender > renders simple node 1`] = `
 </div>"
 `;
 
-exports[`component ProsemirrorRender > skip types when false 1`] = `
-"<doc>
+exports[`component ProsemirrorRender > skip types when set to false 1`] = `
+"<div>
   <!-- prosemirror type 'script' skipped -->
-</doc>"
+</div>"
+`;
+
+exports[`component ProsemirrorRender > skip unknown types when skipUnknown option set 1`] = `
+"<div>
+  <!-- prosemirror type 'script' skipped -->
+</div>"
 `;
