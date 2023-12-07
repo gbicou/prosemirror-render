@@ -2,11 +2,15 @@ import { type Component, type InjectionKey, inject, provide } from "vue";
 import type { ProsemirrorJSONAttributes } from "./prosemirror-json";
 import defu from "defu";
 
-export type VueProsemirrorComponent = string | Component;
+export type VueProsemirrorComponent = string | Component | false;
 export type VueProsemirrorComponentAndProperties = [VueProsemirrorComponent, Record<string, unknown>];
 export type VueProsemirrorComponentReturns = VueProsemirrorComponent | VueProsemirrorComponentAndProperties;
 export type VueProsemirrorComponentFunction = (attributes: ProsemirrorJSONAttributes) => VueProsemirrorComponentReturns;
-export type VueProsemirrorComponentOption = string | VueProsemirrorComponentAndProperties | VueProsemirrorComponentFunction;
+export type VueProsemirrorComponentOption =
+  | string
+  | VueProsemirrorComponentAndProperties
+  | VueProsemirrorComponentFunction
+  | false;
 
 export type VueProsemirrorTypes = Record<string, VueProsemirrorComponentOption>;
 

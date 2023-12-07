@@ -24,3 +24,9 @@ exports[`component ProsemirrorRender > renders simple node 1`] = `
   <p data-test=\\"paragraph\\">content</p>
 </div>"
 `;
+
+exports[`component ProsemirrorRender > skip types when false 1`] = `
+"<doc>
+  <!-- prosemirror type 'script' skipped -->
+</doc>"
+`;

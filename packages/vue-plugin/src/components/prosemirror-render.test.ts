@@ -3,6 +3,7 @@ import { mount } from "@vue/test-utils";
 import ProsemirrorRender from "./prosemirror-render";
 import { describe, it, expect } from "vitest";
 import { ProsemirrorJSONNode } from "../prosemirror-json";
+import { VueProsemirrorOptionsKey } from "../options";
 
 describe("component ProsemirrorRender", () => {
   const nodeSimple: ProsemirrorJSONNode = {
@@ -156,5 +157,32 @@ describe("component ProsemirrorRender", () => {
   it("renders mixed text and marks", () => {
     expect(vueMixedTextNodes.get("[data-test=paragraph]").text()).toBe("This is a basic example.");
     expect(vueMixedTextNodes.html()).toMatchSnapshot();
+  });
+
+  const unsafeScriptDocument: ProsemirrorJSONNode = {
+    type: "doc",
+    content: [
+      {
+        type: "script",
+        content: [{ type: "text", text: "console.log('unsafe')" }],
+      },
+    ],
+  };
+  const vueUnsafeScript = mount(ProsemirrorRender, {
+    props: { node: unsafeScriptDocument },
+    global: {
+      provide: {
+        [VueProsemirrorOptionsKey]: {
+          types: {
+            script: false,
+          },
+        },
+      },
+    },
+  });
+
+  it("skip types when false", () => {
+    expect(vueUnsafeScript.html()).not.toContain("unsafe");
+    expect(vueUnsafeScript.html()).toMatchSnapshot();
   });
 });

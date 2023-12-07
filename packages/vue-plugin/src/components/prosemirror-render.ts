@@ -10,7 +10,7 @@ import {
   mergeProps,
   resolveComponent,
   toRefs,
-  Text,
+  Text, Comment,
 } from "vue";
 import { camelCase, kebabCase, snakeCase } from "change-case";
 import type { ProsemirrorJSONElement, ProsemirrorJSONNode } from "../prosemirror-json";
@@ -83,6 +83,11 @@ const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponen
       // call children function if it's not a component
       if (typeof component === "string") {
         return () => h(component, properties, children() ?? undefined);
+      }
+
+      // skip when false
+      if (component === false) {
+        return () => h(Comment, ` prosemirror type '${element.type}' skipped `);
       }
 
       // render the component with element as a property
