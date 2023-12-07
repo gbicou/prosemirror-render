@@ -273,7 +273,7 @@ You can render marks of `link` type as `RouterLink` components from `vue-router`
 
 Be aware that `RouterLink` warns if the `to` property is not in the router pages.
 
-## Forbidden types
+## Skipping types
 
 If you work with unsafe documents, you may want to disallow rendering of specific types (like `<script />` for example).
 
@@ -313,6 +313,17 @@ Set value to false in order to skip those types, rendered as HTML comments inste
 ```
 
 :::
+
+You can also skip all types without a match in the map by setting the `skipUnknown` option.
+
+```ts [configuration]
+{
+  types: {
+    // ...
+  },
+  skipUnknown: true,  
+}
+```
 
 ## Default options
 
