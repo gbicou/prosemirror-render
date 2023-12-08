@@ -26,11 +26,11 @@
     "@vueuse/core": "^10.7.0"
   },
   "optionalDependencies": {
-    "shikiji": "^0.7.6"
+    "shikiji": "^0.8.0"
   },
   "devDependencies": {
     "nuxt": "^3.8.2",
-    "vue": "^3.3.10"
+    "vue": "^3.3.11"
   },
   "publishConfig": {
     "access": "public"
