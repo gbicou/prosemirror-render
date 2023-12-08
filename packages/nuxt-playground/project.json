@@ -3,7 +3,13 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "targets": {
     "build": {
-      "cache": false
+      "cache": true,
+      "dependsOn": ["^build"],
+      "outputs": [
+        "{projectRoot}/.nuxt",
+        "{projectRoot}/.output",
+        "{projectRoot}/.vercel"
+      ]
     }
   }
 }
