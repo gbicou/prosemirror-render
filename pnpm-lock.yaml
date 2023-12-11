@@ -220,8 +220,8 @@ importers:
         specifier: ^4.5.2
         version: 4.5.2(vite@5.0.7)(vue@3.3.11)
       '@vitest/coverage-v8':
-        specifier: ^0.34.6
-        version: 0.34.6(vitest@0.34.6)
+        specifier: ^1.0.4
+        version: 1.0.4(vitest@0.34.6)
       '@vue/test-utils':
         specifier: ^2.4.3
         version: 2.4.3(vue@3.3.11)
@@ -3583,18 +3583,20 @@ packages:
       vite: 5.0.7(@types/node@20.10.4)
       vue: 3.3.11(typescript@5.3.3)
 
-  /@vitest/coverage-v8@0.34.6(vitest@0.34.6):
-    resolution: {integrity: sha512-fivy/OK2d/EsJFoEoxHFEnNGTg+MmdZBAVK9Ka4qhXR2K3J0DS08vcGVwzDtXSuUMabLv4KtPcpSKkcMXFDViw==}
+  /@vitest/coverage-v8@1.0.4(vitest@0.34.6):
+    resolution: {integrity: sha512-xD6Yuql6RW0Ir/JJIs6rVrmnG2/KOWJF+IRX1oJQk5wGKGxbtdrYPbl+WTUn/4ICCQ2G20zbE1e8/nPNyAG5Vg==}
     peerDependencies:
-      vitest: '>=0.32.0 <1'
+      vitest: ^1.0.0
     dependencies:
       '@ampproject/remapping': 2.2.1
       '@bcoe/v8-coverage': 0.2.3
+      debug: 4.3.4
       istanbul-lib-coverage: 3.2.2
       istanbul-lib-report: 3.0.1
       istanbul-lib-source-maps: 4.0.1
       istanbul-reports: 3.1.6
       magic-string: 0.30.5
+      magicast: 0.3.2
       picocolors: 1.0.0
       std-env: 3.6.0
       test-exclude: 6.0.0
@@ -6243,7 +6245,7 @@ packages:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.5
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: true
@@ -9501,7 +9503,7 @@ packages:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
     hasBin: true
     dependencies:
-      glob: 7.1.4
+      glob: 7.2.3
     dev: true
 
   /rollup-plugin-dts@5.3.1(rollup@3.29.4)(typescript@5.3.3):
