@@ -12,6 +12,6 @@ const emoji = computed(() => findEmojiByShortcode(name.value));
 </script>
 
 <template>
-  <template v-if="emoji">{{ emoji.unicode }}</template>
+  <template v-if="emoji">{{ emoji }}</template>
   <template v-else>:{{ name }}:</template>
 </template>
