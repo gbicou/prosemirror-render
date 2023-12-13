@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import emojis from "emojibase-data/en/compact.json";
-import shortcodes from "emojibase-data/en/shortcodes/emojibase.json";
-import { joinShortcodes } from "emojibase";
 import { toRefs, computed } from "vue";
-
-const emojisCodes = joinShortcodes(emojis, [shortcodes]);
+import { findEmojiByShortcode } from "../emojis";
 
 const properties = defineProps<{
   name: string;
@@ -12,11 +8,7 @@ const properties = defineProps<{
 
 const { name } = toRefs(properties);
 
-const emoji = computed(() => {
-  return emojisCodes.find((emoji) => {
-    return emoji.shortcodes?.includes(name.value) || emoji.tags?.includes(name.value);
-  });
-});
+const emoji = computed(() => findEmojiByShortcode(name.value));
 </script>
 
 <template>
