@@ -9,6 +9,7 @@
       <li><router-link to="/link">link</router-link></li>
       <li><router-link to="/router-link">RouterLink</router-link></li>
       <li><router-link to="/custom-component">Custom Component</router-link></li>
+      <li><router-link to="/emoji">tiptap emoji</router-link></li>
       <li><router-link to="/text-style">textStyle</router-link></li>
       <li><router-link to="/tailwind">tailwind</router-link></li>
     </ul>
