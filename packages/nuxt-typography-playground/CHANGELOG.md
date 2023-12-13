@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-nuxt-typography-playground
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @bicou/prosemirror-render-nuxt-typography@0.0.4
+
 ## 0.0.1
 
 ### Patch Changes
