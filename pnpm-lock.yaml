@@ -141,8 +141,8 @@ importers:
         version: 10.7.0(vue@3.3.11)
     optionalDependencies:
       shikiji:
-        specifier: ^0.8.7
-        version: 0.8.7
+        specifier: ^0.9.9
+        version: 0.9.9
     devDependencies:
       nuxt:
         specifier: ^3.8.2
@@ -157,8 +157,8 @@ importers:
         specifier: workspace:*
         version: link:../nuxt-typography-layer
       shikiji:
-        specifier: ^0.8.7
-        version: 0.8.7
+        specifier: ^0.9.9
+        version: 0.9.9
     devDependencies:
       nuxt:
         specifier: ^3.8.2
@@ -9800,6 +9800,10 @@ packages:
     resolution: {integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==}
     dev: true
 
+  /shikiji-core@0.9.9:
+    resolution: {integrity: sha512-qu5Qq7Co6JIMY312J9Ek6WYjXieeyJT/fIqmkcjF4MdnMNlUnhSqPo8/42g5UdPgdyTCwijS7Nhg8DfLSLodkg==}
+    dev: false
+
   /shikiji-transformers@0.7.6:
     resolution: {integrity: sha512-yTp+7JMD/aXbV9ndn14eo9IK/UNt8iDsLNyqlOmCtcldlkqWE9T2YKAlOHOTVaeDfYWUWZa2EgSXb/CBfepBrw==}
     dependencies:
@@ -9812,10 +9816,10 @@ packages:
       hast-util-to-html: 9.0.0
     dev: false
 
-  /shikiji@0.8.7:
-    resolution: {integrity: sha512-j5usxwI0yHkDTHOuhuSJl9+wT5CNYeYO82dJMSJBlJ/NYT5SIebGcPoL6y9QOyH15wGrJC4LOP2nz5k8mUDGRQ==}
+  /shikiji@0.9.9:
+    resolution: {integrity: sha512-/S3unr/0mZTstNOuAmNDEufeimtqeQb8lXvPMLsYfDvqyfmG6334bO2xmDzD0kfxH2y8gnFgSWAJpdEzksmYXg==}
     dependencies:
-      hast-util-to-html: 9.0.0
+      shikiji-core: 0.9.9
     dev: false
 
   /side-channel@1.0.4:
