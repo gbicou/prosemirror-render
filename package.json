@@ -21,7 +21,7 @@
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.1",
     "@nuxt/eslint-config": "^0.2.0",
-    "@rushstack/eslint-patch": "^1.6.0",
+    "@rushstack/eslint-patch": "^1.6.1",
     "@types/node": "^20.10.4",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
