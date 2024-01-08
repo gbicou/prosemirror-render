@@ -8,6 +8,7 @@ describe("module ProsemirrorRender", async () => {
   });
 
   it("renders the hello world document", async () => {
+    expect.hasAssertions();
     // Get response to a server-rendered page with `$fetch`.
     const html = await $fetch("/");
     expect(html).toContain("<p>Hello world!</p>");

@@ -8,6 +8,7 @@ import defu from "defu";
 
 describe("component ProsemirrorRender", () => {
   it("exists", () => {
+    expect.hasAssertions();
     expect(ProsemirrorRender).toBeTruthy();
   });
 
@@ -33,6 +34,7 @@ describe("component ProsemirrorRender", () => {
   };
 
   it("renders simple node", () => {
+    expect.hasAssertions();
     const vueSimple = mount(ProsemirrorRender, { props: { node: nodeSimple } });
 
     expect(vueSimple.get("[data-test=doc]").element.tagName).toBe("DIV");
@@ -47,6 +49,7 @@ describe("component ProsemirrorRender", () => {
   });
 
   it("don't pollute DOM with stringified object", () => {
+    expect.hasAssertions();
     const vueSimple = mount(ProsemirrorRender, { props: { node: nodeSimple } });
     expect(vueSimple.html()).not.toContain("object Object");
     vueSimple.unmount();
@@ -82,6 +85,7 @@ describe("component ProsemirrorRender", () => {
   };
 
   it("renders simple mark", () => {
+    expect.hasAssertions();
     const vueSimpleMark = mount(ProsemirrorRender, { props: { node: nodeSimpleMark } });
 
     expect(vueSimpleMark.get("[data-test=paragraph]").text()).toBe("content");
@@ -123,6 +127,7 @@ describe("component ProsemirrorRender", () => {
   };
 
   it("renders marks in order", () => {
+    expect.hasAssertions();
     const vueDoubleMark = mount(ProsemirrorRender, { props: { node: nodeDoubleMark } });
     expect(vueDoubleMark.get("[data-test=bold]").get("[data-test=italic]")).toBeDefined();
     expect(vueDoubleMark.get("[data-test=bold]").get("[data-test=italic]").text()).toBe("content");
@@ -137,6 +142,7 @@ describe("component ProsemirrorRender", () => {
   };
 
   it("renders an empty doc", () => {
+    expect.hasAssertions();
     const vueEmpty = mount(ProsemirrorRender, { props: { node: nodeEmpty } });
     expect(vueEmpty.html()).toBe("<div></div>");
     vueEmpty.unmount();
@@ -165,6 +171,7 @@ describe("component ProsemirrorRender", () => {
   };
 
   it("renders mixed text and marks", () => {
+    expect.hasAssertions();
     const vueMixedTextNodes = mount(ProsemirrorRender, { props: { node: nodeMixedTextNodes } });
     expect(vueMixedTextNodes.get("[data-test=paragraph]").text()).toBe("This is a basic example.");
     expect(vueMixedTextNodes.html()).toMatchSnapshot();
@@ -182,6 +189,7 @@ describe("component ProsemirrorRender", () => {
   };
 
   it("skip types when set to false", () => {
+    expect.hasAssertions();
     const vueUnsafeScript = mount(ProsemirrorRender, {
       props: { node: unsafeScriptDocument },
       global: {
@@ -203,6 +211,7 @@ describe("component ProsemirrorRender", () => {
   });
 
   it("skip unknown types when skipUnknown option set", () => {
+    expect.hasAssertions();
     const vueUnknownSkip = mount(ProsemirrorRender, {
       props: { node: unsafeScriptDocument },
 

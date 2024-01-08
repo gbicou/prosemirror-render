@@ -8,6 +8,7 @@ describe("module ProsemirrorRender", async () => {
   });
 
   it("accepts custom options", async () => {
+    expect.hasAssertions();
     // Get response to a server-rendered page with `$fetch`.
     const html = await $fetch("/");
     expect(html).toContain('<span data-testid="italic" class="italic">basic</span>');
