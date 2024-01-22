@@ -141,8 +141,8 @@ importers:
         version: 10.7.1(vue@3.4.5)
     optionalDependencies:
       shikiji:
-        specifier: ^0.9.17
-        version: 0.9.17
+        specifier: ^0.10.0
+        version: 0.10.0
     devDependencies:
       nuxt:
         specifier: ^3.9.1
@@ -157,8 +157,8 @@ importers:
         specifier: workspace:*
         version: link:../nuxt-typography-layer
       shikiji:
-        specifier: ^0.9.17
-        version: 0.9.17
+        specifier: ^0.10.0
+        version: 0.10.0
     devDependencies:
       nuxt:
         specifier: ^3.9.1
@@ -9323,6 +9323,10 @@ packages:
     resolution: {integrity: sha512-6j1W9l1iAs/4xYBI1SYOVZyFcCis9b4KCLQ8fgAGG07QvzaRLVVRQvAy85yNmmZSjYjg4MWh4gNvlPujU/5LpA==}
     dev: true
 
+  /shikiji-core@0.10.0:
+    resolution: {integrity: sha512-imG+bvRkuNlZUi2q9tMVfegRRouTpDxMFejpfF/6J+bFX3NDKtlW9T9iIAkBYnw4pcCtSwirW0AvkwlQR4wyxg==}
+    dev: false
+
   /shikiji-core@0.9.17:
     resolution: {integrity: sha512-r1FWTXk6SO2aYqfWgcsJ11MuVQ1ymPSdXzJjK7q8EXuyqu8yc2N5qrQy5+BL6gTVOaF4yLjbxFjF+KTRM1Sp8Q==}
     dev: false
@@ -9331,6 +9335,12 @@ packages:
     resolution: {integrity: sha512-2CCG9qSLS6Bn/jbeUTEuvC6YSuP8gm8VyX5VjmCvDKyCPGhlLJbH1k/kg9wfRt7cJqpYjhdMDgT5rkdYrOZnsA==}
     dependencies:
       shikiji: 0.9.17
+    dev: false
+
+  /shikiji@0.10.0:
+    resolution: {integrity: sha512-1dAzIOWbtM7B4Sem5BvE+CEdsebDsRA34SfCxM4qJ4PLgR73ZD92VEtNfbcoZ3xOLSqvtV0J9i4WpCgVsmQteg==}
+    dependencies:
+      shikiji-core: 0.10.0
     dev: false
 
   /shikiji@0.9.17:
