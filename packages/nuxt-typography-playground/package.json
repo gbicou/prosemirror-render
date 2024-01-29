@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt-typography": "workspace:*",
-    "shikiji": "^0.9.17"
+    "shikiji": "^0.10.2"
   },
   "devDependencies": {
     "nuxt": "^3.9.1",
