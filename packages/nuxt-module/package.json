@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",
-    "@nuxt/kit": "^3.9.3"
+    "@nuxt/kit": "^3.10.0"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.8",
