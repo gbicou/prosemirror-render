@@ -29,8 +29,8 @@
     "shikiji": "^0.10.2"
   },
   "devDependencies": {
-    "nuxt": "^3.9.3",
-    "vue": "^3.4.15"
+    "nuxt": "^3.10.1",
+    "vue": "^3.4.16"
   },
   "publishConfig": {
     "access": "public"
