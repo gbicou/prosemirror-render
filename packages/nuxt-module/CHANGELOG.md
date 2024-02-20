@@ -1,5 +1,16 @@
 # @bicou/prosemirror-render-nuxt
 
+## 0.0.5
+
+### Patch Changes
+
+- [`f0dae16`](https://github.com/gbicou/prosemirror-render/commit/f0dae1646271daf1fbf2bf72bc7f3cf83cb643cd) Thanks [@gbicou](https://github.com/gbicou)! - dependencies upgradex
+
+- [`2e06095`](https://github.com/gbicou/prosemirror-render/commit/2e0609526b193914359235554e8c752eab3527a8) Thanks [@gbicou](https://github.com/gbicou)! - upgrade dependencies
+
+- Updated dependencies [[`f0dae16`](https://github.com/gbicou/prosemirror-render/commit/f0dae1646271daf1fbf2bf72bc7f3cf83cb643cd), [`2e06095`](https://github.com/gbicou/prosemirror-render/commit/2e0609526b193914359235554e8c752eab3527a8)]:
+  - @bicou/prosemirror-render-vue@0.0.5
+
 ## 0.0.4
 
 ### Patch Changes
