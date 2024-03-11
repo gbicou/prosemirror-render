@@ -23,14 +23,14 @@
   "dependencies": {
     "@bicou/prosemirror-render-nuxt": "workspace:*",
     "@nuxt-themes/typography": "^1.0.1",
-    "@vueuse/core": "^10.7.2"
+    "@vueuse/core": "^10.9.0"
   },
   "optionalDependencies": {
     "shikiji": "^0.10.2"
   },
   "devDependencies": {
-    "nuxt": "^3.10.2",
-    "vue": "^3.4.19"
+    "nuxt": "^3.10.3",
+    "vue": "^3.4.21"
   },
   "publishConfig": {
     "access": "public"

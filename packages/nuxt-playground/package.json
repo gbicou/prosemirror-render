@@ -13,9 +13,9 @@
     "@bicou/prosemirror-render-nuxt": "workspace:*"
   },
   "devDependencies": {
-    "nuxt": "^3.10.2",
-    "postcss-nesting": "^12.0.3",
-    "vue": "^3.4.19",
-    "vue-router": "^4.2.5"
+    "nuxt": "^3.10.3",
+    "postcss-nesting": "^12.1.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   }
 }
