@@ -1,5 +1,11 @@
 # @bicou/prosemirror-render-vue
 
+## 0.0.6
+
+### Patch Changes
+
+- [`be7bdec`](https://github.com/gbicou/prosemirror-render/commit/be7bdec05037c59e0cb0ae3513110dc19da3942c) Thanks [@gbicou](https://github.com/gbicou)! - dependencies upgrade
+
 ## 0.0.5
 
 ### Patch Changes
