@@ -18,8 +18,8 @@ importers:
         specifier: ^0.2.0
         version: 0.2.0(eslint@8.57.0)
       '@rushstack/eslint-patch':
-        specifier: ^1.7.2
-        version: 1.7.2
+        specifier: ^1.10.1
+        version: 1.10.1
       '@types/node':
         specifier: ^20.11.28
         version: 20.11.28
@@ -2179,7 +2179,7 @@ packages:
     peerDependencies:
       eslint: ^8.48.0
     dependencies:
-      '@rushstack/eslint-patch': 1.7.2
+      '@rushstack/eslint-patch': 1.10.1
       '@typescript-eslint/eslint-plugin': 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.4.2)
       '@typescript-eslint/parser': 6.21.0(eslint@8.57.0)(typescript@5.4.2)
       eslint: 8.57.0
@@ -3151,8 +3151,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@rushstack/eslint-patch@1.7.2:
-    resolution: {integrity: sha512-RbhOOTCNoCrbfkRyoXODZp75MlpiHMgbE5MEBZAnnnLyQNgrigEj4p0lzsMDyc1zVsJDLrivB58tgg3emX0eEA==}
+  /@rushstack/eslint-patch@1.10.1:
+    resolution: {integrity: sha512-S3Kq8e7LqxkA9s7HKLqXGTGck1uwis5vAXan3FnU5yw1Ec5hsSGnq4s/UCaSqABPOnOTg7zASLyst7+ohgWexg==}
     dev: true
 
   /@rushstack/node-core-library@3.62.0(@types/node@20.11.28):
