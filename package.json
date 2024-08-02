@@ -13,7 +13,7 @@
   "scripts": {
     "build": "nx run-many -t build --exclude *-playground",
     "dev": "nx run-many -t dev",
-    "lint": "nx run-many -t lint",
+    "lint": "nx run-many --skip-nx-cache -t lint",
     "release": "changeset publish",
     "test": "nx run-many -t test"
   },
