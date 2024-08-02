@@ -7,6 +7,7 @@
     "prepare": "nuxi prepare",
     "build": "nuxi build",
     "dev": "nuxi dev",
+    "lint": "eslint .",
     "generate": "nuxi generate"
   },
   "dependencies": {
@@ -14,7 +15,10 @@
     "@nuxt/kit": "^3.12.3"
   },
   "devDependencies": {
+    "@bicou/eslint-config": "workspace:*",
+    "@nuxt/eslint": "^0.4.0",
     "@nuxt/schema": "^3.12.3",
+    "eslint": "^9.8.0",
     "nuxt": "^3.12.3",
     "postcss-nesting": "^12.1.5",
     "vue": "^3.4.31",

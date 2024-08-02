@@ -6,6 +6,7 @@
   "scripts": {
     "build": "vue-tsc && vite build",
     "dev": "vite",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,6 +17,8 @@
     "vue-router": "^4.4.0"
   },
   "devDependencies": {
+    "eslint": "^9.8.0",
+    "@bicou/eslint-config": "workspace:*",
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",

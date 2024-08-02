@@ -26,6 +26,7 @@
   "scripts": {
     "build": "vue-tsc && vite build",
     "dev": "vite build --watch",
+    "lint": "eslint .",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage"
   },
@@ -37,6 +38,8 @@
     "vue": "^3.3.0"
   },
   "devDependencies": {
+    "eslint": "^9.8.0",
+    "@bicou/eslint-config": "workspace:*",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitest/coverage-v8": "^1.6.0",
     "@vue/test-utils": "^2.4.6",
