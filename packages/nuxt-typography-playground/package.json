@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt-typography": "workspace:*",
-    "shikiji": "^0.10.2"
+    "shiki": "^1.12.1"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
