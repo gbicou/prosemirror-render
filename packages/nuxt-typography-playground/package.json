@@ -18,11 +18,11 @@
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
     "@nuxt/eslint": "^0.4.0",
-    "@nuxt/kit": "^3.12.3",
-    "@nuxt/schema": "^3.12.3",
+    "@nuxt/kit": "^3.12.4",
+    "@nuxt/schema": "^3.12.4",
     "eslint": "^9.8.0",
-    "nuxt": "^3.12.3",
-    "vue": "^3.4.31",
-    "vue-router": "^4.4.0"
+    "nuxt": "^3.12.4",
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2"
   }
 }

@@ -12,16 +12,16 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt": "workspace:*",
-    "@nuxt/kit": "^3.12.3"
+    "@nuxt/kit": "^3.12.4"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
     "@nuxt/eslint": "^0.4.0",
-    "@nuxt/schema": "^3.12.3",
+    "@nuxt/schema": "^3.12.4",
     "eslint": "^9.8.0",
-    "nuxt": "^3.12.3",
+    "nuxt": "^3.12.4",
     "postcss-nesting": "^12.1.5",
-    "vue": "^3.4.31",
-    "vue-router": "^4.4.0"
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2"
   }
 }
