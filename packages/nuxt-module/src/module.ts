@@ -1,16 +1,13 @@
 import { defineNuxtModule, addPlugin, createResolver, addComponent, addImports } from "@nuxt/kit";
 import type { VueProsemirrorOptions } from "@bicou/prosemirror-render-vue";
 
-// Module options TypeScript interface definition
-export interface ModuleOptions {}
-
 declare module "nuxt/schema" {
   interface AppConfigInput {
     prosemirror?: Partial<VueProsemirrorOptions>;
   }
 }
 
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule({
   meta: {
     name: "prosemirror-render",
     configKey: "prosemirrorRender",
