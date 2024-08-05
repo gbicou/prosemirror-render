@@ -1,23 +1,27 @@
 {
   "private": true,
   "name": "@bicou/prosemirror-render-nuxt-playground",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "scripts": {
     "prepare": "nuxi prepare",
     "build": "nuxi build",
     "dev": "nuxi dev",
+    "lint": "eslint .",
     "generate": "nuxi generate"
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt": "workspace:*",
-    "@nuxt/kit": "^3.12.2"
+    "@nuxt/kit": "^3.12.4"
   },
   "devDependencies": {
-    "@nuxt/schema": "^3.12.2",
-    "nuxt": "^3.12.2",
-    "postcss-nesting": "^12.1.5",
-    "vue": "^3.4.31",
-    "vue-router": "^4.4.0"
+    "@bicou/eslint-config": "workspace:*",
+    "@nuxt/eslint": "^0.4.0",
+    "@nuxt/schema": "^3.12.4",
+    "eslint": "^9.8.0",
+    "nuxt": "^3.12.4",
+    "postcss-nesting": "^13.0.0",
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2"
   }
 }

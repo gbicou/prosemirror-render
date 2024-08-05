@@ -1,6 +1,6 @@
 {
   "name": "@bicou/prosemirror-render-nuxt-typography",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Nuxt layer to render ProseMirror JSON data with Nuxt Typography",
   "license": "MIT",
   "author": "Benjamin VIELLARD <bicou@bicou.com>",
@@ -18,7 +18,8 @@
     "nuxt.config.ts"
   ],
   "scripts": {
-    "prepare": "nuxt prepare"
+    "prepare": "nuxt prepare",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt": "workspace:*",
@@ -26,13 +27,16 @@
     "@vueuse/core": "^10.11.0"
   },
   "optionalDependencies": {
-    "shikiji": "^0.10.2"
+    "shiki": "^1.12.1"
   },
   "devDependencies": {
-    "@nuxt/kit": "^3.12.2",
-    "@nuxt/schema": "^3.12.2",
-    "nuxt": "^3.12.2",
-    "vue": "^3.4.31"
+    "@bicou/eslint-config": "workspace:*",
+    "@nuxt/eslint": "^0.4.0",
+    "@nuxt/kit": "^3.12.4",
+    "@nuxt/schema": "^3.12.4",
+    "eslint": "^9.8.0",
+    "nuxt": "^3.12.4",
+    "vue": "^3.4.35"
   },
   "publishConfig": {
     "access": "public"

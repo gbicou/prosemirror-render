@@ -1,6 +1,6 @@
 {
   "name": "@bicou/prosemirror-render-vue",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Vue plugin to render ProseMirror JSON data",
   "license": "MIT",
   "author": "Benjamin VIELLARD <bicou@bicou.com>",
@@ -26,6 +26,7 @@
   "scripts": {
     "build": "vue-tsc && vite build",
     "dev": "vite build --watch",
+    "lint": "eslint .",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage"
   },
@@ -37,16 +38,18 @@
     "vue": "^3.3.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "@vitest/coverage-v8": "^1.6.0",
+    "@bicou/eslint-config": "workspace:*",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "@vitest/coverage-v8": "^2.0.5",
     "@vue/test-utils": "^2.4.6",
+    "eslint": "^9.8.0",
     "happy-dom": "^14.12.3",
     "rollup-plugin-node-externals": "^7.1.2",
-    "vite": "^5.3.2",
+    "vite": "^5.3.5",
     "vite-plugin-dts": "^3.9.1",
-    "vitest": "^1.6.0",
+    "vitest": "^2.0.5",
     "vitest-github-actions-reporter": "^0.11.1",
-    "vue-tsc": "^2.0.22"
+    "vue-tsc": "^2.0.29"
   },
   "publishConfig": {
     "access": "public"

@@ -13,31 +13,18 @@
   "scripts": {
     "build": "nx run-many -t build --exclude *-playground",
     "dev": "nx run-many -t dev",
-    "lint": "eslint .",
+    "lint": "nx run-many --skip-nx-cache -t lint",
     "release": "changeset publish",
     "test": "nx run-many -t test"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
-    "@changesets/cli": "^2.27.6",
-    "@nuxt/eslint-config": "^0.3.13",
-    "@rushstack/eslint-patch": "^1.10.3",
-    "@types/node": "^20.14.9",
-    "@typescript-eslint/eslint-plugin": "^7.14.1",
-    "@typescript-eslint/parser": "^7.14.1",
-    "@vue/eslint-config-prettier": "^9.0.0",
-    "@vue/eslint-config-typescript": "^13.0.0",
-    "eslint": "^8.57.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-jsdoc": "^48.5.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-unicorn": "^54.0.0",
-    "eslint-plugin-vitest": "^0.4.1",
-    "eslint-plugin-vue": "^9.26.0",
-    "nx": "^19.3.2",
-    "prettier": "^3.3.2",
-    "tsx": "^4.15.7",
+    "@changesets/cli": "^2.27.7",
+    "@types/node": "^20.14.14",
+    "nx": "19.3.2",
+    "prettier": "^3.3.3",
+    "tsx": "^4.16.5",
     "typescript": "~5.4.5"
   },
-  "packageManager": "pnpm@9.4.0"
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
 }

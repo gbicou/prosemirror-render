@@ -3,4 +3,6 @@ export default defineNuxtConfig({
     "@bicou/prosemirror-render-vue": "../vue-plugin/src/index.ts",
     "#examples": "../../examples",
   },
+
+  modules: ["@nuxt/eslint"],
 });

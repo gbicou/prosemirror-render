@@ -34,7 +34,7 @@ jobs:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v3
+        uses: pnpm/action-setup@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -43,7 +43,7 @@ jobs:
           cache: "pnpm"
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile

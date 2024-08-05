@@ -1,27 +1,30 @@
 {
   "private": true,
   "name": "@bicou/prosemirror-render-vue-playground",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "scripts": {
     "build": "vue-tsc && vite build",
     "dev": "vite",
+    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",
     "emojibase": "^15.3.1",
     "emojibase-data": "^15.3.2",
-    "vue": "^3.4.31",
-    "vue-router": "^4.4.0"
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4",
-    "unplugin-vue-router": "^0.10.0",
-    "vite": "^5.3.2",
-    "vue-tsc": "^2.0.22"
+    "@bicou/eslint-config": "workspace:*",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.8.0",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "unplugin-vue-router": "^0.10.2",
+    "vite": "^5.3.5",
+    "vue-tsc": "^2.0.29"
   }
 }
