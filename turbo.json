@@ -4,7 +4,6 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [
         ".nuxt/**",
         ".output/**",
@@ -22,5 +21,6 @@
       "cache": false,
       "persistent": true
     }
-  }
+  },
+  "globalEnv": ["VERCEL", "GITHUB_ACTIONS"]
 }
