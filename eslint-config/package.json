@@ -18,6 +18,6 @@
     "eslint-plugin-unicorn": "^55.0.0",
     "eslint-plugin-vitest": "^0.5.4",
     "eslint-plugin-vue": "^9.27.0",
-    "typescript-eslint": "^8.0.0"
+    "typescript-eslint": "^8.0.1"
   }
 }
