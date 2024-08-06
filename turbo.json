@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "outputs": [".nuxt/**", ".output/**", "dist/**"]
+    },
+    "docs:build": {
+      "dependsOn": ["^build"],
+      "outputs": [
+        ".vitepress/cache",
+        ".vitepress/dist"
+      ]
+    },
+    "test": {
+      "dependsOn": ["build"]
+    },
+    "lint": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

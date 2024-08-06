@@ -11,19 +11,19 @@
   },
   "type": "module",
   "scripts": {
-    "build": "nx run-many -t build --exclude *-playground",
-    "dev": "nx run-many -t dev",
-    "lint": "nx run-many --skip-nx-cache -t lint",
+    "build": "turbo build --filter=!*-playground",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
     "release": "changeset publish",
-    "test": "nx run-many -t test"
+    "test": "turbo test"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.7",
     "@types/node": "^20.14.14",
-    "nx": "19.3.2",
     "prettier": "^3.3.3",
     "tsx": "^4.16.5",
+    "turbo": "^2.0.11",
     "typescript": "~5.4.5"
   },
   "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
