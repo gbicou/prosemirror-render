@@ -9,9 +9,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "docs:build": "vitepress build",
-    "docs:dev": "vitepress dev",
-    "docs:preview": "vitepress preview"
+    "build": "vitepress build",
+    "dev": "vitepress dev",
+    "preview": "vitepress preview"
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",

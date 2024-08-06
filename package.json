@@ -11,11 +11,12 @@
   },
   "type": "module",
   "scripts": {
-    "build": "turbo build --filter=!*-playground",
-    "dev": "turbo dev",
+    "build": "turbo build --filter=!*-playground --filter=!*-docs",
+    "build:docs": "turbo build --filter=@bicou/prosemirror-render-docs",
+    "dev": "turbo dev --filter=!*-docs",
     "lint": "turbo lint",
     "release": "changeset publish",
-    "test": "turbo test"
+    "test": "turbo test --filter=!*-playground --filter=!*-docs"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",

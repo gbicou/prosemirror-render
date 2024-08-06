@@ -5,11 +5,11 @@
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".nuxt/**", ".output/**", ".vercel/**", "dist/**"]
-    },
-    "docs:build": {
-      "dependsOn": ["^build"],
       "outputs": [
+        ".nuxt/**",
+        ".output/**",
+        ".vercel/**",
+        "dist/**",
         ".vitepress/cache",
         ".vitepress/dist"
       ]
