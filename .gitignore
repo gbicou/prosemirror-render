@@ -18,6 +18,9 @@ cache
 # Nx
 .nx
 
+# Turbo
+.turbo
+
 # Generated dirs
 dist
 
