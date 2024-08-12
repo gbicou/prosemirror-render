@@ -20,9 +20,9 @@
     "@nuxt/eslint": "^0.5.0",
     "@nuxt/kit": "^3.12.4",
     "@nuxt/schema": "^3.12.4",
-    "eslint": "^9.8.0",
+    "eslint": "^9.9.0",
     "nuxt": "^3.12.4",
-    "vue": "^3.4.35",
-    "vue-router": "^4.4.2"
+    "vue": "^3.4.37",
+    "vue-router": "^4.4.3"
   }
 }
