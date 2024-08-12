@@ -27,8 +27,8 @@ importers:
         specifier: ^2.0.12
         version: 2.0.12
       typescript:
-        specifier: ~5.4.5
-        version: 5.4.5
+        specifier: ~5.5.0
+        version: 5.5.4
 
   docs:
     dependencies:
@@ -5432,11 +5432,6 @@ packages:
 
   typescript@5.4.2:
     resolution: {integrity: sha512-+2/g0Fds1ERlP6JsakQQDXjZdZMM+rqpamFZJEKh4kwTIn3iDkgKtby0CeNd5ATNZ4Ry1ax15TMx0W2V+miizQ==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
-  typescript@5.4.5:
-    resolution: {integrity: sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -12085,8 +12080,6 @@ snapshots:
       - supports-color
 
   typescript@5.4.2: {}
-
-  typescript@5.4.5: {}
 
   typescript@5.5.4: {}
 
