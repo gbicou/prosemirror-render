@@ -13,16 +13,16 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt-typography": "workspace:*",
-    "shiki": "^1.12.1"
+    "shiki": "^1.18.0"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@nuxt/eslint": "^0.5.0",
-    "@nuxt/kit": "^3.12.4",
-    "@nuxt/schema": "^3.12.4",
-    "eslint": "^9.9.0",
-    "nuxt": "^3.12.4",
-    "vue": "^3.4.37",
-    "vue-router": "^4.4.3"
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/kit": "^3.13.2",
+    "@nuxt/schema": "^3.13.2",
+    "eslint": "^9.11.0",
+    "nuxt": "^3.13.2",
+    "vue": "^3.5.8",
+    "vue-router": "^4.4.5"
   }
 }

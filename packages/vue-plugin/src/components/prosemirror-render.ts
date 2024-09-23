@@ -80,7 +80,7 @@ const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponen
     const { node, mark } = toRefs(properties);
 
     // point to the mark
-    const markItem = computed(() => node.value.marks?.at(mark.value));
+    const markItem = computed(() => node.value.marks?.at(mark.value ?? 0));
 
     const render = (element: ProsemirrorJSONElement, children: () => VNodeChild): (() => VNode) => {
       // resolve component and properties
@@ -103,7 +103,7 @@ const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponen
     // render the current mark
     if (markItem.value) {
       // recurse the next mark for child
-      const child = () => h(ProsemirrorRender, { node: node.value, mark: mark.value + 1 });
+      const child = () => h(ProsemirrorRender, { node: node.value, mark: (mark.value ?? 0) + 1 });
       return render(markItem.value, child);
     }
     // render text as is
