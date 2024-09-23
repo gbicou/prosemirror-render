@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import helloWorld from "#examples/documents/hello-world.json";
+import helloWorld from "../../../../../examples/documents/hello-world.json";
 </script>
