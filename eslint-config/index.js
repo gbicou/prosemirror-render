@@ -5,7 +5,7 @@ import ts from "typescript-eslint";
 import vue from "eslint-plugin-vue";
 import unicorn from "eslint-plugin-unicorn";
 import jsdoc from "eslint-plugin-jsdoc";
-import vitest from "eslint-plugin-vitest";
+import vitest from "@vitest/eslint-plugin";
 import prettier from "eslint-plugin-prettier/recommended";
 
 export const forNuxt = [
