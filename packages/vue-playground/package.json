@@ -11,20 +11,20 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",
-    "emojibase": "^15.3.1",
-    "emojibase-data": "^15.3.2",
-    "vue": "^3.5.10",
-    "vue-router": "^4.4.5"
+    "emojibase": "15.3.1",
+    "emojibase-data": "15.3.2",
+    "vue": "3.5.11",
+    "vue-router": "4.4.5"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@vitejs/plugin-vue": "^5.1.4",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.11.1",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13",
-    "unplugin-vue-router": "^0.10.8",
-    "vite": "^5.4.8",
-    "vue-tsc": "^2.1.6"
+    "@vitejs/plugin-vue": "5.1.4",
+    "autoprefixer": "10.4.20",
+    "eslint": "9.12.0",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.13",
+    "unplugin-vue-router": "0.10.8",
+    "vite": "5.4.8",
+    "vue-tsc": "2.1.6"
   }
 }
