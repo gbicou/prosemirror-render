@@ -45,8 +45,8 @@ importers:
         specifier: 9.12.0
         version: 9.12.0
       '@vitest/eslint-plugin':
-        specifier: 1.1.6
-        version: 1.1.6(@typescript-eslint/utils@8.8.0(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3))(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3)(vitest@2.1.2(@types/node@22.7.4)(happy-dom@15.7.4)(terser@5.34.1))
+        specifier: 1.1.7
+        version: 1.1.7(@typescript-eslint/utils@8.8.0(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3))(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3)(vitest@2.1.2(@types/node@22.7.4)(happy-dom@15.7.4)(terser@5.34.1))
       eslint-config-prettier:
         specifier: 9.1.0
         version: 9.1.0(eslint@9.12.0(jiti@2.3.1))
@@ -2317,8 +2317,8 @@ packages:
       '@vitest/browser':
         optional: true
 
-  '@vitest/eslint-plugin@1.1.6':
-    resolution: {integrity: sha512-sFuAnD9iycnOzLHHhNCULXeb6ejOSo5Lcq/ODhdlUOoUrXkQPcVeYqXurZMA3neOqf+wNCQ6YuU1zyoYH/WEcg==}
+  '@vitest/eslint-plugin@1.1.7':
+    resolution: {integrity: sha512-pTWGW3y6lH2ukCuuffpan6kFxG6nIuoesbhMiQxskyQMRcCN5t9SXsKrNHvEw3p8wcCsgJoRqFZVkOTn6TjclA==}
     peerDependencies:
       '@typescript-eslint/utils': '>= 8.0'
       eslint: '>= 8.57.0'
@@ -2326,6 +2326,8 @@ packages:
       vitest: '*'
     peerDependenciesMeta:
       typescript:
+        optional: true
+      vitest:
         optional: true
 
   '@vitest/expect@2.1.2':
@@ -8589,13 +8591,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/eslint-plugin@1.1.6(@typescript-eslint/utils@8.8.0(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3))(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3)(vitest@2.1.2(@types/node@22.7.4)(happy-dom@15.7.4)(terser@5.34.1))':
+  '@vitest/eslint-plugin@1.1.7(@typescript-eslint/utils@8.8.0(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3))(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3)(vitest@2.1.2(@types/node@22.7.4)(happy-dom@15.7.4)(terser@5.34.1))':
     dependencies:
       '@typescript-eslint/utils': 8.8.0(eslint@9.12.0(jiti@2.3.1))(typescript@5.6.3)
       eslint: 9.12.0(jiti@2.3.1)
-      vitest: 2.1.2(@types/node@22.7.4)(happy-dom@15.7.4)(terser@5.34.1)
     optionalDependencies:
       typescript: 5.6.3
+      vitest: 2.1.2(@types/node@22.7.4)(happy-dom@15.7.4)(terser@5.34.1)
 
   '@vitest/expect@2.1.2':
     dependencies:
