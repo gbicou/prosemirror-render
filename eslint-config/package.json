@@ -13,7 +13,7 @@
     "@eslint/js": "9.12.0",
     "@vitest/eslint-plugin": "1.1.7",
     "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-jsdoc": "50.3.1",
+    "eslint-plugin-jsdoc": "50.3.2",
     "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-unicorn": "56.0.0",
     "eslint-plugin-vue": "9.29.0",
