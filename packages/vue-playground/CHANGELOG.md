@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-vue-playground
 
+## 0.0.9
+
+### Patch Changes
+
+- Updated dependencies [[`0a4696e`](https://github.com/gbicou/prosemirror-render/commit/0a4696e272bdb2e80d969c7651f1218de48b8bc6)]:
+  - @bicou/prosemirror-render-vue@0.0.9
+
 ## 0.0.8
 
 ### Patch Changes

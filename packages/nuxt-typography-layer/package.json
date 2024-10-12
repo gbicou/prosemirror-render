@@ -1,6 +1,6 @@
 {
   "name": "@bicou/prosemirror-render-nuxt-typography",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Nuxt layer to render ProseMirror JSON data with Nuxt Typography",
   "license": "MIT",
   "author": "Benjamin VIELLARD <bicou@bicou.com>",
