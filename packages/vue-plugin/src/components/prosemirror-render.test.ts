@@ -250,4 +250,43 @@ describe("component ProsemirrorRender", () => {
 
     vueUnknownSkip.unmount();
   });
+
+  const textNullish: ProsemirrorJSONNode = {
+    type: "doc",
+    content: [
+      {
+        type: "paragraph",
+        content: [
+          {
+            type: "text",
+            text: null,
+          },
+        ],
+      },
+      {
+        type: "paragraph",
+        content: [
+          {
+            type: "text",
+            text: undefined,
+          },
+        ],
+      },
+    ],
+  };
+
+  it("renders an nullish text as empty string", () => {
+    expect.hasAssertions();
+
+    const vueTextNullish = mount(ProsemirrorRender, { props: { node: textNullish } });
+
+    expect(vueTextNullish.html()).toMatchInlineSnapshot(`
+      "<div>
+        <p></p>
+        <p></p>
+      </div>"
+    `);
+
+    vueTextNullish.unmount();
+  });
 });

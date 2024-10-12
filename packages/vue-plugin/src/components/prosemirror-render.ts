@@ -108,7 +108,7 @@ const ProsemirrorRender: Component<ProsemirrorRenderProperties> = defineComponen
     }
     // render text as is
     else if (node.value.type === "text") {
-      return () => h(Text, node.value.text);
+      return () => h(Text, node.value.text ?? "");
     }
     // render the current node when marks are done
     else {
