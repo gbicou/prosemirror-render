@@ -7,19 +7,19 @@
 </template>
 
 <script setup lang="ts">
-import basic from "#examples/documents/basic.json";
-import helloWorld from "#examples/documents/hello-world.json";
+import basic from '#examples/documents/basic.json'
+import helloWorld from '#examples/documents/hello-world.json'
 
 const link = {
-  type: "doc",
+  type: 'doc',
   content: [
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
-        { type: "text", text: "This is a link to " },
-        { type: "link", attrs: { href: "https://nuxt.com", target: "_blank" }, content: [{ type: "text", text: "Nuxt" }] },
+        { type: 'text', text: 'This is a link to ' },
+        { type: 'link', attrs: { href: 'https://nuxt.com', target: '_blank' }, content: [{ type: 'text', text: 'Nuxt' }] },
       ],
     },
   ],
-};
+}
 </script>

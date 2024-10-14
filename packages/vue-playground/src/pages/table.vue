@@ -1,46 +1,46 @@
 <script setup lang="ts">
-import { ProsemirrorRender } from "@bicou/prosemirror-render-vue";
+import { ProsemirrorRender } from '@bicou/prosemirror-render-vue'
 
 const node = {
-  type: "doc",
+  type: 'doc',
   content: [
     {
-      type: "table",
+      type: 'table',
       content: [
         {
-          type: "tableRow",
+          type: 'tableRow',
           content: [
             {
-              type: "tableHeader",
+              type: 'tableHeader',
               attrs: {
                 colspan: 1,
                 rowspan: 1,
               },
               content: [
                 {
-                  type: "paragraph",
+                  type: 'paragraph',
                   content: [
                     {
-                      type: "text",
-                      text: "Name",
+                      type: 'text',
+                      text: 'Name',
                     },
                   ],
                 },
               ],
             },
             {
-              type: "tableHeader",
+              type: 'tableHeader',
               attrs: {
                 colspan: 3,
                 rowspan: 1,
               },
               content: [
                 {
-                  type: "paragraph",
+                  type: 'paragraph',
                   content: [
                     {
-                      type: "text",
-                      text: "Description",
+                      type: 'text',
+                      text: 'Description',
                     },
                   ],
                 },
@@ -49,75 +49,75 @@ const node = {
           ],
         },
         {
-          type: "tableRow",
+          type: 'tableRow',
           content: [
             {
-              type: "tableCell",
+              type: 'tableCell',
               attrs: {
                 colspan: 1,
                 rowspan: 1,
               },
               content: [
                 {
-                  type: "paragraph",
+                  type: 'paragraph',
                   content: [
                     {
-                      type: "text",
-                      text: "Cyndi Lauper",
+                      type: 'text',
+                      text: 'Cyndi Lauper',
                     },
                   ],
                 },
               ],
             },
             {
-              type: "tableCell",
+              type: 'tableCell',
               attrs: {
                 colspan: 1,
                 rowspan: 1,
               },
               content: [
                 {
-                  type: "paragraph",
+                  type: 'paragraph',
                   content: [
                     {
-                      type: "text",
-                      text: "singer",
+                      type: 'text',
+                      text: 'singer',
                     },
                   ],
                 },
               ],
             },
             {
-              type: "tableCell",
+              type: 'tableCell',
               attrs: {
                 colspan: 1,
                 rowspan: 1,
               },
               content: [
                 {
-                  type: "paragraph",
+                  type: 'paragraph',
                   content: [
                     {
-                      type: "text",
-                      text: "songwriter",
+                      type: 'text',
+                      text: 'songwriter',
                     },
                   ],
                 },
               ],
             },
             {
-              type: "tableCell",
+              type: 'tableCell',
               attrs: {
                 colspan: 1,
                 rowspan: 1,
               },
               content: [
                 {
-                  type: "paragraph",
+                  type: 'paragraph',
                   content: [
                     {
-                      type: "text",
-                      text: "actress",
+                      type: 'text',
+                      text: 'actress',
                     },
                   ],
                 },
@@ -128,7 +128,7 @@ const node = {
       ],
     },
   ],
-};
+}
 </script>
 
 <template>

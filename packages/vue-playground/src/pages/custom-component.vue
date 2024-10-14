@@ -1,95 +1,95 @@
 <script setup lang="ts">
-import { provideProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
-import PmMention from "../components/pm-mention.vue";
+import { provideProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from '@bicou/prosemirror-render-vue'
+import PmMention from '../components/pm-mention.vue'
 
 provideProsemirrorOptions({
   types: {
     mention: () => PmMention,
   },
-});
+})
 
 const node: ProsemirrorJSONNode = {
-  type: "doc",
+  type: 'doc',
   content: [
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
-          text: "Hi everyone! Don’t forget the daily stand up at 8 AM.",
+          type: 'text',
+          text: 'Hi everyone! Don’t forget the daily stand up at 8 AM.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "mention",
+          type: 'mention',
           attrs: {
-            id: "Jennifer Grey",
+            id: 'Jennifer Grey',
           },
         },
         {
-          type: "text",
-          text: " Would you mind to share what you’ve been working on lately? We fear not much happened since Dirty Dancing.",
+          type: 'text',
+          text: ' Would you mind to share what you’ve been working on lately? We fear not much happened since Dirty Dancing.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "mention",
+          type: 'mention',
           attrs: {
-            id: "Winona Ryder",
+            id: 'Winona Ryder',
           },
         },
         {
-          type: "text",
-          text: " ",
+          type: 'text',
+          text: ' ',
         },
         {
-          type: "mention",
+          type: 'mention',
           attrs: {
-            id: "Axl Rose",
+            id: 'Axl Rose',
           },
         },
         {
-          type: "text",
-          text: " Let’s go through your most important points quickly.",
+          type: 'text',
+          text: ' Let’s go through your most important points quickly.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
-          text: "I have a meeting with ",
+          type: 'text',
+          text: 'I have a meeting with ',
         },
         {
-          type: "mention",
+          type: 'mention',
           attrs: {
-            id: "Christina Applegate",
+            id: 'Christina Applegate',
           },
         },
         {
-          type: "text",
-          text: " and don’t want to come late.",
+          type: 'text',
+          text: ' and don’t want to come late.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
-          text: "– Thanks, your big boss",
+          type: 'text',
+          text: '– Thanks, your big boss',
         },
       ],
     },
   ],
-};
+}
 </script>
 
 <template>

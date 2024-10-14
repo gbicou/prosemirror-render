@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import book from "#examples/documents/book.json";
+import book from '#examples/documents/book.json'
 </script>

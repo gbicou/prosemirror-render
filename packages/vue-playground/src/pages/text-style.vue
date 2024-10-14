@@ -1,125 +1,125 @@
 <script setup lang="ts">
-import { ProsemirrorRender, provideProsemirrorOptions } from "@bicou/prosemirror-render-vue";
+import { ProsemirrorRender, provideProsemirrorOptions } from '@bicou/prosemirror-render-vue'
 
 provideProsemirrorOptions({
   types: {
     // pass fontFamily attribute to font-family style of a span
-    textStyle: ({ fontFamily }) => ["span", { style: { fontFamily } }],
+    textStyle: ({ fontFamily }) => ['span', { style: { fontFamily } }],
   },
-});
+})
 
 const node = {
-  type: "doc",
+  type: 'doc',
   from: 0,
   to: 268,
   content: [
     {
-      type: "paragraph",
+      type: 'paragraph',
       from: 0,
       to: 63,
       content: [
         {
-          type: "text",
+          type: 'text',
           from: 1,
           to: 62,
           marks: [
             {
-              type: "textStyle",
+              type: 'textStyle',
               attrs: {
-                fontFamily: "Inter",
+                fontFamily: 'Inter',
               },
             },
           ],
-          text: "Did you know that Inter is a really nice font for interfaces?",
+          text: 'Did you know that Inter is a really nice font for interfaces?',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       from: 63,
       to: 111,
       content: [
         {
-          type: "text",
+          type: 'text',
           from: 64,
           to: 110,
           marks: [
             {
-              type: "textStyle",
+              type: 'textStyle',
               attrs: {
-                fontFamily: "Comic Sans MS, Comic Sans",
+                fontFamily: 'Comic Sans MS, Comic Sans',
               },
             },
           ],
-          text: "It doesn’t look as professional as Comic Sans.",
+          text: 'It doesn’t look as professional as Comic Sans.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       from: 111,
       to: 151,
       content: [
         {
-          type: "text",
+          type: 'text',
           from: 112,
           to: 150,
           marks: [
             {
-              type: "textStyle",
+              type: 'textStyle',
               attrs: {
-                fontFamily: "serif",
+                fontFamily: 'serif',
               },
             },
           ],
-          text: "Serious people use serif fonts anyway.",
+          text: 'Serious people use serif fonts anyway.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       from: 151,
       to: 200,
       content: [
         {
-          type: "text",
+          type: 'text',
           from: 152,
           to: 199,
           marks: [
             {
-              type: "textStyle",
+              type: 'textStyle',
               attrs: {
-                fontFamily: "monospace",
+                fontFamily: 'monospace',
               },
             },
           ],
-          text: "The cool kids can apply monospace fonts aswell.",
+          text: 'The cool kids can apply monospace fonts aswell.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       from: 200,
       to: 266,
       content: [
         {
-          type: "text",
+          type: 'text',
           from: 201,
           to: 265,
           marks: [
             {
-              type: "textStyle",
+              type: 'textStyle',
               attrs: {
-                fontFamily: "cursive",
+                fontFamily: 'cursive',
               },
             },
           ],
-          text: "But hopefully we all can agree, that cursive fonts are the best.",
+          text: 'But hopefully we all can agree, that cursive fonts are the best.',
         },
       ],
     },
   ],
-};
+}
 </script>
 
 <template>

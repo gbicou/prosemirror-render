@@ -1,116 +1,116 @@
 <script setup lang="ts">
-import { ProsemirrorRender } from "@bicou/prosemirror-render-vue";
+import { ProsemirrorRender } from '@bicou/prosemirror-render-vue'
 
 const node = {
-  type: "doc",
+  type: 'doc',
   content: [
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
-          text: "This isn’t highlighted.",
+          type: 'text',
+          text: 'This isn’t highlighted.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
+          type: 'text',
           marks: [
             {
-              type: "highlight",
+              type: 'highlight',
             },
           ],
-          text: "But that one is.",
+          text: 'But that one is.',
         },
       ],
     },
     {
-      type: "horizontalRule",
+      type: 'horizontalRule',
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
-          text: "This isn’t striked through.",
+          type: 'text',
+          text: 'This isn’t striked through.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
+          type: 'text',
           marks: [
             {
-              type: "strike",
+              type: 'strike',
             },
           ],
-          text: "But that’s striked through.",
+          text: 'But that’s striked through.',
         },
       ],
     },
     {
-      type: "horizontalRule",
+      type: 'horizontalRule',
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
-          text: "There is no underline here.",
+          type: 'text',
+          text: 'There is no underline here.',
         },
       ],
     },
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
+          type: 'text',
           marks: [
             {
-              type: "underline",
+              type: 'underline',
             },
           ],
-          text: "This is underlined though.",
+          text: 'This is underlined though.',
         },
       ],
     },
     {
-      type: "horizontalRule",
+      type: 'horizontalRule',
     },
     {
-      type: "orderedList",
+      type: 'orderedList',
       attrs: {
         start: 1,
       },
       content: [
         {
-          type: "listItem",
+          type: 'listItem',
           content: [
             {
-              type: "paragraph",
+              type: 'paragraph',
               content: [
                 {
-                  type: "text",
-                  text: "A list item",
+                  type: 'text',
+                  text: 'A list item',
                 },
               ],
             },
           ],
         },
         {
-          type: "listItem",
+          type: 'listItem',
           content: [
             {
-              type: "paragraph",
+              type: 'paragraph',
               content: [
                 {
-                  type: "text",
-                  text: "And another one",
+                  type: 'text',
+                  text: 'And another one',
                 },
               ],
             },
@@ -119,34 +119,34 @@ const node = {
       ],
     },
     {
-      type: "orderedList",
+      type: 'orderedList',
       attrs: {
         start: 5,
       },
       content: [
         {
-          type: "listItem",
+          type: 'listItem',
           content: [
             {
-              type: "paragraph",
+              type: 'paragraph',
               content: [
                 {
-                  type: "text",
-                  text: "This item starts at 5",
+                  type: 'text',
+                  text: 'This item starts at 5',
                 },
               ],
             },
           ],
         },
         {
-          type: "listItem",
+          type: 'listItem',
           content: [
             {
-              type: "paragraph",
+              type: 'paragraph',
               content: [
                 {
-                  type: "text",
-                  text: "And another one",
+                  type: 'text',
+                  text: 'And another one',
                 },
               ],
             },
@@ -155,7 +155,7 @@ const node = {
       ],
     },
   ],
-};
+}
 </script>
 
 <template>

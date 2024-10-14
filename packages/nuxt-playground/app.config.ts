@@ -1,7 +1,7 @@
 export default defineAppConfig({
   prosemirror: {
     types: {
-      doc: () => ["section", { class: "prosemirror" }],
+      doc: () => ['section', { class: 'prosemirror' }],
     },
   },
-});
+})

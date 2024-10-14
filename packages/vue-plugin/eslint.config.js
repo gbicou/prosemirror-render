@@ -1,10 +1,10 @@
 /* eslint-env node */
 
-import local from "@bicou/eslint-config";
+import local from '@bicou/eslint-config'
 
 export default [
   {
-    ignores: ["dist/", "coverage/"],
+    ignores: ['dist/', 'coverage/'],
   },
   ...local,
-];
+]

@@ -1,59 +1,59 @@
 <script setup lang="ts">
-import { provideProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from "@bicou/prosemirror-render-vue";
+import { provideProsemirrorOptions, ProsemirrorRender, type ProsemirrorJSONNode } from '@bicou/prosemirror-render-vue'
 
 provideProsemirrorOptions({
   types: {
-    link: "router-link",
+    link: 'router-link',
   },
-});
+})
 
 const node: ProsemirrorJSONNode = {
-  type: "doc",
+  type: 'doc',
   content: [
     {
-      type: "paragraph",
+      type: 'paragraph',
       content: [
         {
-          type: "text",
-          text: "Wow, this has support for links to the whole ",
+          type: 'text',
+          text: 'Wow, this has support for links to the whole ',
         },
         {
-          type: "text",
+          type: 'text',
           marks: [
             {
-              type: "link",
+              type: 'link',
               attrs: {
-                to: "/etc",
+                to: '/etc',
               },
             },
           ],
-          text: "world wide web",
+          text: 'world wide web',
         },
         {
-          type: "text",
-          text: ". We tested a lot of URLs and I think you can add *every URL* you want. Isn’t that cool? Let’s try ",
+          type: 'text',
+          text: '. We tested a lot of URLs and I think you can add *every URL* you want. Isn’t that cool? Let’s try ',
         },
         {
-          type: "text",
+          type: 'text',
           marks: [
             {
-              type: "link",
+              type: 'link',
               attrs: {
-                to: "/table",
-                target: "_blank",
+                to: '/table',
+                target: '_blank',
               },
             },
           ],
-          text: "another one!",
+          text: 'another one!',
         },
         {
-          type: "text",
-          text: " Yep, seems to work.",
+          type: 'text',
+          text: ' Yep, seems to work.',
         },
       ],
     },
   ],
-};
+}
 </script>
 
 <template>

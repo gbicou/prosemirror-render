@@ -1,7 +1,7 @@
 export default defineAppConfig({
   prosemirror: {
     types: {
-      italic: () => ["span", { class: "italic" }],
+      italic: () => ['span', { class: 'italic' }],
     },
   },
-});
+})

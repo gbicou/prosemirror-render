@@ -1,12 +1,12 @@
 export default defineAppConfig({
   prosemirror: {
     types: {
-      doc: "section",
+      doc: 'section',
     },
   },
   prosemirrorTypography: {
     shiki: {
-      theme: "light-plus",
+      theme: 'light-plus',
     },
   },
-});
+})
