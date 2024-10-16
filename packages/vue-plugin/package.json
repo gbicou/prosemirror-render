@@ -40,14 +40,14 @@
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
     "@vitejs/plugin-vue": "5.1.4",
-    "@vitest/coverage-v8": "2.1.2",
+    "@vitest/coverage-v8": "2.1.3",
     "@vue/test-utils": "2.4.6",
     "eslint": "9.12.0",
     "happy-dom": "15.7.4",
     "rollup-plugin-node-externals": "7.1.3",
     "vite": "5.4.9",
     "vite-plugin-dts": "4.2.4",
-    "vitest": "2.1.2",
+    "vitest": "2.1.3",
     "vitest-github-actions-reporter": "0.11.1",
     "vue-tsc": "2.1.6"
   },
