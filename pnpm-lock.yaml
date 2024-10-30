@@ -33,8 +33,8 @@ importers:
         specifier: workspace:*
         version: link:../packages/vue-plugin
       vitepress:
-        specifier: 1.4.1
-        version: 1.4.1(@algolia/client-search@4.24.0)(@types/node@20.17.3)(change-case@5.4.4)(postcss@8.4.47)(search-insights@2.17.2)(terser@5.36.0)(typescript@5.6.3)
+        specifier: 1.4.2
+        version: 1.4.2(@algolia/client-search@4.24.0)(@types/node@20.17.3)(change-case@5.4.4)(postcss@8.4.47)(search-insights@2.17.2)(terser@5.36.0)(typescript@5.6.3)
 
   eslint-config:
     dependencies:
@@ -5858,8 +5858,8 @@ packages:
       terser:
         optional: true
 
-  vitepress@1.4.1:
-    resolution: {integrity: sha512-C2rQ7PMlDVqgsaHOa0uJtgGGWaGv74QMaGL62lxKbtFkYtosJB5HAfZ8+pEbfzzvLemYaYwaiQdFLBlexK2sFw==}
+  vitepress@1.4.2:
+    resolution: {integrity: sha512-10v92Lqx0N4r7YC3cQLBvu+gRS2rHviE7vgdKiwlupUGfSWkyiQDqYccxM5iPStDGSi1Brnec1lf+lmhaQcZXw==}
     hasBin: true
     peerDependencies:
       markdown-it-mathjax3: ^4
@@ -12782,7 +12782,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.36.0
 
-  vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.17.3)(change-case@5.4.4)(postcss@8.4.47)(search-insights@2.17.2)(terser@5.36.0)(typescript@5.6.3):
+  vitepress@1.4.2(@algolia/client-search@4.24.0)(@types/node@20.17.3)(change-case@5.4.4)(postcss@8.4.47)(search-insights@2.17.2)(terser@5.36.0)(typescript@5.6.3):
     dependencies:
       '@docsearch/css': 3.6.2
       '@docsearch/js': 3.6.2(@algolia/client-search@4.24.0)(search-insights@2.17.2)
