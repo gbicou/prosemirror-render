@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",
-    "vitepress": "1.4.1"
+    "vitepress": "1.4.2"
   }
 }
