@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@eslint/js": "9.13.0",
-    "@stylistic/eslint-plugin": "2.9.0",
+    "@stylistic/eslint-plugin": "2.10.1",
     "@vitest/eslint-plugin": "1.1.7",
     "eslint-plugin-jsdoc": "50.4.3",
     "eslint-plugin-unicorn": "56.0.0",
