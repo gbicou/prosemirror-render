@@ -20,11 +20,11 @@
     "@bicou/eslint-config": "workspace:*",
     "@vitejs/plugin-vue": "5.1.4",
     "autoprefixer": "10.4.20",
-    "eslint": "9.13.0",
+    "eslint": "9.14.0",
     "postcss": "8.4.47",
     "tailwindcss": "3.4.14",
     "unplugin-vue-router": "0.10.8",
     "vite": "5.4.10",
-    "vue-tsc": "2.1.6"
+    "vue-tsc": "2.1.10"
   }
 }
