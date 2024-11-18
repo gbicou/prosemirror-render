@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@vitejs/plugin-vue": "5.1.4",
+    "@vitejs/plugin-vue": "5.2.0",
     "autoprefixer": "10.4.20",
     "eslint": "9.14.0",
     "postcss": "8.4.49",
