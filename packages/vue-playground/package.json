@@ -20,7 +20,7 @@
     "@bicou/eslint-config": "workspace:*",
     "@vitejs/plugin-vue": "5.2.0",
     "autoprefixer": "10.4.20",
-    "eslint": "9.14.0",
+    "eslint": "9.15.0",
     "postcss": "8.4.49",
     "tailwindcss": "3.4.15",
     "unplugin-vue-router": "0.10.8",
