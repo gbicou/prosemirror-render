@@ -7,6 +7,10 @@ on:
     # The branches below must be a subset of the branches above
     branches: [ "main" ]
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   eslint:
     name: Run eslint scanning
@@ -14,18 +18,6 @@ jobs:
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
-    permissions:
-      contents: read
-      security-events: write
-    strategy:
-      matrix:
-        package:
-          - nuxt-module
-          - nuxt-playground
-          - nuxt-typography-layer
-          - nuxt-typography-playground
-          - vue-playground
-          - vue-plugin
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -42,8 +34,32 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Run ESLint
+      - name: Run eslint
         run: pnpm turbo lint:sarif
+
+      - name: Upload eslint results
+        uses: actions/upload-artifact@v4
+        with:
+          name: eslint-results
+          path: packages/**/eslint.sarif
+
+  codeql:
+    name: Upload to CodeQL
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package:
+          - nuxt-module
+          - nuxt-playground
+          - nuxt-typography-layer
+          - nuxt-typography-playground
+          - vue-playground
+          - vue-plugin
+    steps:
+      - name: Download eslint results
+        uses: actions/download-artifact@v4
+        with:
+          name: eslint-results
 
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v3
