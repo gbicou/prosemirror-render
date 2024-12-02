@@ -37,7 +37,37 @@ jobs:
       - name: Run eslint
         run: pnpm turbo lint:sarif
 
+      - name: Upload eslint results
+        uses: actions/upload-artifact@v4
+        with:
+          name: eslint-results
+          path: packages/*/eslint.sarif
+
+  codeql:
+    needs: eslint
+    name: Upload to CodeQL
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        package:
+          - nuxt-module
+          - nuxt-playground
+          - nuxt-typography-layer
+          - nuxt-typography-playground
+          - vue-playground
+          - vue-plugin
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download eslint results
+        uses: actions/download-artifact@v4
+        with:
+          name: eslint-results
+          path: packages
+
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v3
         with:
-          sarif_file: packages/*/eslint.sarif
+          category: ${{ matrix.package }}
+          sarif_file: packages/${{ matrix.package }}/eslint.sarif
