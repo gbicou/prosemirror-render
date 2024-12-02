@@ -41,9 +41,10 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: eslint-results
-          path: packages/**/eslint.sarif
+          path: packages/*/eslint.sarif
 
   codeql:
+    needs: eslint
     name: Upload to CodeQL
     runs-on: ubuntu-latest
     strategy:
