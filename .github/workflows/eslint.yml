@@ -57,6 +57,9 @@ jobs:
           - vue-playground
           - vue-plugin
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Download eslint results
         uses: actions/download-artifact@v4
         with:
