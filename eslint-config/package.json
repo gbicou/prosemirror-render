@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@eslint/js": "9.15.0",
+    "@eslint/js": "9.16.0",
     "@microsoft/eslint-formatter-sarif": "3.1.0",
     "@stylistic/eslint-plugin": "2.11.0",
     "@vitest/eslint-plugin": "1.1.12",
