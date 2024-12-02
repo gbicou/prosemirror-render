@@ -27,6 +27,7 @@
     "build": "vue-tsc && vite build",
     "dev": "vite build --watch",
     "lint": "eslint .",
+    "lint:sarif": "eslint -f @microsoft/eslint-formatter-sarif -o eslint.sarif .",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage"
   },

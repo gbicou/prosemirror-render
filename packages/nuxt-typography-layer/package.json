@@ -19,7 +19,8 @@
   ],
   "scripts": {
     "prepare": "nuxt prepare",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:sarif": "eslint -f @microsoft/eslint-formatter-sarif -o eslint.sarif ."
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt": "workspace:*",

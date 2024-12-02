@@ -19,6 +19,9 @@
     "lint": {
       "outputs": []
     },
+    "lint:sarif": {
+      "outputs": ["eslint.sarif"]
+    },
     "dev": {
       "cache": false,
       "persistent": true

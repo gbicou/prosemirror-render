@@ -8,6 +8,7 @@
     "build": "nuxt build",
     "dev": "nuxi dev",
     "lint": "eslint .",
+    "lint:sarif": "eslint -f @microsoft/eslint-formatter-sarif -o eslint.sarif .",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
