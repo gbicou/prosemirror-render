@@ -284,7 +284,6 @@ describe('component ProsemirrorRender', () => {
         content: [
           {
             type: 'text',
-            // eslint-disable-next-line unicorn/no-null
             text: null,
           },
         ],

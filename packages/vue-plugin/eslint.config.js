@@ -7,4 +7,10 @@ export default [
     ignores: ['dist/', 'coverage/'],
   },
   ...local,
+  {
+    files: ['**/*.test.ts'],
+    rules: {
+      'unicorn/no-null': 'off',
+    },
+  },
 ]
