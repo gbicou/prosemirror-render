@@ -16,13 +16,7 @@ const node = {
     {
       type: 'image',
       attrs: {
-        src: 'https://source.unsplash.com/8xznAGy4HcY/800x400',
-      },
-    },
-    {
-      type: 'image',
-      attrs: {
-        src: 'https://source.unsplash.com/K9QHL52rE2k/800x400',
+        src: 'https://placehold.co/400x300',
       },
     },
   ],
