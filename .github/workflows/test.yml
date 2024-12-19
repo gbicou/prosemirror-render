@@ -30,7 +30,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Install playwright browsers
-        run: pnpm exec playwright install --with-deps
+        run: pnpm playwright install --with-deps
 
       - name: Test
         run: pnpm test
