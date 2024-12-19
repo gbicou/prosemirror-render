@@ -50,3 +50,9 @@ coverage
 
 # Linting
 eslint.sarif
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/

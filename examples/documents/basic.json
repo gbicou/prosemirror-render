@@ -1,5 +1,8 @@
 {
   "type": "doc",
+  "attrs": {
+    "data-testid": "doc-basic"
+  },
   "content": [
     {
       "type": "heading",

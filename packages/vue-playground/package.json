@@ -8,7 +8,8 @@
     "dev": "vite",
     "lint": "eslint .",
     "lint:sarif": "eslint -f @microsoft/eslint-formatter-sarif -o eslint.sarif .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "playwright test"
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
+    "@playwright/test": "^1.49.1",
     "@types/node": "22.10.2",
     "@vitejs/plugin-vue": "5.2.1",
     "autoprefixer": "10.4.20",

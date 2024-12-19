@@ -3,6 +3,9 @@
   "content": [
     {
       "type": "paragraph",
+      "attrs": {
+        "data-testid": "emoji-smile"
+      },
       "content": [
         {
           "type": "text",
