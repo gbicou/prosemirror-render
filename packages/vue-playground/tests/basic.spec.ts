@@ -6,6 +6,4 @@ test('render basic document', async ({ page }) => {
   const document = page.getByTestId('doc-basic')
 
   await expect(document).not.toBeEmpty()
-
-  // await expect(document).toHaveScreenshot()
 })
