@@ -26,7 +26,8 @@ const node: ProsemirrorJSONNode = {
         {
           type: 'mention',
           attrs: {
-            id: 'Jennifer Grey',
+            'data-testid': 'jennifer-grey',
+            'id': 'Jennifer Grey',
           },
         },
         {

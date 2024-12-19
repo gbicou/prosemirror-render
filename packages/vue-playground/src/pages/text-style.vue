@@ -26,7 +26,8 @@ const node = {
             {
               type: 'textStyle',
               attrs: {
-                fontFamily: 'Inter',
+                'fontFamily': 'Inter',
+                'data-testid': 'inter',
               },
             },
           ],
