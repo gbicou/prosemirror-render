@@ -42,8 +42,8 @@ importers:
         specifier: 2.12.1
         version: 2.12.1(eslint@8.57.1)(typescript@5.6.3)
       '@vitest/eslint-plugin':
-        specifier: 1.1.22
-        version: 1.1.22(@typescript-eslint/utils@8.18.2(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)(vitest@2.1.8(@types/node@22.10.3)(happy-dom@15.11.7)(terser@5.37.0))
+        specifier: 1.1.23
+        version: 1.1.23(@typescript-eslint/utils@8.18.2(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)(vitest@2.1.8(@types/node@22.10.3)(happy-dom@15.11.7)(terser@5.37.0))
       eslint-plugin-jsdoc:
         specifier: 50.6.1
         version: 50.6.1(eslint@8.57.1)
@@ -2100,8 +2100,8 @@ packages:
       '@vitest/browser':
         optional: true
 
-  '@vitest/eslint-plugin@1.1.22':
-    resolution: {integrity: sha512-ztvy2+thiCMmKnywvKGhH3AcKgEMGd4BsFK2QC9/EXqlyjXDp7Pg96PonbLx8bDvNCAjq4hfCw5YuZSAz1EDIg==}
+  '@vitest/eslint-plugin@1.1.23':
+    resolution: {integrity: sha512-tH8nPAKYdH8jXo/ZJ7SpYTjW9Djoc6t1/EIJicI/ouDwYJQh/U6vhOAOU2nzQgjjfjU26ukvB6iu8MEI9oJmPg==}
     peerDependencies:
       '@typescript-eslint/utils': '>= 8.0'
       eslint: '>= 8.57.0'
@@ -8343,7 +8343,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/eslint-plugin@1.1.22(@typescript-eslint/utils@8.18.2(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)(vitest@2.1.8(@types/node@22.10.3)(happy-dom@15.11.7)(terser@5.37.0))':
+  '@vitest/eslint-plugin@1.1.23(@typescript-eslint/utils@8.18.2(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)(vitest@2.1.8(@types/node@22.10.3)(happy-dom@15.11.7)(terser@5.37.0))':
     dependencies:
       '@typescript-eslint/utils': 8.18.2(eslint@8.57.1)(typescript@5.6.3)
       eslint: 8.57.1
