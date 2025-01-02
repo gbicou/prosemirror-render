@@ -1,5 +1,14 @@
 # @bicou/prosemirror-render-nuxt-typography-playground
 
+## 0.0.8
+
+### Patch Changes
+
+- [#287](https://github.com/gbicou/prosemirror-render/pull/287) [`2e73780`](https://github.com/gbicou/prosemirror-render/commit/2e737805da070fee8e6ba18f0f5de3254d67f2de) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `shiki` to `1.25.1`.
+
+- Updated dependencies [[`2e73780`](https://github.com/gbicou/prosemirror-render/commit/2e737805da070fee8e6ba18f0f5de3254d67f2de)]:
+  - @bicou/prosemirror-render-nuxt-typography@0.0.10
+
 ## 0.0.7
 
 ### Patch Changes
