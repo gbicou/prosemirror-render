@@ -12,15 +12,15 @@ jobs:
   generate-changeset:
     runs-on: ubuntu-latest
     if: github.actor == 'renovate[bot]' && github.repository == 'gbicou/prosemirror-render'
+    permissions: write-all
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2
           ref: ${{ github.head_ref }}
       - name: Git Identity
         run: |
           git config --global user.name 'renovate[bot]'
-          git config --global user.email 'renovate[bot]@users.noreply.github.com'
+          git config --global user.email 'gbicou@gmail.com'
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
