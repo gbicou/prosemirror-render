@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-nuxt-playground
 
+## 0.0.10
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @bicou/prosemirror-render-nuxt@0.0.10
+
 ## 0.0.9
 
 ### Patch Changes

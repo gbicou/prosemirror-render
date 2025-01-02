@@ -1,5 +1,14 @@
 # @bicou/prosemirror-render-vue-playground
 
+## 0.0.10
+
+### Patch Changes
+
+- [#275](https://github.com/gbicou/prosemirror-render/pull/275) [`bbc034f`](https://github.com/gbicou/prosemirror-render/commit/bbc034f624d602e805ea50627f112d59a84d6fa9) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vue-tsc` to `2.2.0`.
+
+- Updated dependencies [[`bbc034f`](https://github.com/gbicou/prosemirror-render/commit/bbc034f624d602e805ea50627f112d59a84d6fa9)]:
+  - @bicou/prosemirror-render-vue@0.0.10
+
 ## 0.0.9
 
 ### Patch Changes
