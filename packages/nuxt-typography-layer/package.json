@@ -28,7 +28,7 @@
     "@vueuse/core": "12.2.0"
   },
   "optionalDependencies": {
-    "shiki": "1.24.4"
+    "shiki": "1.25.1"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
