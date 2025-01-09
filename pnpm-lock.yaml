@@ -43,7 +43,7 @@ importers:
         version: 2.12.1(eslint@8.57.1)(typescript@5.6.3)
       '@vitest/eslint-plugin':
         specifier: 1.1.24
-        version: 1.1.24(@typescript-eslint/utils@8.19.1(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0))
+        version: 1.1.24(@typescript-eslint/utils@8.19.1(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0))
       eslint-plugin-jsdoc:
         specifier: 50.6.1
         version: 50.6.1(eslint@8.57.1)
@@ -296,7 +296,7 @@ importers:
         version: 5.2.1(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(yaml@2.6.1))(vue@3.5.13(typescript@5.6.3))
       '@vitest/coverage-v8':
         specifier: 2.1.8
-        version: 2.1.8(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0))
+        version: 2.1.8(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0))
       '@vue/test-utils':
         specifier: 2.4.6
         version: 2.4.6
@@ -304,8 +304,8 @@ importers:
         specifier: 9.17.0
         version: 9.17.0(jiti@2.4.2)
       happy-dom:
-        specifier: 16.5.2
-        version: 16.5.2
+        specifier: 16.5.3
+        version: 16.5.3
       rollup-plugin-node-externals:
         specifier: 8.0.0
         version: 8.0.0(rollup@4.29.1)
@@ -320,10 +320,10 @@ importers:
         version: 4.4.0(@types/node@22.10.5)(rollup@4.29.1)(typescript@5.6.3)(vite@6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(yaml@2.6.1))
       vitest:
         specifier: 2.1.8
-        version: 2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0)
+        version: 2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0)
       vitest-github-actions-reporter:
         specifier: 0.11.1
-        version: 0.11.1(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0))
+        version: 0.11.1(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0))
       vue-tsc:
         specifier: 2.2.0
         version: 2.2.0(typescript@5.6.3)
@@ -3565,8 +3565,8 @@ packages:
     resolution: {integrity: sha512-KyrFvnl+J9US63TEzwoiJOQzZBJY7KgBushJA8X61DMbNsH+2ONkDuLDnCnwUiPTF42tLoEmrPyoqbenVA5zrg==}
     engines: {node: '>=18.0.0'}
 
-  happy-dom@16.5.2:
-    resolution: {integrity: sha512-XWXjbbNjog3Me13Q9FQ5L1D7p4bCUdxrJndLVdsCIsCZgHpKz7HUQzAy+R2TidjKEz2Spe3gaqNpPPxOOkepyg==}
+  happy-dom@16.5.3:
+    resolution: {integrity: sha512-7zGnyROZuntn+5X84MQ535qiQ3ccm45uHl+Q7EFAcPP0NhkbrfPitqprz0GgszX91/QqsZKQ7nTYkyObCTDUjg==}
     engines: {node: '>=18.0.0'}
 
   has-flag@4.0.0:
@@ -8535,7 +8535,7 @@ snapshots:
       vite: 6.0.7(@types/node@22.10.5)(jiti@2.4.2)(terser@5.37.0)(yaml@2.6.1)
       vue: 3.5.13(typescript@5.6.3)
 
-  '@vitest/coverage-v8@2.1.8(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0))':
+  '@vitest/coverage-v8@2.1.8(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -8549,17 +8549,17 @@ snapshots:
       std-env: 3.8.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0)
+      vitest: 2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0)
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/eslint-plugin@1.1.24(@typescript-eslint/utils@8.19.1(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0))':
+  '@vitest/eslint-plugin@1.1.24(@typescript-eslint/utils@8.19.1(eslint@8.57.1)(typescript@5.6.3))(eslint@8.57.1)(typescript@5.6.3)(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0))':
     dependencies:
       '@typescript-eslint/utils': 8.19.1(eslint@8.57.1)(typescript@5.6.3)
       eslint: 8.57.1
     optionalDependencies:
       typescript: 5.6.3
-      vitest: 2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0)
+      vitest: 2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0)
 
   '@vitest/expect@2.1.8':
     dependencies:
@@ -10285,7 +10285,7 @@ snapshots:
       whatwg-mimetype: 3.0.0
     optional: true
 
-  happy-dom@16.5.2:
+  happy-dom@16.5.3:
     dependencies:
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
@@ -13214,10 +13214,10 @@ snapshots:
       - typescript
       - vitest
 
-  vitest-github-actions-reporter@0.11.1(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0)):
+  vitest-github-actions-reporter@0.11.1(vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0)):
     dependencies:
       '@actions/core': 1.11.1
-      vitest: 2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0)
+      vitest: 2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0)
 
   vitest@2.1.8(@types/node@22.10.5)(happy-dom@15.11.7)(terser@5.37.0):
     dependencies:
@@ -13255,7 +13255,7 @@ snapshots:
       - supports-color
       - terser
 
-  vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.2)(terser@5.37.0):
+  vitest@2.1.8(@types/node@22.10.5)(happy-dom@16.5.3)(terser@5.37.0):
     dependencies:
       '@vitest/expect': 2.1.8
       '@vitest/mocker': 2.1.8(vite@5.4.11(@types/node@22.10.5)(terser@5.37.0))
@@ -13279,7 +13279,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.10.5
-      happy-dom: 16.5.2
+      happy-dom: 16.5.3
     transitivePeerDependencies:
       - less
       - lightningcss
