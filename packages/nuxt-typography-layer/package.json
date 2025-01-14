@@ -25,10 +25,10 @@
   "dependencies": {
     "@bicou/prosemirror-render-nuxt": "workspace:*",
     "@nuxt-themes/typography": "1.0.1",
-    "@vueuse/core": "12.3.0"
+    "@vueuse/core": "12.4.0"
   },
   "optionalDependencies": {
-    "shiki": "1.26.1"
+    "shiki": "1.27.0"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
