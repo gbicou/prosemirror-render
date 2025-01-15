@@ -316,8 +316,8 @@ importers:
         specifier: 6.0.7
         version: 6.0.7(@types/node@22.10.6)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0)
       vite-plugin-dts:
-        specifier: 4.4.0
-        version: 4.4.0(@types/node@22.10.6)(rollup@4.30.1)(typescript@5.6.3)(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))
+        specifier: 4.5.0
+        version: 4.5.0(@types/node@22.10.6)(rollup@4.30.1)(typescript@5.6.3)(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0))
       vitest:
         specifier: 2.1.8
         version: 2.1.8(@types/node@22.10.6)(happy-dom@16.5.3)(terser@5.37.0)
@@ -2244,14 +2244,6 @@ packages:
   '@vue/devtools-shared@7.7.0':
     resolution: {integrity: sha512-jtlQY26R5thQxW9YQTpXbI0HoK0Wf9Rd4ekidOkRvSy7ChfK0kIU6vvcBtjj87/EcpeOSK49fZAicaFNJcoTcQ==}
 
-  '@vue/language-core@2.1.10':
-    resolution: {integrity: sha512-DAI289d0K3AB5TUG3xDp9OuQ71CnrujQwJrQnfuZDwo6eGNf0UoRlPuaVNO+Zrn65PC3j0oB2i7mNmVPggeGeQ==}
-    peerDependencies:
-      typescript: '*'
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
   '@vue/language-core@2.2.0':
     resolution: {integrity: sha512-O1ZZFaaBGkKbsRfnVH1ifOK1/1BUkyK+3SQsfnh6PmMmD4qJcTU8godCeA96jjDRTL6zgnK7YzCHfaUlH2r0Mw==}
     peerDependencies:
@@ -2403,9 +2395,6 @@ packages:
   algoliasearch@5.19.0:
     resolution: {integrity: sha512-zrLtGhC63z3sVLDDKGW+SlCRN9eJHFTgdEmoAOpsVh6wgGL1GgTTDou7tpCBjevzgIvi3AIyDAQO3Xjbg5eqZg==}
     engines: {node: '>= 14.0.0'}
-
-  alien-signals@0.2.2:
-    resolution: {integrity: sha512-cZIRkbERILsBOXTQmMrxc9hgpxglstn69zm+F1ARf4aPAzdAFYd6sBq87ErO0Fj3DV94tglcyHG5kQz9nDC/8A==}
 
   alien-signals@0.4.14:
     resolution: {integrity: sha512-itUAVzhczTmP2U5yX67xVpsbbOiquusbWVyA9N+sy6+r6YVbFkahXvNCeEPWEOMhwDYwbVbGHFkVL03N9I5g+Q==}
@@ -5645,9 +5634,8 @@ packages:
       vue-tsc:
         optional: true
 
-  vite-plugin-dts@4.4.0:
-    resolution: {integrity: sha512-CJ6phvnnPLF+aFk8Jz2ZcMBLleJ4gKJOXb9We5Kzmsp5bPuD+uMDeVefjFNYSXZ+wdcqnf+Yp2P7oA5hBKQTlQ==}
-    engines: {node: ^14.18.0 || >=16.0.0}
+  vite-plugin-dts@4.5.0:
+    resolution: {integrity: sha512-M1lrPTdi7gilLYRZoLmGYnl4fbPryVYsehPN9JgaxjJKTs8/f7tuAlvCCvOLB5gRDQTTKnptBcB0ACsaw2wNLw==}
     peerDependencies:
       typescript: '*'
       vite: '*'
@@ -8626,19 +8614,6 @@ snapshots:
     dependencies:
       rfdc: 1.4.1
 
-  '@vue/language-core@2.1.10(typescript@5.6.3)':
-    dependencies:
-      '@volar/language-core': 2.4.11
-      '@vue/compiler-dom': 3.5.13
-      '@vue/compiler-vue2': 2.7.16
-      '@vue/shared': 3.5.13
-      alien-signals: 0.2.2
-      minimatch: 9.0.5
-      muggle-string: 0.4.1
-      path-browserify: 1.0.1
-    optionalDependencies:
-      typescript: 5.6.3
-
   '@vue/language-core@2.2.0(typescript@5.6.3)':
     dependencies:
       '@volar/language-core': 2.4.11
@@ -8816,8 +8791,6 @@ snapshots:
       '@algolia/requester-browser-xhr': 5.19.0
       '@algolia/requester-fetch': 5.19.0
       '@algolia/requester-node-http': 5.19.0
-
-  alien-signals@0.2.2: {}
 
   alien-signals@0.4.14: {}
 
@@ -12877,12 +12850,12 @@ snapshots:
       optionator: 0.9.4
       typescript: 5.6.3
 
-  vite-plugin-dts@4.4.0(@types/node@22.10.6)(rollup@4.30.1)(typescript@5.6.3)(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0)):
+  vite-plugin-dts@4.5.0(@types/node@22.10.6)(rollup@4.30.1)(typescript@5.6.3)(vite@6.0.7(@types/node@22.10.6)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0)):
     dependencies:
       '@microsoft/api-extractor': 7.49.1(@types/node@22.10.6)
       '@rollup/pluginutils': 5.1.4(rollup@4.30.1)
       '@volar/typescript': 2.4.11
-      '@vue/language-core': 2.1.10(typescript@5.6.3)
+      '@vue/language-core': 2.2.0(typescript@5.6.3)
       compare-versions: 6.1.1
       debug: 4.4.0(supports-color@9.4.0)
       kolorist: 1.8.0
