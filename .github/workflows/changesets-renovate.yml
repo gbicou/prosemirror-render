@@ -18,6 +18,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: '${{ secrets.PAT }}'
+          fetch-depth: 2
       - name: Git Identity
         run: |
           git config --global user.name 'renovate[bot]'
