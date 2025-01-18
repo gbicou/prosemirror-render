@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-nuxt-typography
 
+## 0.0.11
+
+### Patch Changes
+
+- Updated dependencies [[`dc7d702`](https://github.com/gbicou/prosemirror-render/commit/dc7d702d57169f59bef420ae7a45f0a2fbb369eb)]:
+  - @bicou/prosemirror-render-nuxt@0.0.11
+
 ## 0.0.10
 
 ### Patch Changes

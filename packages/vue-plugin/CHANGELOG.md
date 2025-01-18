@@ -1,5 +1,14 @@
 # @bicou/prosemirror-render-vue
 
+## 0.0.11
+
+### Patch Changes
+
+- [#318](https://github.com/gbicou/prosemirror-render/pull/318) [`dc7d702`](https://github.com/gbicou/prosemirror-render/commit/dc7d702d57169f59bef420ae7a45f0a2fbb369eb) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vitest` to `3.0.2`.
+  Updated dependency `@vitest/coverage-v8` to `3.0.2`.
+
+- [#315](https://github.com/gbicou/prosemirror-render/pull/315) [`68f9863`](https://github.com/gbicou/prosemirror-render/commit/68f986323462d0492c5e5db7f73cc3a465aa716c) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `happy-dom` to `16.6.0`.
+
 ## 0.0.10
 
 ### Patch Changes

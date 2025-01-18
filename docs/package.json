@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@bicou/prosemirror-render-docs",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "",
   "keywords": [],
   "license": "ISC",
