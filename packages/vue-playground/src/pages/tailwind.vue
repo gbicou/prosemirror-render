@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ProsemirrorRender, provideProsemirrorOptions } from '@bicou/prosemirror-render-vue'
 import PmMention from '../components/pm-mention.vue'
-import '../tailwind.css'
+import '../main.css'
 
 provideProsemirrorOptions({
   types: {
