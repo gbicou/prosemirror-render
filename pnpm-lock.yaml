@@ -264,8 +264,8 @@ importers:
         specifier: 5.6.3
         version: 5.6.3
       unplugin-vue-router:
-        specifier: 0.11.0
-        version: 0.11.0(rollup@4.31.0)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
+        specifier: 0.11.1
+        version: 0.11.1(rollup@4.31.0)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3))
       vite:
         specifier: 6.0.10
         version: 6.0.10(@types/node@22.10.7)(jiti@2.4.2)(terser@5.37.0)(yaml@2.7.0)
@@ -5528,8 +5528,8 @@ packages:
       vue-router:
         optional: true
 
-  unplugin-vue-router@0.11.0:
-    resolution: {integrity: sha512-2mjN0dS5WLAq3A6FTvvXe7+6qxMQk0i9K51UwB75EzT7dxcGpCVFRk82TnVuDk8MjFyn7Nc8zv2DkEnHi1Nleg==}
+  unplugin-vue-router@0.11.1:
+    resolution: {integrity: sha512-uYKJiFcPcLn20ve9KDDfvmGvgZph3mfE9ozd3SduFmkmQXo7bnPhSglytlV7WhuaHkhEDCPfnKx2trKbYieNXQ==}
     peerDependencies:
       vue-router: ^4.4.0
     peerDependenciesMeta:
@@ -12902,7 +12902,7 @@ snapshots:
       - rollup
       - vue
 
-  unplugin-vue-router@0.11.0(rollup@4.31.0)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3)):
+  unplugin-vue-router@0.11.1(rollup@4.31.0)(vue-router@4.5.0(vue@3.5.13(typescript@5.6.3)))(vue@3.5.13(typescript@5.6.3)):
     dependencies:
       '@babel/types': 7.26.5
       '@rollup/pluginutils': 5.1.4(rollup@4.31.0)
