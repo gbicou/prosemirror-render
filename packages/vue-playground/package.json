@@ -28,7 +28,7 @@
     "postcss": "8.5.1",
     "tailwindcss": "3.4.17",
     "typescript": "5.6.3",
-    "unplugin-vue-router": "0.10.9",
+    "unplugin-vue-router": "0.11.0",
     "vite": "6.0.10",
     "vue-tsc": "2.2.0"
   }
