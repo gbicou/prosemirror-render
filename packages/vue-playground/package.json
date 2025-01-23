@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@playwright/test": "1.49.1",
+    "@playwright/test": "1.50.0",
     "@types/node": "22.10.10",
     "@vitejs/plugin-vue": "5.2.1",
     "autoprefixer": "10.4.20",
@@ -29,7 +29,7 @@
     "tailwindcss": "3.4.17",
     "typescript": "5.6.3",
     "unplugin-vue-router": "0.11.1",
-    "vite": "6.0.10",
+    "vite": "6.0.11",
     "vue-tsc": "2.2.0"
   }
 }
