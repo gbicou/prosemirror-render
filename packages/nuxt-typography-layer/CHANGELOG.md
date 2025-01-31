@@ -1,5 +1,18 @@
 # @bicou/prosemirror-render-nuxt-typography
 
+## 0.0.12
+
+### Patch Changes
+
+- [#334](https://github.com/gbicou/prosemirror-render/pull/334) [`dcc7f1d`](https://github.com/gbicou/prosemirror-render/commit/dcc7f1da6bd4f6229eec26743a20902c172a82ea) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@vueuse/core` to `12.5.0`.
+
+- [#344](https://github.com/gbicou/prosemirror-render/pull/344) [`9462f33`](https://github.com/gbicou/prosemirror-render/commit/9462f3342a91f5313f6667b12eb2be902da77a74) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@nuxt/eslint` to `1.0.0`.
+
+- [#323](https://github.com/gbicou/prosemirror-render/pull/323) [`26a014b`](https://github.com/gbicou/prosemirror-render/commit/26a014bb1f71ca87fb481ee25ccd37cdc7e2f925) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `shiki` to `1.29.1`.
+
+- Updated dependencies [[`9462f33`](https://github.com/gbicou/prosemirror-render/commit/9462f3342a91f5313f6667b12eb2be902da77a74)]:
+  - @bicou/prosemirror-render-nuxt@0.0.12
+
 ## 0.0.11
 
 ### Patch Changes

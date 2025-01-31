@@ -1,5 +1,22 @@
 # @bicou/prosemirror-render-vue-playground
 
+## 0.0.12
+
+### Patch Changes
+
+- [#332](https://github.com/gbicou/prosemirror-render/pull/332) [`a486040`](https://github.com/gbicou/prosemirror-render/commit/a48604085e44e14aa95337612c5760b92acdfc07) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@types/node` to `22.10.10`.
+
+- [#331](https://github.com/gbicou/prosemirror-render/pull/331) [`09cb957`](https://github.com/gbicou/prosemirror-render/commit/09cb957910580da2e6da08e37684fb70609ccf54) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `unplugin-vue-router` to `0.11.0`.
+
+- [#322](https://github.com/gbicou/prosemirror-render/pull/322) [`388b872`](https://github.com/gbicou/prosemirror-render/commit/388b872a2c04a60a1294b69cd549092ee798326c) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vite` to `6.0.9`.
+
+- [#337](https://github.com/gbicou/prosemirror-render/pull/337) [`cad96aa`](https://github.com/gbicou/prosemirror-render/commit/cad96aabc96fe93bc42fadb7b5c2173a08f89b30) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `unplugin-vue-router` to `0.11.1`.
+
+- [#327](https://github.com/gbicou/prosemirror-render/pull/327) [`8cc0223`](https://github.com/gbicou/prosemirror-render/commit/8cc02230d51d2814a6af201556aab188c5549635) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vite` to `6.0.10`.
+
+- Updated dependencies [[`a486040`](https://github.com/gbicou/prosemirror-render/commit/a48604085e44e14aa95337612c5760b92acdfc07), [`388b872`](https://github.com/gbicou/prosemirror-render/commit/388b872a2c04a60a1294b69cd549092ee798326c), [`e561653`](https://github.com/gbicou/prosemirror-render/commit/e56165318ca2c92b589ed09346748d2717ad0b11), [`8cc0223`](https://github.com/gbicou/prosemirror-render/commit/8cc02230d51d2814a6af201556aab188c5549635), [`8a507fe`](https://github.com/gbicou/prosemirror-render/commit/8a507fe80233eefec8d3a667c2307573e64fa46b)]:
+  - @bicou/prosemirror-render-vue@0.0.12
+
 ## 0.0.11
 
 ### Patch Changes
