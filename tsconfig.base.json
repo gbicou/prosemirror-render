@@ -28,9 +28,6 @@
       "@bicou/prosemirror-render-nuxt": [
         "./packages/nuxt-module/src/module.ts"
       ],
-      "@bicou/prosemirror-render-nuxt-typography": [
-        "./packages/nuxt-typography"
-      ],
       "#examples/*": [
         "./examples/*"
       ]
