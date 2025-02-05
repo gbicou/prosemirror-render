@@ -1,5 +1,4 @@
 ---
-'@bicou/prosemirror-render': patch
 '@bicou/prosemirror-render-vue-playground': patch
 ---
 
