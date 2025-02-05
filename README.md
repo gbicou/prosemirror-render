@@ -28,6 +28,3 @@ Nuxt module integration of the Vue plugin.
 
 [npm-version-src-nuxt]: https://img.shields.io/npm/v/@bicou/prosemirror-render-nuxt/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href-nuxt]: https://npmjs.com/package/@bicou/prosemirror-render-nuxt
-
-[npm-version-src-nuxt-typography]: https://img.shields.io/npm/v/@bicou/prosemirror-render-nuxt-typography/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href-nuxt-typography]: https://npmjs.com/package/@bicou/prosemirror-render-nuxt-typography
