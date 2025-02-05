@@ -16,9 +16,6 @@ hero:
     - theme: brand
       text: Nuxt module
       link: /nuxt-module/
-    - theme: brand
-      text: Nuxt typography layer
-      link: /nuxt-typography-layer/
 #    - theme: alt
 #      text: Examples
 #      link: /prosemirror-examples

@@ -52,8 +52,6 @@ jobs:
         package:
           - nuxt-module
           - nuxt-playground
-          - nuxt-typography-layer
-          - nuxt-typography-playground
           - vue-playground
           - vue-plugin
     steps:

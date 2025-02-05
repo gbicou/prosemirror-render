@@ -1,2 +1,0 @@
-alias.@bicou/prosemirror-render-vue=../vue-plugin/src/index.ts
-alias.@bicou/prosemirror-render-nuxt=../nuxt-module/src/module.ts
