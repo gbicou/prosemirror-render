@@ -22,13 +22,6 @@ Nuxt module integration of the Vue plugin.
 [Nuxt playground](/packages/nuxt-playground) deployed to https://prosemirror-render-nuxt.vercel.app/
 
 
-### [@bicou/prosemirror-render-nuxt-typography](/packages/nuxt-typography-layer) [![npm version][npm-version-src-nuxt-typography]][npm-version-href-nuxt-typography]
-
-Nuxt layer combining module and @nuxt-themes/typography
-
-
-[Nuxt playground](/packages/nuxt-typography-playground) deployed to https://prosemirror-render-nuxt-typography.vercel.app/
-
 <!-- Badges -->
 [npm-version-src-vue]: https://img.shields.io/npm/v/@bicou/prosemirror-render-vue/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href-vue]: https://npmjs.com/package/@bicou/prosemirror-render-vue

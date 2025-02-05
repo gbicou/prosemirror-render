@@ -46,8 +46,3 @@ with a basic configuration to translate the marks and nodes of ProseMirror to ba
 ### [@bicou/prosemirror-render-nuxt](nuxt-module/index.md)
 
 The Nuxt module which integrates the Vue plugin.
-
-### [@bicou/prosemirror-render-nuxt-typography](nuxt-typography-layer/index.md)
-
-A Nuxt layer combining the Nuxt module and the @nuxt-themes/typography layer 
-to render ProseMirror documents with prose components.

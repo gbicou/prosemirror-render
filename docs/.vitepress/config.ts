@@ -15,7 +15,6 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Vue plugin', link: '/vue-plugin/' },
       { text: 'Nuxt module', link: '/nuxt-module/' },
-      { text: 'Nuxt typography layer', link: '/nuxt-typography-layer/' },
     ],
 
     sidebar: [
@@ -23,7 +22,6 @@ export default defineConfig({
       { text: 'Vue plugin', link: '/vue-plugin/' },
       { text: 'Configuration', link: '/vue-plugin/configuration' },
       { text: 'Nuxt module', link: '/nuxt-module/' },
-      { text: 'Nuxt typography layer', link: '/nuxt-typography-layer/' },
       /*
       {
         text: 'Examples',
