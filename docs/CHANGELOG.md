@@ -1,5 +1,16 @@
 # @bicou/prosemirror-render-docs
 
+## 0.0.12
+
+### Patch Changes
+
+- [#324](https://github.com/gbicou/prosemirror-render/pull/324) [`bfa03f5`](https://github.com/gbicou/prosemirror-render/commit/bfa03f520fc2c773b4724abb9fcdab2159c4a81d) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vitepress` to `1.6.0`.
+
+- [#328](https://github.com/gbicou/prosemirror-render/pull/328) [`2783a55`](https://github.com/gbicou/prosemirror-render/commit/2783a556cd13839f962b9346ef1d1320e1466bd0) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vitepress` to `1.6.3`.
+
+- Updated dependencies [[`a486040`](https://github.com/gbicou/prosemirror-render/commit/a48604085e44e14aa95337612c5760b92acdfc07), [`e8ac029`](https://github.com/gbicou/prosemirror-render/commit/e8ac029f6cf17649f9ed93cf199ec6e82faab461), [`bc0313f`](https://github.com/gbicou/prosemirror-render/commit/bc0313f3298b1b344db142067cd3eec726eb1a99), [`7240c89`](https://github.com/gbicou/prosemirror-render/commit/7240c8940dc96422f5181a73707e13bcddb546bf), [`c08fb9b`](https://github.com/gbicou/prosemirror-render/commit/c08fb9b7d12661dacc6a98905cd191d5435360af), [`388b872`](https://github.com/gbicou/prosemirror-render/commit/388b872a2c04a60a1294b69cd549092ee798326c), [`e561653`](https://github.com/gbicou/prosemirror-render/commit/e56165318ca2c92b589ed09346748d2717ad0b11), [`8cc0223`](https://github.com/gbicou/prosemirror-render/commit/8cc02230d51d2814a6af201556aab188c5549635), [`8a507fe`](https://github.com/gbicou/prosemirror-render/commit/8a507fe80233eefec8d3a667c2307573e64fa46b)]:
+  - @bicou/prosemirror-render-vue@0.0.12
+
 ## 0.0.11
 
 ### Patch Changes
