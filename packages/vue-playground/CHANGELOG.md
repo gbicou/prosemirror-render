@@ -1,5 +1,30 @@
 # @bicou/prosemirror-render-vue-playground
 
+## 0.0.13
+
+### Patch Changes
+
+- [#392](https://github.com/gbicou/prosemirror-render/pull/392) [`29479ce`](https://github.com/gbicou/prosemirror-render/commit/29479cec5b3141f686f8d72ca88a9cd5590881ad) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vue-tsc` to `2.2.2`.
+
+- [#383](https://github.com/gbicou/prosemirror-render/pull/383) [`f84000b`](https://github.com/gbicou/prosemirror-render/commit/f84000b5ca84a4b171addce48b1f0b9e5ab31615) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint` to `9.20.1`.
+
+- [#369](https://github.com/gbicou/prosemirror-render/pull/369) [`4c1d766`](https://github.com/gbicou/prosemirror-render/commit/4c1d76693f385ff1e73948f69f5e65fd673c58ca) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `tailwindcss` to `4.0.4`.
+
+- [#390](https://github.com/gbicou/prosemirror-render/pull/390) [`86283e4`](https://github.com/gbicou/prosemirror-render/commit/86283e41fa4723cfdfb5f8e91584a394bc0a5658) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@types/node` to `22.13.4`.
+
+- [#389](https://github.com/gbicou/prosemirror-render/pull/389) [`b7ed790`](https://github.com/gbicou/prosemirror-render/commit/b7ed790f285e18612ca39247d0c8a64d43721af3) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@types/node` to `22.13.2`.
+
+- [#378](https://github.com/gbicou/prosemirror-render/pull/378) [`d0c2f54`](https://github.com/gbicou/prosemirror-render/commit/d0c2f54ea95929d693eecb07e05549ee8202fe3d) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `postcss` to `8.5.2`.
+
+- [#375](https://github.com/gbicou/prosemirror-render/pull/375) [`27b0704`](https://github.com/gbicou/prosemirror-render/commit/27b070418f7003048c74a210ad8331b2fd030db1) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint` to `9.20.0`.
+
+- [#362](https://github.com/gbicou/prosemirror-render/pull/362) [`368d905`](https://github.com/gbicou/prosemirror-render/commit/368d9055135baf58131fe997897bb10c7e07ef65) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vite` to `6.1.0`.
+
+- [#377](https://github.com/gbicou/prosemirror-render/pull/377) [`83cbbdb`](https://github.com/gbicou/prosemirror-render/commit/83cbbdbe135f8b6edda2a2a542a97b61bdf3e8d5) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `tailwindcss` to `4.0.6`.
+
+- Updated dependencies [[`29479ce`](https://github.com/gbicou/prosemirror-render/commit/29479cec5b3141f686f8d72ca88a9cd5590881ad), [`ba750a5`](https://github.com/gbicou/prosemirror-render/commit/ba750a53007c9d5dc3820c3cb379459e95c2a8a4), [`f84000b`](https://github.com/gbicou/prosemirror-render/commit/f84000b5ca84a4b171addce48b1f0b9e5ab31615), [`86283e4`](https://github.com/gbicou/prosemirror-render/commit/86283e41fa4723cfdfb5f8e91584a394bc0a5658), [`687b333`](https://github.com/gbicou/prosemirror-render/commit/687b3337e35d82c8de15efd6914b188c8f6a9446), [`b7ed790`](https://github.com/gbicou/prosemirror-render/commit/b7ed790f285e18612ca39247d0c8a64d43721af3), [`b9fee6c`](https://github.com/gbicou/prosemirror-render/commit/b9fee6c270cc7d473f5670ee4225ee172bd47ee6), [`27b0704`](https://github.com/gbicou/prosemirror-render/commit/27b070418f7003048c74a210ad8331b2fd030db1), [`368d905`](https://github.com/gbicou/prosemirror-render/commit/368d9055135baf58131fe997897bb10c7e07ef65)]:
+  - @bicou/prosemirror-render-vue@0.0.13
+
 ## 0.0.12
 
 ### Patch Changes

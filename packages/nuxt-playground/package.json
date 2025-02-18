@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@bicou/prosemirror-render-nuxt-playground",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "type": "module",
   "scripts": {
     "prepare": "nuxi prepare",
