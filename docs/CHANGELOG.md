@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-docs
 
+## 0.0.13
+
+### Patch Changes
+
+- Updated dependencies [[`29479ce`](https://github.com/gbicou/prosemirror-render/commit/29479cec5b3141f686f8d72ca88a9cd5590881ad), [`ba750a5`](https://github.com/gbicou/prosemirror-render/commit/ba750a53007c9d5dc3820c3cb379459e95c2a8a4), [`f84000b`](https://github.com/gbicou/prosemirror-render/commit/f84000b5ca84a4b171addce48b1f0b9e5ab31615), [`86283e4`](https://github.com/gbicou/prosemirror-render/commit/86283e41fa4723cfdfb5f8e91584a394bc0a5658), [`687b333`](https://github.com/gbicou/prosemirror-render/commit/687b3337e35d82c8de15efd6914b188c8f6a9446), [`b7ed790`](https://github.com/gbicou/prosemirror-render/commit/b7ed790f285e18612ca39247d0c8a64d43721af3), [`b9fee6c`](https://github.com/gbicou/prosemirror-render/commit/b9fee6c270cc7d473f5670ee4225ee172bd47ee6), [`27b0704`](https://github.com/gbicou/prosemirror-render/commit/27b070418f7003048c74a210ad8331b2fd030db1), [`368d905`](https://github.com/gbicou/prosemirror-render/commit/368d9055135baf58131fe997897bb10c7e07ef65)]:
+  - @bicou/prosemirror-render-vue@0.0.13
+
 ## 0.0.12
 
 ### Patch Changes

@@ -1,5 +1,27 @@
 # @bicou/eslint-config
 
+## 1.0.5
+
+### Patch Changes
+
+- [#380](https://github.com/gbicou/prosemirror-render/pull/380) [`3d2d51d`](https://github.com/gbicou/prosemirror-render/commit/3d2d51d30134221df179845a590819fbf311617e) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `typescript-eslint` to `8.24.0`.
+
+- [#386](https://github.com/gbicou/prosemirror-render/pull/386) [`8abac37`](https://github.com/gbicou/prosemirror-render/commit/8abac37206fb71470086a90a400b2728c17db6d5) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@vitest/eslint-plugin` to `1.1.30`.
+
+- [#372](https://github.com/gbicou/prosemirror-render/pull/372) [`87fba56`](https://github.com/gbicou/prosemirror-render/commit/87fba5607a0567b77c91e1d82cfc821dcfe0a1f5) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@vitest/eslint-plugin` to `1.1.28`.
+
+- [#398](https://github.com/gbicou/prosemirror-render/pull/398) [`2558253`](https://github.com/gbicou/prosemirror-render/commit/25582537fe8cacb810aaa58cca28d0ce8bdd0668) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `typescript-eslint` to `8.24.1`.
+
+- [#374](https://github.com/gbicou/prosemirror-render/pull/374) [`2790294`](https://github.com/gbicou/prosemirror-render/commit/27902945561e36d9d099fa30762289fd220bdee6) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@stylistic/eslint-plugin` to `3.1.0`.
+
+- [#373](https://github.com/gbicou/prosemirror-render/pull/373) [`9ce590d`](https://github.com/gbicou/prosemirror-render/commit/9ce590d248c46d4dccfffb8b25210ad697899a78) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@eslint/js` to `9.20.0`.
+
+- [#399](https://github.com/gbicou/prosemirror-render/pull/399) [`e436401`](https://github.com/gbicou/prosemirror-render/commit/e43640195b0b1755afe3041f897936066f538b9c) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint-plugin-unicorn` to `57.0.0`.
+
+- [#400](https://github.com/gbicou/prosemirror-render/pull/400) [`2dd3487`](https://github.com/gbicou/prosemirror-render/commit/2dd3487a322a1b3afa8f42215690ae3b687210f8) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@stylistic/eslint-plugin` to `4.0.0`.
+
+- [#387](https://github.com/gbicou/prosemirror-render/pull/387) [`b3c17a5`](https://github.com/gbicou/prosemirror-render/commit/b3c17a5dd214b571be20d84400127d2fe09dfb47) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@vitest/eslint-plugin` to `1.1.31`.
+
 ## 1.0.4
 
 ### Patch Changes
