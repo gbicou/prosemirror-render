@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-nuxt
 
+## 0.0.14
+
+### Patch Changes
+
+- Updated dependencies [[`e30e240`](https://github.com/gbicou/prosemirror-render/commit/e30e240cc89210d7fda730a2565e790d9a984abf)]:
+  - @bicou/prosemirror-render-vue@0.0.14
+
 ## 0.0.13
 
 ### Patch Changes

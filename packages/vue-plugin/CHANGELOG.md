@@ -1,5 +1,11 @@
 # @bicou/prosemirror-render-vue
 
+## 0.0.14
+
+### Patch Changes
+
+- [#404](https://github.com/gbicou/prosemirror-render/pull/404) [`e30e240`](https://github.com/gbicou/prosemirror-render/commit/e30e240cc89210d7fda730a2565e790d9a984abf) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `happy-dom` to `17.1.1`.
+
 ## 0.0.13
 
 ### Patch Changes
