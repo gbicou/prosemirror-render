@@ -1,5 +1,31 @@
 # @bicou/prosemirror-render-vue
 
+## 0.0.14
+
+### Patch Changes
+
+- [#416](https://github.com/gbicou/prosemirror-render/pull/416) [`6059043`](https://github.com/gbicou/prosemirror-render/commit/60590438742a04762baa3a1cfc3ececabf77a161) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vue-tsc` to `2.2.4`.
+
+- [#414](https://github.com/gbicou/prosemirror-render/pull/414) [`74cdc73`](https://github.com/gbicou/prosemirror-render/commit/74cdc73b917f4ec09b3a1f24a49d1d90d5c34d58) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `happy-dom` to `17.1.2`.
+
+- [#420](https://github.com/gbicou/prosemirror-render/pull/420) [`0af7cf0`](https://github.com/gbicou/prosemirror-render/commit/0af7cf0a7c9821dcbb1327c1833a1ab6dc06ed5b) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `happy-dom` to `17.1.7`.
+
+- [#421](https://github.com/gbicou/prosemirror-render/pull/421) [`a3a907b`](https://github.com/gbicou/prosemirror-render/commit/a3a907b481df13aea3f518b1eee10c2466aebf41) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vitest` to `3.0.7`.
+  Updated dependency `@vitest/coverage-v8` to `3.0.7`.
+
+- [#415](https://github.com/gbicou/prosemirror-render/pull/415) [`145063c`](https://github.com/gbicou/prosemirror-render/commit/145063c29e228b35ca236f8d1782b99dfeb4b889) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `happy-dom` to `17.1.3`.
+
+- [#407](https://github.com/gbicou/prosemirror-render/pull/407) [`4517db7`](https://github.com/gbicou/prosemirror-render/commit/4517db7f4ede296f607867d9d38338980ac108d1) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vite` to `6.1.1`.
+
+- [#413](https://github.com/gbicou/prosemirror-render/pull/413) [`18c8ccf`](https://github.com/gbicou/prosemirror-render/commit/18c8ccf058ce61a661329b32a2cd2b5381fc1bfa) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint` to `9.21.0`.
+  Updated dependency `@eslint/js` to `9.21.0`.
+
+- [#412](https://github.com/gbicou/prosemirror-render/pull/412) [`5b5730e`](https://github.com/gbicou/prosemirror-render/commit/5b5730e2b3e57a63b0e702164b330847f703fdb8) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@types/node` to `22.13.5`.
+
+- [#404](https://github.com/gbicou/prosemirror-render/pull/404) [`e30e240`](https://github.com/gbicou/prosemirror-render/commit/e30e240cc89210d7fda730a2565e790d9a984abf) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `happy-dom` to `17.1.1`.
+
+- [#417](https://github.com/gbicou/prosemirror-render/pull/417) [`a97b77e`](https://github.com/gbicou/prosemirror-render/commit/a97b77e43fd9134e1ef21323c0ea96beca6974b6) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `happy-dom` to `17.1.4`.
+
 ## 0.0.13
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @bicou/eslint-config
 
+## 1.0.6
+
+### Patch Changes
+
+- [#406](https://github.com/gbicou/prosemirror-render/pull/406) [`a198806`](https://github.com/gbicou/prosemirror-render/commit/a1988064585ca10897c9dd33977d97ac46b260f4) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@stylistic/eslint-plugin` to `4.0.1`.
+
+- [#413](https://github.com/gbicou/prosemirror-render/pull/413) [`18c8ccf`](https://github.com/gbicou/prosemirror-render/commit/18c8ccf058ce61a661329b32a2cd2b5381fc1bfa) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint` to `9.21.0`.
+  Updated dependency `@eslint/js` to `9.21.0`.
+
 ## 1.0.5
 
 ### Patch Changes

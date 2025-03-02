@@ -1,5 +1,21 @@
 # @bicou/prosemirror-render-nuxt
 
+## 0.0.14
+
+### Patch Changes
+
+- [#410](https://github.com/gbicou/prosemirror-render/pull/410) [`3a7100a`](https://github.com/gbicou/prosemirror-render/commit/3a7100a3ff85f6eb2a1bc8062f6d561541048a30) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@nuxt/test-utils` to `3.16.0`.
+
+- [#411](https://github.com/gbicou/prosemirror-render/pull/411) [`5f8026f`](https://github.com/gbicou/prosemirror-render/commit/5f8026f1f59390a338395756e89d8c31180ac6e4) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `@nuxt/test-utils` to `3.17.0`.
+
+- [#421](https://github.com/gbicou/prosemirror-render/pull/421) [`a3a907b`](https://github.com/gbicou/prosemirror-render/commit/a3a907b481df13aea3f518b1eee10c2466aebf41) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `vitest` to `3.0.7`.
+  Updated dependency `@vitest/coverage-v8` to `3.0.7`.
+
+- [#413](https://github.com/gbicou/prosemirror-render/pull/413) [`18c8ccf`](https://github.com/gbicou/prosemirror-render/commit/18c8ccf058ce61a661329b32a2cd2b5381fc1bfa) Thanks [@renovate](https://github.com/apps/renovate)! - Updated dependency `eslint` to `9.21.0`.
+  Updated dependency `@eslint/js` to `9.21.0`.
+- Updated dependencies [[`6059043`](https://github.com/gbicou/prosemirror-render/commit/60590438742a04762baa3a1cfc3ececabf77a161), [`74cdc73`](https://github.com/gbicou/prosemirror-render/commit/74cdc73b917f4ec09b3a1f24a49d1d90d5c34d58), [`0af7cf0`](https://github.com/gbicou/prosemirror-render/commit/0af7cf0a7c9821dcbb1327c1833a1ab6dc06ed5b), [`a3a907b`](https://github.com/gbicou/prosemirror-render/commit/a3a907b481df13aea3f518b1eee10c2466aebf41), [`145063c`](https://github.com/gbicou/prosemirror-render/commit/145063c29e228b35ca236f8d1782b99dfeb4b889), [`4517db7`](https://github.com/gbicou/prosemirror-render/commit/4517db7f4ede296f607867d9d38338980ac108d1), [`18c8ccf`](https://github.com/gbicou/prosemirror-render/commit/18c8ccf058ce61a661329b32a2cd2b5381fc1bfa), [`5b5730e`](https://github.com/gbicou/prosemirror-render/commit/5b5730e2b3e57a63b0e702164b330847f703fdb8), [`e30e240`](https://github.com/gbicou/prosemirror-render/commit/e30e240cc89210d7fda730a2565e790d9a984abf), [`a97b77e`](https://github.com/gbicou/prosemirror-render/commit/a97b77e43fd9134e1ef21323c0ea96beca6974b6)]:
+  - @bicou/prosemirror-render-vue@0.0.14
+
 ## 0.0.13
 
 ### Patch Changes
