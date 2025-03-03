@@ -36,20 +36,11 @@ jobs:
         with:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ".nvmrc"
-          cache: "pnpm"
+      - name: Setup node and pnpm
+        uses: ./.github/actions/setup-node-pnpm
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
 
       - name: Build with VitePress
         run: |
