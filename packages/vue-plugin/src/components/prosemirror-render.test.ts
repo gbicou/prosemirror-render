@@ -9,7 +9,7 @@ import defu from 'defu'
 describe('component ProsemirrorRender', () => {
   it('exists', () => {
     expect.hasAssertions()
-    expect(ProsemirrorRender).toBeTruthy()
+    expect(ProsemirrorRender).toBeDefined()
   })
 
   const nodeSimple: ProsemirrorJSONNode = {
