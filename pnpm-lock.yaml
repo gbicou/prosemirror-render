@@ -11,6 +11,9 @@ importers:
       '@playwright/test':
         specifier: 1.51.0
         version: 1.51.0
+      '@types/node':
+        specifier: 22.13.9
+        version: 22.13.9
       turbo:
         specifier: 2.4.4
         version: 2.4.4
@@ -161,9 +164,6 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.0.0
         version: 4.0.11(vite@6.2.0(@types/node@22.13.9)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))
-      '@types/node':
-        specifier: 22.13.9
-        version: 22.13.9
       '@vitejs/plugin-vue':
         specifier: 5.2.1
         version: 5.2.1(vite@6.2.0(@types/node@22.13.9)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.6.3))
@@ -207,9 +207,6 @@ importers:
       '@bicou/eslint-config':
         specifier: workspace:*
         version: link:../../eslint-config
-      '@types/node':
-        specifier: 22.13.9
-        version: 22.13.9
       '@vitejs/plugin-vue':
         specifier: 5.2.1
         version: 5.2.1(vite@6.2.0(@types/node@22.13.9)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0)(yaml@2.7.0))(vue@3.5.13(typescript@5.6.3))
