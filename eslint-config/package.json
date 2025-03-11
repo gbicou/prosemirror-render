@@ -14,7 +14,7 @@
     "@microsoft/eslint-formatter-sarif": "3.1.0",
     "@stylistic/eslint-plugin": "4.2.0",
     "@vitest/eslint-plugin": "1.1.37",
-    "eslint-plugin-jsdoc": "50.6.4",
+    "eslint-plugin-jsdoc": "50.6.6",
     "eslint-plugin-unicorn": "57.0.0",
     "eslint-plugin-vue": "10.0.0",
     "typescript-eslint": "8.26.1",
