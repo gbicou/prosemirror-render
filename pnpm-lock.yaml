@@ -63,7 +63,7 @@ importers:
         specifier: workspace:*
         version: link:../vue-plugin
       '@nuxt/kit':
-        specifier: 3.16.0
+        specifier: ^3.16.0
         version: 3.16.0(magicast@0.3.5)
     devDependencies:
       '@bicou/eslint-config':
@@ -195,13 +195,13 @@ importers:
   packages/vue-plugin:
     dependencies:
       change-case:
-        specifier: 5.4.4
+        specifier: ^5.4.4
         version: 5.4.4
       defu:
-        specifier: 6.1.4
+        specifier: ^6.1.4
         version: 6.1.4
       vue:
-        specifier: 3.5.13
+        specifier: ^3.5.13
         version: 3.5.13(typescript@5.6.3)
     devDependencies:
       '@bicou/eslint-config':

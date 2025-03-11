@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",
-    "@nuxt/kit": "3.16.0"
+    "@nuxt/kit": "^3.16.0"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",

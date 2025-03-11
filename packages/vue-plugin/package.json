@@ -32,11 +32,11 @@
     "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
-    "change-case": "5.4.4",
-    "defu": "6.1.4"
+    "change-case": "^5.4.4",
+    "defu": "^6.1.4"
   },
   "peerDependencies": {
-    "vue": "3.5.13"
+    "vue": "^3.5.13"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
