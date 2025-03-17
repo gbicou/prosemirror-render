@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@vitejs/plugin-vue": "5.2.1",
+    "@vitejs/plugin-vue": "5.2.2",
     "@vitest/coverage-v8": "3.0.8",
     "@vue/test-utils": "2.4.6",
     "eslint": "9.22.0",
