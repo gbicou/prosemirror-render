@@ -1,5 +1,13 @@
 # @bicou/prosemirror-render-nuxt
 
+## [0.0.15](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-v0.0.14...prosemirror-render-nuxt-v0.0.15) (2025-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update nuxtjs monorepo to v3.16.1 ([#484](https://github.com/gbicou/prosemirror-render/issues/484)) ([e2aebf1](https://github.com/gbicou/prosemirror-render/commit/e2aebf10d49d821e92f38dd958e3c004c1f270b2))
+* Migrate nuxt module builder ([659c9fd](https://github.com/gbicou/prosemirror-render/commit/659c9fd39a1455d8b350218eb56f55c7833e6829))
+
 ## [0.0.14](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-v0.0.13...prosemirror-render-nuxt-v0.0.14) (2025-03-11)
 
 
