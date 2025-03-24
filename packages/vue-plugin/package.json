@@ -47,7 +47,7 @@
     "happy-dom": "17.4.4",
     "rollup-plugin-node-externals": "8.0.0",
     "typescript": "5.8.2",
-    "vite": "6.2.2",
+    "vite": "6.2.3",
     "vite-plugin-dts": "4.5.3",
     "vitest": "3.0.9",
     "vitest-github-actions-reporter": "0.11.1",
