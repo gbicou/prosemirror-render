@@ -1,5 +1,20 @@
 # @bicou/prosemirror-render-vue-playground
 
+## [0.0.14](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.13...prosemirror-render-vue-playground-v0.0.14) (2025-04-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxt/kit to v3.16.2 ([#538](https://github.com/gbicou/prosemirror-render/issues/538)) ([a9ff185](https://github.com/gbicou/prosemirror-render/commit/a9ff185aa86e0e6b789691d3c6ee0785cb9ea046))
+* **deps:** update dependency @nuxt/kit to v3.16.2 ([#540](https://github.com/gbicou/prosemirror-render/issues/540)) ([e9791c3](https://github.com/gbicou/prosemirror-render/commit/e9791c38332657c188d41fe86bb03869a3e8b553))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/prosemirror-render-vue bumped to 0.0.14
+
 ## 0.0.13
 
 ### Patch Changes
