@@ -18,6 +18,6 @@
     "eslint-plugin-unicorn": "58.0.0",
     "eslint-plugin-vue": "10.0.0",
     "typescript-eslint": "8.29.0",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   }
 }
