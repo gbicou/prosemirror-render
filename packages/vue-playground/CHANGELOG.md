@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-vue-playground
 
+## [0.0.15](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.14...prosemirror-render-vue-playground-v0.0.15) (2025-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency emojibase-data to v16.0.3 ([#557](https://github.com/gbicou/prosemirror-render/issues/557)) ([7367dba](https://github.com/gbicou/prosemirror-render/commit/7367dba0d0ef23083c99c24a4a15ce21d7ffb0c5))
+
 ## [0.0.14](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.13...prosemirror-render-vue-playground-v0.0.14) (2025-04-04)
 
 
