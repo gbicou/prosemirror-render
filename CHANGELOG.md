@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-v1.0.2...prosemirror-render-v1.0.3) (2025-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxt/kit to v3.16.2 ([#541](https://github.com/gbicou/prosemirror-render/issues/541)) ([c8123d5](https://github.com/gbicou/prosemirror-render/commit/c8123d546c56865ea72b96d6351a5560ad8eae4a))
+* **deps:** update dependency emojibase-data to v16.0.3 ([#557](https://github.com/gbicou/prosemirror-render/issues/557)) ([7367dba](https://github.com/gbicou/prosemirror-render/commit/7367dba0d0ef23083c99c24a4a15ce21d7ffb0c5))
+
 ## [1.0.2](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-v1.0.1...prosemirror-render-v1.0.2) (2025-04-04)
 
 
