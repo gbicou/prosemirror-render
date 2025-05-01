@@ -2,7 +2,7 @@ import ProsemirrorRender, { resolveProseComponent } from './prosemirror-render'
 import { describe, it, expect } from 'vitest'
 import { VueProsemirrorOptions } from '../options'
 
-describe('resolveProseComponent', () => {
+describe('function resolveProseComponent', () => {
   const options: VueProsemirrorOptions = {
     types: {
       heading: ({ level }) => `h${level}`,
