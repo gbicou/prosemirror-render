@@ -13,7 +13,7 @@
     "@eslint/js": "9.25.1",
     "@microsoft/eslint-formatter-sarif": "3.1.0",
     "@stylistic/eslint-plugin": "4.2.0",
-    "@vitest/eslint-plugin": "1.1.43",
+    "@vitest/eslint-plugin": "1.1.44",
     "eslint-plugin-jsdoc": "50.6.11",
     "eslint-plugin-unicorn": "59.0.0",
     "eslint-plugin-vue": "10.1.0",
