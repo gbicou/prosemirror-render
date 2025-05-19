@@ -1,5 +1,24 @@
 # @bicou/prosemirror-render-nuxt-playground
 
+## [0.0.17](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-playground-v0.0.16...prosemirror-render-nuxt-playground-v0.0.17) (2025-05-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue to v3.5.14 ([#632](https://github.com/gbicou/prosemirror-render/issues/632)) ([9e72e01](https://github.com/gbicou/prosemirror-render/commit/9e72e01fbe5a0a617bac372ec982c0ab9ff8ac9f))
+* **deps:** update dependency vue-router to v4.5.1 ([#586](https://github.com/gbicou/prosemirror-render/issues/586)) ([f3fcbe1](https://github.com/gbicou/prosemirror-render/commit/f3fcbe1ca4b0473695b4c148c6319ef11bde7184))
+* **deps:** update nuxtjs monorepo to v3.17.0 ([#590](https://github.com/gbicou/prosemirror-render/issues/590)) ([2a64cd7](https://github.com/gbicou/prosemirror-render/commit/2a64cd7e79c20cdc0f248be88e7a54b9b220dac3))
+* **deps:** update nuxtjs monorepo to v3.17.1 ([#596](https://github.com/gbicou/prosemirror-render/issues/596)) ([b1bd6fa](https://github.com/gbicou/prosemirror-render/commit/b1bd6fae2c1082fa6ecbf77b23b73c0a0773d531))
+* **deps:** update nuxtjs monorepo to v3.17.2 ([#607](https://github.com/gbicou/prosemirror-render/issues/607)) ([8113025](https://github.com/gbicou/prosemirror-render/commit/81130256b02ec5286c4e65c2ce878f0e3e5378d0))
+* **deps:** update nuxtjs monorepo to v3.17.3 ([#623](https://github.com/gbicou/prosemirror-render/issues/623)) ([6ed4e7d](https://github.com/gbicou/prosemirror-render/commit/6ed4e7d1b97358b4abbdcb957df1d3061c297aee))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/prosemirror-render-nuxt bumped to 0.0.17
+
 ## [0.0.16](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-playground-v0.0.15...prosemirror-render-nuxt-playground-v0.0.16) (2025-04-04)
 
 
