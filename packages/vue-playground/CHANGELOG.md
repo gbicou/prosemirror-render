@@ -1,5 +1,20 @@
 # @bicou/prosemirror-render-vue-playground
 
+## [0.0.16](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.15...prosemirror-render-vue-playground-v0.0.16) (2025-05-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue to v3.5.14 ([#632](https://github.com/gbicou/prosemirror-render/issues/632)) ([9e72e01](https://github.com/gbicou/prosemirror-render/commit/9e72e01fbe5a0a617bac372ec982c0ab9ff8ac9f))
+* **deps:** update dependency vue-router to v4.5.1 ([#586](https://github.com/gbicou/prosemirror-render/issues/586)) ([f3fcbe1](https://github.com/gbicou/prosemirror-render/commit/f3fcbe1ca4b0473695b4c148c6319ef11bde7184))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/prosemirror-render-vue bumped to 0.0.15
+
 ## [0.0.15](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.14...prosemirror-render-vue-playground-v0.0.15) (2025-04-22)
 
 

@@ -1,5 +1,14 @@
 # @bicou/prosemirror-render-docs
 
+## [0.0.15](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-docs-v0.0.14...prosemirror-render-docs-v0.0.15) (2025-05-19)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/prosemirror-render-vue bumped to 0.0.15
+
 ## [0.0.14](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-docs-v0.0.13...prosemirror-render-docs-v0.0.14) (2025-04-04)
 
 

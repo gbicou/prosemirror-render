@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-vue
 
+## [0.0.15](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-v0.0.14...prosemirror-render-vue-v0.0.15) (2025-05-19)
+
+
+### Bug Fixes
+
+* Export more ProseMirror types ([791aeb6](https://github.com/gbicou/prosemirror-render/commit/791aeb69fee102943e69f4ee17626322e32a1752))
+
 ## [0.0.14](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-v0.0.13...prosemirror-render-vue-v0.0.14) (2025-04-04)
 
 
