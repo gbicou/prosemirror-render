@@ -36,8 +36,8 @@ importers:
         specifier: 3.1.0
         version: 3.1.0
       '@stylistic/eslint-plugin':
-        specifier: 5.0.0
-        version: 5.0.0(eslint@8.57.1)
+        specifier: 5.1.0
+        version: 5.1.0(eslint@8.57.1)
       '@vitest/eslint-plugin':
         specifier: 1.2.7
         version: 1.2.7(eslint@8.57.1)(typescript@5.8.3)(vitest@3.2.4(@types/node@22.15.33)(happy-dom@18.0.1)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)(yaml@2.8.0))
@@ -1626,8 +1626,8 @@ packages:
     peerDependencies:
       eslint: '>=9.0.0'
 
-  '@stylistic/eslint-plugin@5.0.0':
-    resolution: {integrity: sha512-nVV2FSzeTJ3oFKw+3t9gQYQcrgbopgCASSY27QOtkhEGgSfdQQjDmzZd41NeT1myQ8Wc6l+pZllST9qIu4NKzg==}
+  '@stylistic/eslint-plugin@5.1.0':
+    resolution: {integrity: sha512-TJRJul4u/lmry5N/kyCU+7RWWOk0wyXN+BncRlDYBqpLFnzXkd7QGVfN7KewarFIXv0IX0jSF/Ksu7aHWEDeuw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=9.0.0'
@@ -7435,7 +7435,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@stylistic/eslint-plugin@5.0.0(eslint@8.57.1)':
+  '@stylistic/eslint-plugin@5.1.0(eslint@8.57.1)':
     dependencies:
       '@eslint-community/eslint-utils': 4.7.0(eslint@8.57.1)
       '@typescript-eslint/types': 8.35.1
