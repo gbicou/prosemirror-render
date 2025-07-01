@@ -22,7 +22,7 @@
     "@bicou/eslint-config": "workspace:*",
     "@playwright/test": "1.53.2",
     "@tailwindcss/vite": "^4.1.11",
-    "@vitejs/plugin-vue": "5.2.4",
+    "@vitejs/plugin-vue": "6.0.0",
     "autoprefixer": "10.4.21",
     "eslint": "9.29.0",
     "postcss": "8.5.6",
