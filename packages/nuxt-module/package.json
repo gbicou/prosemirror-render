@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@nuxt/devtools": "2.5.0",
+    "@nuxt/devtools": "2.6.2",
     "@nuxt/eslint": "1.4.1",
     "@nuxt/module-builder": "1.0.1",
     "@nuxt/schema": "3.17.5",
