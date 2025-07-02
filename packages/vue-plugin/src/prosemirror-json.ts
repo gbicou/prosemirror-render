@@ -1,14 +1,14 @@
 /**
  * JSON scalar values
  */
-export type ProsemirrorJSONValue =
-  | string
-  | number
-  | boolean
-  | { [name: string]: ProsemirrorJSONValue }
-  | ProsemirrorJSONValue[]
-  | null
-  | undefined
+export type ProsemirrorJSONValue
+  = | string
+    | number
+    | boolean
+    | { [name: string]: ProsemirrorJSONValue }
+    | ProsemirrorJSONValue[]
+    | null
+    | undefined
 
 /**
  * JSON ProseMirror attributes

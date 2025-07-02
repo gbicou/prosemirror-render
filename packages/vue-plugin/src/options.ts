@@ -6,11 +6,11 @@ export type VueProsemirrorComponent = string | Component | false
 export type VueProsemirrorComponentAndProperties = [VueProsemirrorComponent, Record<string, unknown>]
 export type VueProsemirrorComponentReturns = VueProsemirrorComponent | VueProsemirrorComponentAndProperties
 export type VueProsemirrorComponentFunction = (attributes: ProsemirrorJSONAttributes) => VueProsemirrorComponentReturns
-export type VueProsemirrorComponentOption =
-  | string
-  | VueProsemirrorComponentAndProperties
-  | VueProsemirrorComponentFunction
-  | false
+export type VueProsemirrorComponentOption
+  = | string
+    | VueProsemirrorComponentAndProperties
+    | VueProsemirrorComponentFunction
+    | false
 
 export type VueProsemirrorTypes = Record<string, VueProsemirrorComponentOption>
 
