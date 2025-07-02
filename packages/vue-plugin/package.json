@@ -40,18 +40,18 @@
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@vitejs/plugin-vue": "5.2.4",
+    "@vitejs/plugin-vue": "6.0.0",
     "@vitest/coverage-v8": "3.2.4",
     "@vue/test-utils": "2.4.6",
-    "eslint": "9.29.0",
+    "eslint": "9.30.1",
     "happy-dom": "18.0.1",
     "rollup-plugin-node-externals": "8.0.1",
     "typescript": "5.8.3",
-    "vite": "6.3.5",
+    "vite": "7.0.0",
     "vite-plugin-dts": "4.5.4",
     "vitest": "3.2.4",
     "vitest-github-actions-reporter": "0.11.1",
-    "vue-tsc": "2.2.10"
+    "vue-tsc": "3.0.1"
   },
   "publishConfig": {
     "access": "public"
