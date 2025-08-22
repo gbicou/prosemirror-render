@@ -51,7 +51,7 @@
     "vite-plugin-dts": "4.5.4",
     "vitest": "3.2.4",
     "vitest-github-actions-reporter": "0.11.1",
-    "vue-tsc": "3.0.2"
+    "vue-tsc": "3.0.6"
   },
   "publishConfig": {
     "access": "public"
