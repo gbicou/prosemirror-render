@@ -39,7 +39,7 @@
     "@bicou/eslint-config": "workspace:*",
     "@nuxt/devtools": "2.6.3",
     "@nuxt/eslint": "1.5.2",
-    "@nuxt/module-builder": "1.0.1",
+    "@nuxt/module-builder": "1.0.2",
     "@nuxt/schema": "3.17.6",
     "@nuxt/test-utils": "3.19.2",
     "eslint": "9.30.1",
