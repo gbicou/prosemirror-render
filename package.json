@@ -18,7 +18,7 @@
     "test": "turbo test --filter=!*nuxt*playground --filter=!*-docs"
   },
   "devDependencies": {
-    "@playwright/test": "1.53.2",
+    "@playwright/test": "1.55.0",
     "@types/node": "22.18.0",
     "turbo": "2.5.6"
   },
