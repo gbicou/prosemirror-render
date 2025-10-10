@@ -20,7 +20,7 @@
     "@nuxt/eslint": "1.5.2",
     "@nuxt/schema": "3.19.3",
     "eslint": "9.34.0",
-    "nuxt": "3.19.0",
+    "nuxt": "3.19.3",
     "postcss-nesting": "13.0.2",
     "typescript": "5.9.3",
     "vue": "3.5.17",
