@@ -13,12 +13,12 @@
   },
   "dependencies": {
     "@bicou/prosemirror-render-nuxt": "workspace:*",
-    "@nuxt/kit": "3.19.2"
+    "@nuxt/kit": "3.19.3"
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
     "@nuxt/eslint": "1.5.2",
-    "@nuxt/schema": "3.19.2",
+    "@nuxt/schema": "3.19.3",
     "eslint": "9.34.0",
     "nuxt": "3.17.6",
     "postcss-nesting": "13.0.2",
