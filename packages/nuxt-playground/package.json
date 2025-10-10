@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@nuxt/eslint": "1.5.2",
+    "@nuxt/eslint": "1.9.0",
     "@nuxt/schema": "3.19.3",
     "eslint": "9.34.0",
     "nuxt": "3.19.3",
