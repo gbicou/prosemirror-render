@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-docs
 
+## [0.0.16](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-docs-v0.0.15...prosemirror-render-docs-v0.0.16) (2025-10-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vitepress to v1.6.4 ([#752](https://github.com/gbicou/prosemirror-render/issues/752)) ([387bcf2](https://github.com/gbicou/prosemirror-render/commit/387bcf2941406ff08271c5f75ff60c9c918d1ee4))
+
 ## [0.0.15](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-docs-v0.0.14...prosemirror-render-docs-v0.0.15) (2025-05-19)
 
 

@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.5](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-v1.0.4...prosemirror-render-v1.0.5) (2025-10-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vitepress to v1.6.4 ([#752](https://github.com/gbicou/prosemirror-render/issues/752)) ([387bcf2](https://github.com/gbicou/prosemirror-render/commit/387bcf2941406ff08271c5f75ff60c9c918d1ee4))
+* **deps:** update dependency vue to v3.5.16 ([#650](https://github.com/gbicou/prosemirror-render/issues/650)) ([0a02e19](https://github.com/gbicou/prosemirror-render/commit/0a02e195d058ffc2fc5d3b1fc4102e9b6ea324e6))
+* **deps:** update dependency vue-router to v4.6.2 ([#790](https://github.com/gbicou/prosemirror-render/issues/790)) ([9be3c84](https://github.com/gbicou/prosemirror-render/commit/9be3c8434459962c3e5e99fc167f717ddc546141))
+* **deps:** update nuxtjs monorepo to v3.17.4 ([#643](https://github.com/gbicou/prosemirror-render/issues/643)) ([4eb41b1](https://github.com/gbicou/prosemirror-render/commit/4eb41b19b561832dd9647f24330fdf1ca966066d))
+* **deps:** update nuxtjs monorepo to v3.17.5 ([#669](https://github.com/gbicou/prosemirror-render/issues/669)) ([c4fbaf3](https://github.com/gbicou/prosemirror-render/commit/c4fbaf316809ff7f0d9909e1e3279262d722d00e))
+* **deps:** update nuxtjs monorepo to v3.19.2 ([#735](https://github.com/gbicou/prosemirror-render/issues/735)) ([0f9caac](https://github.com/gbicou/prosemirror-render/commit/0f9caac15e663c45b24ddc7d9742cdedfe5da177))
+* **deps:** update nuxtjs monorepo to v3.19.3 ([#770](https://github.com/gbicou/prosemirror-render/issues/770)) ([5d6cfd8](https://github.com/gbicou/prosemirror-render/commit/5d6cfd89f316bacb0818a822a29ed83bf0836147))
+
 ## [1.0.4](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-v1.0.3...prosemirror-render-v1.0.4) (2025-05-19)
 
 
