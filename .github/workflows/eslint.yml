@@ -54,7 +54,7 @@ jobs:
           path: packages
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
         with:
           category: ${{ matrix.package }}
           sarif_file: packages/${{ matrix.package }}/eslint.sarif
