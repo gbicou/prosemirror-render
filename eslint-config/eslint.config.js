@@ -16,7 +16,7 @@ export const forNuxt = [
   jsdoc.configs['flat/recommended-typescript'],
 
   // style
-  stylistic.configs['recommended-flat'],
+  stylistic.configs['recommended'],
 
   // vitest
   {
