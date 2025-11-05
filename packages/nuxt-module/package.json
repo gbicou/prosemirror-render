@@ -46,7 +46,7 @@
     "nuxt": "3.19.3",
     "typescript": "5.9.3",
     "vitest": "4.0.7",
-    "vue": "3.5.17"
+    "vue": "3.5.22"
   },
   "publishConfig": {
     "access": "public"

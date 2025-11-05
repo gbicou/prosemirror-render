@@ -15,7 +15,7 @@
     "@bicou/prosemirror-render-vue": "workspace:*",
     "emojibase": "16.0.0",
     "emojibase-data": "16.0.3",
-    "vue": "3.5.17",
+    "vue": "3.5.22",
     "vue-router": "4.6.3"
   },
   "devDependencies": {
