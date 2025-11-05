@@ -23,6 +23,7 @@
       "outputs": ["eslint.sarif"]
     },
     "typecheck": {
+      "dependsOn": ["^build"],
       "outputs": []
     },
     "dev": {
