@@ -24,12 +24,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
     "dev": "vite build --watch",
     "lint": "eslint .",
     "lint:sarif": "eslint -f @microsoft/eslint-formatter-sarif -o eslint.sarif .",
     "test": "vitest run",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "vue-tsc"
   },
   "dependencies": {
     "change-case": "^5.4.4",

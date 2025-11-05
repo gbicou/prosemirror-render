@@ -22,6 +22,9 @@
     "lint:sarif": {
       "outputs": ["eslint.sarif"]
     },
+    "typecheck": {
+      "outputs": []
+    },
     "dev": {
       "cache": false,
       "persistent": true
