@@ -29,7 +29,8 @@
     "lint": "eslint .",
     "lint:sarif": "eslint -f @microsoft/eslint-formatter-sarif -o eslint.sarif .",
     "test": "vitest run",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "typecheck": "nuxi typecheck"
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",

@@ -4,12 +4,13 @@
   "version": "0.0.16",
   "type": "module",
   "scripts": {
-    "build": "vue-tsc && vite build",
+    "build": "vite build",
     "dev": "vite",
     "lint": "eslint .",
     "lint:sarif": "eslint -f @microsoft/eslint-formatter-sarif -o eslint.sarif .",
     "preview": "vite preview",
-    "test": "playwright test"
+    "test": "playwright test",
+    "typecheck": "vue-tsc"
   },
   "dependencies": {
     "@bicou/prosemirror-render-vue": "workspace:*",
