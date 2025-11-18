@@ -23,7 +23,7 @@
     "@types/node": "24.10.0",
     "turbo": "2.6.1"
   },
-  "packageManager": "pnpm@10.20.0",
+  "packageManager": "pnpm@10.22.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@parcel/watcher",
