@@ -12,7 +12,7 @@
   "devDependencies": {
     "@eslint/js": "9.39.1",
     "@microsoft/eslint-formatter-sarif": "3.1.0",
-    "@stylistic/eslint-plugin": "5.5.0",
+    "@stylistic/eslint-plugin": "5.6.1",
     "@vitest/eslint-plugin": "1.4.3",
     "eslint-plugin-jsdoc": "61.1.12",
     "eslint-plugin-unicorn": "62.0.0",
