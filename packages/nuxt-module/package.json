@@ -48,7 +48,7 @@
     "typescript": "5.9.3",
     "vitest": "4.0.12",
     "vue": "3.5.22",
-    "vue-tsc": "3.1.4"
+    "vue-tsc": "3.1.5"
   },
   "publishConfig": {
     "access": "public"
