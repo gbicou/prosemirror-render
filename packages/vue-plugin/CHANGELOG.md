@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-vue
 
+## [0.0.16](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-v0.0.15...prosemirror-render-vue-v0.0.16) (2025-11-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue to v3.5.22 ([#753](https://github.com/gbicou/prosemirror-render/issues/753)) ([b5ea7f9](https://github.com/gbicou/prosemirror-render/commit/b5ea7f956e80576c0c0dec7251cf85780bb94ea1))
+
 ## [0.0.15](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-v0.0.14...prosemirror-render-vue-v0.0.15) (2025-05-19)
 
 
