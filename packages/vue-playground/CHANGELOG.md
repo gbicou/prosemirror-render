@@ -1,5 +1,24 @@
 # @bicou/prosemirror-render-vue-playground
 
+## [0.0.17](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.16...prosemirror-render-vue-playground-v0.0.17) (2025-11-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue to v3.5.16 ([#650](https://github.com/gbicou/prosemirror-render/issues/650)) ([0a02e19](https://github.com/gbicou/prosemirror-render/commit/0a02e195d058ffc2fc5d3b1fc4102e9b6ea324e6))
+* **deps:** update dependency vue to v3.5.22 ([#753](https://github.com/gbicou/prosemirror-render/issues/753)) ([b5ea7f9](https://github.com/gbicou/prosemirror-render/commit/b5ea7f956e80576c0c0dec7251cf85780bb94ea1))
+* **deps:** update dependency vue to v3.5.25 ([#830](https://github.com/gbicou/prosemirror-render/issues/830)) ([b313ed3](https://github.com/gbicou/prosemirror-render/commit/b313ed3327af04a465af9dc97dd73f27daa9585e))
+* **deps:** update dependency vue-router to v4.6.2 ([#790](https://github.com/gbicou/prosemirror-render/issues/790)) ([9be3c84](https://github.com/gbicou/prosemirror-render/commit/9be3c8434459962c3e5e99fc167f717ddc546141))
+* **deps:** update dependency vue-router to v4.6.3 ([#796](https://github.com/gbicou/prosemirror-render/issues/796)) ([95011fd](https://github.com/gbicou/prosemirror-render/commit/95011fd1c9d687c5c01231d41fc1d5fe18669929))
+* **deps:** update emojibase monorepo to v17 ([#849](https://github.com/gbicou/prosemirror-render/issues/849)) ([23b93d1](https://github.com/gbicou/prosemirror-render/commit/23b93d1f43724b2b8abf89245ffd92c95fdc0d54))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/prosemirror-render-vue bumped to 0.0.16
+
 ## [0.0.16](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.15...prosemirror-render-vue-playground-v0.0.16) (2025-05-19)
 
 
