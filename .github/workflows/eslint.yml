@@ -27,7 +27,7 @@ jobs:
         run: pnpm turbo lint:sarif
 
       - name: Upload eslint results
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: eslint-results
           path: packages/*/eslint.sarif
@@ -48,7 +48,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download eslint results
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: eslint-results
           path: packages
