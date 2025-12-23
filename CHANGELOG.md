@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-v1.0.5...prosemirror-render-v1.0.6) (2025-12-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue-router to v4.6.4 ([#886](https://github.com/gbicou/prosemirror-render/issues/886)) ([2dd6578](https://github.com/gbicou/prosemirror-render/commit/2dd6578b1c3bbd15c9fa4792470b0d8574231e12))
+
 ## [1.0.5](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-v1.0.4...prosemirror-render-v1.0.5) (2025-11-28)
 
 
