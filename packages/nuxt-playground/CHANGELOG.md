@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-nuxt-playground
 
+## [0.0.19](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-playground-v0.0.18...prosemirror-render-nuxt-playground-v0.0.19) (2025-12-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue-router to v4.6.4 ([#886](https://github.com/gbicou/prosemirror-render/issues/886)) ([2dd6578](https://github.com/gbicou/prosemirror-render/commit/2dd6578b1c3bbd15c9fa4792470b0d8574231e12))
+
 ## [0.0.18](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-playground-v0.0.17...prosemirror-render-nuxt-playground-v0.0.18) (2025-11-28)
 
 
