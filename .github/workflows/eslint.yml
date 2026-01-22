@@ -18,7 +18,7 @@ jobs:
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
 
       - name: Setup node and pnpm
         uses: ./.github/actions/setup-node-pnpm
@@ -27,7 +27,7 @@ jobs:
         run: pnpm turbo lint:sarif
 
       - name: Upload eslint results
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
         with:
           name: eslint-results
           path: packages/*/eslint.sarif
@@ -45,16 +45,16 @@ jobs:
           - vue-plugin
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
 
       - name: Download eslint results
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131 # v7
         with:
           name: eslint-results
           path: packages
 
       - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v4
+        uses: github/codeql-action/upload-sarif@cdefb33c0f6224e58673d9004f47f7cb3e328b89 # v4
         with:
           category: ${{ matrix.package }}
           sarif_file: packages/${{ matrix.package }}/eslint.sarif
