@@ -52,7 +52,7 @@
     "vite-plugin-dts": "4.5.4",
     "vitest": "4.0.18",
     "vitest-github-actions-reporter": "0.11.1",
-    "vue-tsc": "3.2.2"
+    "vue-tsc": "3.2.3"
   },
   "publishConfig": {
     "access": "public"
