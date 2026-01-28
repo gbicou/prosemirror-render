@@ -1,5 +1,19 @@
 # @bicou/prosemirror-render-nuxt
 
+## [0.0.20](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-v0.0.19...prosemirror-render-nuxt-v0.0.20) (2026-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update nuxtjs monorepo to v4.3.0 ([#929](https://github.com/gbicou/prosemirror-render/issues/929)) ([f42defa](https://github.com/gbicou/prosemirror-render/commit/f42defa68c08bde4b641b97898ec3e1b247a1fc4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/prosemirror-render-vue bumped to 0.0.17
+
 ## [0.0.19](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-v0.0.18...prosemirror-render-nuxt-v0.0.19) (2026-01-22)
 
 

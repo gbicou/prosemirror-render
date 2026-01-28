@@ -1,5 +1,14 @@
 # @bicou/prosemirror-render-vue-playground
 
+## [0.0.19](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.18...prosemirror-render-vue-playground-v0.0.19) (2026-01-28)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @bicou/prosemirror-render-vue bumped to 0.0.17
+
 ## [0.0.18](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-playground-v0.0.17...prosemirror-render-vue-playground-v0.0.18) (2026-01-22)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-v1.0.6...prosemirror-render-v1.0.7) (2026-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update nuxtjs monorepo to v4.3.0 ([#929](https://github.com/gbicou/prosemirror-render/issues/929)) ([f42defa](https://github.com/gbicou/prosemirror-render/commit/f42defa68c08bde4b641b97898ec3e1b247a1fc4))
+
 ## [1.0.6](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-v1.0.5...prosemirror-render-v1.0.6) (2026-01-22)
 
 

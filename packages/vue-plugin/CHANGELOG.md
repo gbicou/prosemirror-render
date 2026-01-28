@@ -1,5 +1,12 @@
 # @bicou/prosemirror-render-vue
 
+## [0.0.17](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-v0.0.16...prosemirror-render-vue-v0.0.17) (2026-01-28)
+
+
+### Bug Fixes
+
+* exports json value type ([e59ddcb](https://github.com/gbicou/prosemirror-render/commit/e59ddcb44edd05ad9d40b40c2c6a43d1898d0245))
+
 ## [0.0.16](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-vue-v0.0.15...prosemirror-render-vue-v0.0.16) (2025-11-28)
 
 
