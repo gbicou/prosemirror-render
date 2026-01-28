@@ -1,5 +1,5 @@
 // export types
-export type { ProsemirrorJSONAttributes, ProsemirrorJSONElement, ProsemirrorJSONNode, ProsemirrorJSONMark } from './prosemirror-json'
+export type { ProsemirrorJSONValue, ProsemirrorJSONAttributes, ProsemirrorJSONElement, ProsemirrorJSONNode, ProsemirrorJSONMark } from './prosemirror-json'
 export type { VueProsemirrorOptions, VueProsemirrorTypes } from './options'
 
 // export plugin
