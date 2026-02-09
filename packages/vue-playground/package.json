@@ -21,7 +21,7 @@
   },
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
-    "@playwright/test": "1.58.1",
+    "@playwright/test": "1.58.2",
     "@tailwindcss/vite": "4.1.18",
     "@vitejs/plugin-vue": "6.0.4",
     "autoprefixer": "10.4.24",
