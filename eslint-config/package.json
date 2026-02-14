@@ -15,7 +15,7 @@
     "@stylistic/eslint-plugin": "5.7.1",
     "@vitest/eslint-plugin": "1.6.7",
     "eslint-plugin-jsdoc": "62.5.4",
-    "eslint-plugin-unicorn": "62.0.0",
+    "eslint-plugin-unicorn": "63.0.0",
     "eslint-plugin-vue": "10.7.0",
     "typescript-eslint": "8.54.0",
     "typescript": "5.9.3"
