@@ -42,7 +42,7 @@ importers:
         specifier: 1.6.7
         version: 1.6.7(eslint@10.0.0(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.18(@types/node@24.10.13)(happy-dom@20.6.1)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.46.0)(yaml@2.8.2))
       '@vue/eslint-config-typescript':
-        specifier: ^14.6.0
+        specifier: 14.6.0
         version: 14.6.0(eslint-plugin-vue@10.7.0(@stylistic/eslint-plugin@5.8.0(eslint@10.0.0(jiti@2.6.1)))(@typescript-eslint/parser@8.55.0(eslint@10.0.0(jiti@2.6.1))(typescript@5.9.3))(eslint@10.0.0(jiti@2.6.1))(vue-eslint-parser@10.2.0(eslint@10.0.0(jiti@2.6.1))))(eslint@10.0.0(jiti@2.6.1))(typescript@5.9.3)
       eslint:
         specifier: 10.0.0
