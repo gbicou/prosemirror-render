@@ -28,9 +28,7 @@ export interface ProsemirrorJSONElement {
 /**
  * JSON ProseMirror Mark
  */
-export type ProsemirrorJSONMark = ProsemirrorJSONElement & {
-  [other: string]: unknown
-}
+export type ProsemirrorJSONMark = ProsemirrorJSONElement & Record<string, unknown>
 
 /**
  * JSON ProseMirror Node

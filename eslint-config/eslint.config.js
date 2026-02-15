@@ -40,6 +40,7 @@ export default defineConfigWithVueTs(
 
   ...pluginVue.configs['flat/recommended'],
   vueTsConfigs.recommended,
+  vueTsConfigs.stylistic,
 
   ...forNuxt,
 )
