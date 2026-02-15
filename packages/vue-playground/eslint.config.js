@@ -2,7 +2,7 @@ import local from '@bicou/eslint-config'
 
 export default [
   {
-    ignores: ['dist/', 'coverage/', 'typed-router.d.ts'],
+    ignores: ['typed-router.d.ts'],
   },
   ...local,
   {

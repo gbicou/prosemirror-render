@@ -1,14 +1,1 @@
-import local from '@bicou/eslint-config'
-
-export default [
-  {
-    ignores: ['dist/', 'coverage/'],
-  },
-  ...local,
-  {
-    files: ['**/*.test.ts'],
-    rules: {
-      'unicorn/no-null': 'off',
-    },
-  },
-]
+export { default } from '@bicou/eslint-config'

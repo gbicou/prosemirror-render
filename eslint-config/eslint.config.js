@@ -1,12 +1,12 @@
 // @ts-check
 
-import js from '@eslint/js'
-import ts from 'typescript-eslint'
-import vue from 'eslint-plugin-vue'
 import unicorn from 'eslint-plugin-unicorn'
 import jsdoc from 'eslint-plugin-jsdoc'
 import vitest from '@vitest/eslint-plugin'
 import stylistic from '@stylistic/eslint-plugin'
+import { globalIgnores } from 'eslint/config'
+import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript'
+import pluginVue from 'eslint-plugin-vue'
 
 export const forNuxt = [
   // unicorn
@@ -30,26 +30,16 @@ export const forNuxt = [
   },
 ]
 
-export default ts.config(
-  // javascript
-  js.configs.recommended,
-
-  // typescript
-  ts.configs.recommended,
-
-  // vue
-  vue.configs['flat/recommended'],
+export default defineConfigWithVueTs(
   {
-    files: [
-      '*.vue',
-      '**/*.vue',
-    ],
-    languageOptions: {
-      parserOptions: {
-        parser: ts.parser,
-      },
-    },
+    name: 'app/files-to-lint',
+    files: ['**/*.{vue,ts,mts,tsx}'],
   },
 
-  forNuxt,
+  globalIgnores(['**/dist/**', '**/.turbo/**', '**/coverage/**']),
+
+  ...pluginVue.configs['flat/recommended'],
+  vueTsConfigs.recommended,
+
+  ...forNuxt,
 )
