@@ -16,7 +16,7 @@
     "@vitest/eslint-plugin": "1.6.9",
     "@vue/eslint-config-typescript": "14.6.0",
     "eslint": "10.0.0",
-    "eslint-plugin-jsdoc": "62.5.4",
+    "eslint-plugin-jsdoc": "62.5.5",
     "eslint-plugin-unicorn": "63.0.0",
     "eslint-plugin-vue": "10.7.0",
     "typescript-eslint": "8.55.0",
