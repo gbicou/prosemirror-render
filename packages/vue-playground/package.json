@@ -24,7 +24,7 @@
     "@playwright/test": "1.58.2",
     "@tailwindcss/vite": "4.2.1",
     "@vitejs/plugin-vue": "6.0.4",
-    "autoprefixer": "10.4.24",
+    "autoprefixer": "10.4.27",
     "eslint": "10.0.2",
     "postcss": "8.5.6",
     "tailwindcss": "4.2.1",
