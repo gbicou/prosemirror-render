@@ -39,8 +39,8 @@ importers:
         specifier: 5.10.0
         version: 5.10.0(eslint@10.0.3(jiti@2.6.1))
       '@vitest/eslint-plugin':
-        specifier: 1.6.10
-        version: 1.6.10(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.18(@types/node@24.12.0)(happy-dom@20.8.3)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
+        specifier: 1.6.11
+        version: 1.6.11(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.18(@types/node@24.12.0)(happy-dom@20.8.3)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))
       '@vue/eslint-config-typescript':
         specifier: 14.7.0
         version: 14.7.0(eslint-plugin-vue@10.8.0(@stylistic/eslint-plugin@5.10.0(eslint@10.0.3(jiti@2.6.1)))(@typescript-eslint/parser@8.56.1(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3))(eslint@10.0.3(jiti@2.6.1))(vue-eslint-parser@10.4.0(eslint@10.0.3(jiti@2.6.1))))(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)
@@ -2499,8 +2499,8 @@ packages:
       '@vitest/browser':
         optional: true
 
-  '@vitest/eslint-plugin@1.6.10':
-    resolution: {integrity: sha512-/cOf+mTu4HBJIYHTETo8/OFCSZv3T2p+KfGnouzKfjK063cWLZp0TzvK7EU5B3eFG7ypUNtw6l+jK+SA+p1g8g==}
+  '@vitest/eslint-plugin@1.6.11':
+    resolution: {integrity: sha512-/m7cyD2x/TMJt6SmW6X9ZQWThCROa3AgBXJKVzTDG6MIRQkxBGLlwi4Vi+F5bcKnRKI17b3aeUzOhqBwnsjiHg==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -8282,7 +8282,7 @@ snapshots:
       tinyrainbow: 3.0.3
       vitest: 4.0.18(@types/node@24.12.0)(happy-dom@20.8.3)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2)
 
-  '@vitest/eslint-plugin@1.6.10(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.18(@types/node@24.12.0)(happy-dom@20.8.3)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))':
+  '@vitest/eslint-plugin@1.6.11(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.18(@types/node@24.12.0)(happy-dom@20.8.3)(jiti@2.6.1)(lightningcss@1.31.1)(terser@5.46.0)(yaml@2.8.2))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.56.1
       '@typescript-eslint/utils': 8.56.1(eslint@10.0.3(jiti@2.6.1))(typescript@5.9.3)
