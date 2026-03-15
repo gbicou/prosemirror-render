@@ -19,7 +19,7 @@
     "eslint-plugin-jsdoc": "62.7.1",
     "eslint-plugin-unicorn": "63.0.0",
     "eslint-plugin-vue": "10.8.0",
-    "typescript-eslint": "8.56.1",
+    "typescript-eslint": "8.57.0",
     "typescript": "5.9.3"
   }
 }
