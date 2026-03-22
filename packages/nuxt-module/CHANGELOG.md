@@ -1,5 +1,14 @@
 # @bicou/prosemirror-render-nuxt
 
+## [0.0.22](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-v0.0.21...prosemirror-render-nuxt-v0.0.22) (2026-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vue to v3.5.29 ([#1018](https://github.com/gbicou/prosemirror-render/issues/1018)) ([ec836e9](https://github.com/gbicou/prosemirror-render/commit/ec836e91824d93da7cd05d74aa99e67ca20ff54f))
+* **deps:** update dependency vue to v3.5.30 ([#1040](https://github.com/gbicou/prosemirror-render/issues/1040)) ([631d59d](https://github.com/gbicou/prosemirror-render/commit/631d59dbd7e3d8d479db2537d3c9a7b5e9a22c76))
+* **deps:** update nuxtjs monorepo to v4.4.2 ([#1050](https://github.com/gbicou/prosemirror-render/issues/1050)) ([7ed14fd](https://github.com/gbicou/prosemirror-render/commit/7ed14fdee1cb2bc57fb1e8a17fc9dd47f1ec5e80))
+
 ## [0.0.21](https://github.com/gbicou/prosemirror-render/compare/prosemirror-render-nuxt-v0.0.20...prosemirror-render-nuxt-v0.0.21) (2026-02-15)
 
 
