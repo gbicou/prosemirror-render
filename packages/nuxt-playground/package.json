@@ -19,7 +19,7 @@
     "@bicou/eslint-config": "workspace:*",
     "@nuxt/eslint": "1.15.2",
     "@nuxt/schema": "4.4.2",
-    "eslint": "10.0.3",
+    "eslint": "10.1.0",
     "nuxt": "4.4.2",
     "postcss-nesting": "14.0.0",
     "typescript": "5.9.3",
