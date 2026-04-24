@@ -42,7 +42,7 @@
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
     "@vitejs/plugin-vue": "6.0.6",
-    "@vitest/coverage-v8": "4.1.4",
+    "@vitest/coverage-v8": "4.1.5",
     "@vue/test-utils": "2.4.6",
     "eslint": "10.2.1",
     "happy-dom": "20.9.0",
@@ -50,7 +50,7 @@
     "typescript": "5.9.3",
     "vite": "7.3.2",
     "vite-plugin-dts": "4.5.4",
-    "vitest": "4.1.4",
+    "vitest": "4.1.5",
     "vitest-github-actions-reporter": "0.11.1",
     "vue-tsc": "3.2.7"
   },
