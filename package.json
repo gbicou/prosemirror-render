@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@bicou/prosemirror-render",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Render ProseMirror JSON data in Vue and Nuxt",
   "license": "MIT",
   "author": "Benjamin VIELLARD <bicou@bicou.com>",
