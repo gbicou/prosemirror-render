@@ -19,7 +19,7 @@
     "typecheck": "turbo typecheck --filter=!*-docs"
   },
   "devDependencies": {
-    "@playwright/test": "1.59.1",
+    "@playwright/test": "1.60.0",
     "@types/node": "24.12.3",
     "turbo": "2.9.16"
   },
