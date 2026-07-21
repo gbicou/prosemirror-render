@@ -30,7 +30,7 @@
     "tailwindcss": "4.3.2",
     "typescript": "5.9.3",
     "unplugin-vue-router": "0.19.2",
-    "vite": "7.3.6",
+    "vite": "8.1.5",
     "vue-tsc": "3.3.7"
   }
 }
