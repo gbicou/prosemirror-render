@@ -1,6 +1,6 @@
 {
   "name": "@bicou/prosemirror-render-nuxt",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "description": "Nuxt module to render ProseMirror JSON data",
   "license": "MIT",
   "author": "Benjamin VIELLARD <bicou@bicou.com>",
