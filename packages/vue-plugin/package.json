@@ -42,7 +42,7 @@
   "devDependencies": {
     "@bicou/eslint-config": "workspace:*",
     "@vitejs/plugin-vue": "6.0.9",
-    "@vitest/coverage-v8": "4.1.10",
+    "@vitest/coverage-v8": "4.1.11",
     "@vue/test-utils": "2.4.11",
     "eslint": "10.5.0",
     "happy-dom": "20.10.6",
